@@ -2,9 +2,45 @@
 
 body {
   margin: 0;
-  background-color: magenta;
+  font-size: 16px;
 }
 
-:fullscreen {
-  background-color: black;
+/* -- .Nav -- */
+.Nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Nav-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: magenta;
+  margin-bottom: 10px;
+}
+
+.Nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.Nav-link {
+  color: black;
+}
+
+.Nav-link:visited {
+  color: black;
+}
+
+@media (min-width: 1250px) {
+  .Nav {
+    border-bottom: 1px solid black;
+  }
+}
+
+/* -- .Content -- */
+.Content {
+  padding: 20px;
 }
