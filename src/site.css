@@ -1,0 +1,10 @@
+@import "reset.css";
+
+body {
+  margin: 0;
+  background-color: magenta;
+}
+
+:fullscreen {
+  background-color: black;
+}
