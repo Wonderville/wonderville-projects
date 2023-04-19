@@ -1,29 +1,37 @@
 @import "reset.css";
 
-body {
-  margin: 0;
+/* -- .Page -- */
+.Page {
   font-size: 16px;
 }
 
-/* -- .Nav -- */
-.Nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-}
-
-.Nav-title {
+.Page-logo {
   font-size: 2.5em;
   font-weight: bold;
   font-style: italic;
   color: magenta;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.Nav-links {
+.Page-title {
+  font-size: 2.3em;
+  margin-bottom: 15px;
+}
+
+.Page-content {
+  padding: 20px;
+}
+
+/* -- .Nav -- */
+.Nav {
+  position: sticky;
   display: flex;
+  top: 0;
   gap: 20px;
+  padding: 20px;
+  background-color: white;
 }
 
 .Nav-link {
@@ -34,13 +42,23 @@ body {
   color: black;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 600px) {
   .Nav {
     border-bottom: 1px solid black;
   }
 }
 
-/* -- .Content -- */
-.Content {
-  padding: 20px;
+/* -- .Home -- */
+.Mission {
+  border-top: 1px dashed black;
+  padding-top: 15px;
+}
+
+.Mission-title {
+  font-size: 1.5em;
+}
+
+.Mission-line {
+  margin-top: 15px;
+  font-size: 1em;
 }
