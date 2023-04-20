@@ -9,6 +9,7 @@ module.exports = function (config) {
   // -- assets --
   config.addPlugin(PostCSSPlugin)
   config.addPassthroughCopy(`${srcDir}/site.css`);
+  config.addPassthroughCopy(`${srcDir}/img`);
 
   // -- output --
   return {
