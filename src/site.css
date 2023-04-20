@@ -6,13 +6,13 @@
 }
 
 .Page-logo {
+  display: flex;
+  justify-content: center;
   font-size: 2.5em;
+  line-height: 1.1em;
   font-weight: bold;
   font-style: italic;
-  color: magenta;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 0px 20px;
 }
 
 .Page-title {
@@ -21,13 +21,16 @@
 }
 
 .Page-content {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* -- .Nav -- */
 .Nav {
   position: sticky;
   display: flex;
+  justify-content: center;
   top: 0;
   gap: 20px;
   padding: 20px;
@@ -50,15 +53,42 @@
 
 /* -- .Home -- */
 .Mission {
-  border-top: 1px dashed black;
-  padding-top: 15px;
+  padding: 30px 0px;
 }
 
-.Mission-title {
+.Mission-title, .Board-title {
+  display: flex;
+  justify-content: center;
   font-size: 1.5em;
+}
+
+.Mission-lines {
+  max-width: 1000px;
 }
 
 .Mission-line {
   margin-top: 15px;
   font-size: 1em;
+}
+
+.Board {
+  border-top: 1px dashed black;
+  padding-top: 30px;
+}
+
+.Board-members {
+  max-width: 1000px;
+}
+
+.Board-member {
+  margin: 20px 0px;
+}
+
+.Board-member > p {
+  margin: 10px 0px;
+}
+
+.Board-member-title {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
