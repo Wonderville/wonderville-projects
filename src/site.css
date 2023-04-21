@@ -1,8 +1,16 @@
-@import "reset.css";
+/* -- resets --*/
+@import "_includes/reset.css";
+
+/* -- constants --*/
+@import "_includes/fonts.css";
+@import "_includes/spacing.css";
+
+/* -- pages --*/
+@import "_includes/home.css";
 
 /* -- .Page -- */
 .Page {
-  font-size: 16px;
+  font-size: $fonts-baseSize;
 }
 
 .Page-logo {
@@ -57,13 +65,16 @@
   padding-bottom: 30px;
 }
 
-.Mission-title, .Board-title, .Contact-title {
+.Mission-title,
+.Board-title,
+.Contact-title {
   display: flex;
   justify-content: center;
   font-size: 1.5em;
 }
 
-.Mission-lines, .Board-members {
+.Mission-lines,
+.Board-members {
   max-width: 1000px;
 }
 
@@ -72,7 +83,8 @@
   font-size: 1em;
 }
 
-.Board, .Contact {
+.Board,
+.Contact {
   border-top: 1px dashed black;
   padding-top: 30px;
 }

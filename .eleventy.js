@@ -1,4 +1,4 @@
-const PostCSSPlugin = require("eleventy-plugin-postcss");
+const PostCSSPlugin = require("eleventy-plugin-postcss")
 
 // -- config --
 module.exports = function (config) {
@@ -8,8 +8,7 @@ module.exports = function (config) {
 
   // -- assets --
   config.addPlugin(PostCSSPlugin)
-  config.addPassthroughCopy(`${srcDir}/site.css`);
-  config.addPassthroughCopy(`${srcDir}/img`);
+  config.addPassthroughCopy(`${srcDir}/img`)
 
   // -- output --
   return {
@@ -17,5 +16,5 @@ module.exports = function (config) {
       input: srcDir,
       output: dstDir,
     },
-  };
-};
+  }
+}
