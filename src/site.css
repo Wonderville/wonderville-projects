@@ -2,6 +2,7 @@
 @import "_includes/reset.css";
 
 /* -- constants --*/
+@import "_includes/media.css";
 @import "_includes/fonts.css";
 @import "_includes/spacing.css";
 
@@ -10,29 +11,26 @@
 
 /* -- .Page -- */
 .Page {
-  font-size: $fonts-baseSize;
+  font-size: $fontSize-base;
 }
 
 .Page-logo {
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
-  line-height: 1.1em;
+  font-size: $fontSize2;
   font-weight: bold;
   font-style: italic;
-  margin: 20px 20px 0px 20px;
-}
-
-.Page-title {
-  font-size: 2.3em;
-  margin-bottom: 15px;
+  margin-top: $spacing2;
+  margin-left: $spacing2;
+  margin-right: $spacing2;
 }
 
 .Page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0px;
+  padding-top: $spacing3;
+  padding-bottom: $spacing3;
 }
 
 /* -- .Nav -- */
@@ -41,8 +39,8 @@
   display: flex;
   justify-content: center;
   top: 0;
-  gap: 20px;
-  padding: 20px;
+  gap: $spacing2;
+  padding: $spacing2;
   background-color: white;
 }
 
@@ -54,52 +52,8 @@
   color: black;
 }
 
-@media (min-width: 600px) {
+@media (min-width: $desktop) {
   .Nav {
     border-bottom: 1px solid black;
   }
-}
-
-/* -- .Home -- */
-.Mission {
-  padding-bottom: 30px;
-}
-
-.Mission-title,
-.Board-title,
-.Contact-title {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-}
-
-.Mission-lines,
-.Board-members {
-  max-width: 1000px;
-}
-
-.Mission-line {
-  margin-top: 15px;
-  font-size: 1em;
-}
-
-.Board,
-.Contact {
-  border-top: 1px dashed black;
-  padding-top: 30px;
-}
-
-.Board-member {
-  display: flex;
-  gap: 20px;
-  margin: 20px 0px;
-}
-
-.Board-member > p {
-  margin: 10px 0px;
-}
-
-.Board-member-title {
-  font-weight: bold;
-  margin-bottom: 10px;
 }

@@ -1,2 +1,43 @@
-.Test {
+/* -- .Home -- */
+.HomeSection + .HomeSection {
+  margin-top: $spacing3;
+  padding-top: $spacing3;
+  border-top: 1px dashed black;
+}
+
+.HomeSection-title {
+  display: flex;
+  justify-content: center;
+  font-size: $fontSize1;
+}
+
+/* -- .Mission -- */
+.Mission-lines {
+  max-width: 1000px;
+}
+
+.Mission-line {
+  margin-top: $spacing1;
+}
+
+/* -- .Board -- */
+.Board-members {
+  max-width: 1000px;
+}
+
+/* -- .BoardMember -- */
+.BoardMember {
+  display: flex;
+  gap: $spacing2;
+  margin-top: $spacing2;
+  margin-bottom: $spacing2;
+}
+
+.BoardMember-body > * + * {
+  margin-top: $spacing0;
+}
+
+.BoardMember-name {
+  margin-bottom: $spacing0;
+  font-weight: bold;
 }
