@@ -9,6 +9,19 @@
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
 /* -- .Page -- */
 .Page {
   font-size: $fontSize-base;
@@ -32,10 +45,16 @@
   }
 }
 
+.Page-center {
+  display: flex;
+  justify-content: center;
+}
+
 .Page-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   padding-top: $spacing3;
   padding-bottom: $spacing3;
   padding-left: $spacing-margin;
@@ -44,9 +63,24 @@
 
 @media (min-width: $desktop) {
   .Page-content {
+    max-width: $desktop-maxWidth;
     padding-left: $spacing-marginDesktop;
     padding-right: $spacing-marginDesktop;
   }
+}
+
+/* -- .PageSection -- */
+.PageSection + .PageSection {
+  margin-top: $spacing3;
+  padding-top: $spacing3;
+  border-top: 1px dashed black;
+}
+
+.PageSection-title {
+  display: flex;
+  justify-content: center;
+  font-size: $fontSize1;
+  margin-bottom: $spacing1;
 }
 
 /* -- .Nav -- */

@@ -29,8 +29,10 @@
       <a class="Nav-link" href="/donate">Donate</a>
     </nav>
 
-    <main class="Page-content {{ class }}">
-      {{ content }}
-    </main>
+    <div class="Page-center">
+      <main class="Page-content {{ title | camelize }}">
+        {{ content }}
+      </main>
+    </div>
   </body>
 </html>
