@@ -1,11 +1,11 @@
-/* -- .ProjectsSection -- */
-.ProjectsSection + .ProjectsSection {
+/* -- .DonateSection -- */
+.DonateSection + .DonateSection {
   margin-top: $spacing3;
   padding-top: $spacing3;
   border-top: 1px dashed black;
 }
 
-.ProjectsSection-title {
+.DonateSection-title {
   display: flex;
   justify-content: center;
   font-size: $fontSize1;

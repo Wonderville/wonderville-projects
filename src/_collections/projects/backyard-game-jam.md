@@ -1,4 +1,4 @@
 ---
 name: Backyard Game Jam
-tags: ["projects", "jams"]
+tags: jams
 ---

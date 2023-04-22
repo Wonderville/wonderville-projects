@@ -3,4 +3,26 @@ layout: Page.liquid
 title: donate
 class: Donate
 ---
-donate
+<!-- ~*~ Donate ~*~ -->
+<section class="DonateSection">
+  <h1 class="DonateSection-title">
+    Donate
+  </h1>
+
+  <p>
+    If you have contacts or know any companies interested in providing in-kind donations, below is a list of items we could use for programming and projects. Thank you in advance for considering helping our organization!
+  </p>
+</section>
+
+<!-- ~*~ WishList ~*~ -->
+<section class="WishList DonateSection">
+  <h1 class="DonateSection-title">
+    Wish List
+  </h1>
+
+  <div class="WishList-items">
+    {%- for wish in collections.wishes %}
+      {% render "donate/Wish.liquid", wish: wish %}
+    {%- endfor %}
+  </div>
+</section>

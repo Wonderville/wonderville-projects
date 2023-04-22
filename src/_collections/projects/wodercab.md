@@ -1,4 +1,4 @@
 ---
 name: Wondercab
-tags: ["projects", "residencies"]
+tags: residencies
 ---

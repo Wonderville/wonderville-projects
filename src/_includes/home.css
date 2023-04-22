@@ -1,4 +1,4 @@
-/* -- .Home -- */
+/* -- .HomeSection -- */
 .HomeSection + .HomeSection {
   margin-top: $spacing3;
   padding-top: $spacing3;
