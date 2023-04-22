@@ -1,12 +1,5 @@
-/* -- resets --*/
-@import "_includes/reset.css";
-
-/* -- constants --*/
-@import "_includes/media.css";
-@import "_includes/fonts.css";
-@import "_includes/spacing.css";
-
-/* -- pages --*/
+/* -- includes --*/
+@import "_includes/shared.css";
 @import "_includes/home.css";
 
 /* -- resets (more) -- */

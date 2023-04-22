@@ -35,63 +35,9 @@ class: Home
   </h1>
 
   <div class="Board-members">
-    <article class="BoardMember">
-      <img
-        class="BoardMember-photo"
-        src="img/mitu-khandaker.jpg"
-        width=300
-        height=300>
-
-      <div class="BoardMember-body">
-        <div class="BoardMember-name">Dr. Mitu Khandaker</div>
-        <p>Dr. Mitu Khandaker is a game designer, engineer, scholar, and entrepreneur. She is an Associate Arts Professor at the NYU Game Center, where she teaches game design and development, and is also CEO/co-founder at Glow Up Games, a game studio centering diverse voices & unlocking the future of play. She holds a PhD on designing games for immersive interfaces such as VR and AR, and has a background in computer engineering.</p>
-        <p>She was previously on the founding team at Spirit AI, an AI tools company, and launched a location-based games startup. She also worked in the indie game space on titles such as the social simulation game Redshirt. She has received a number of international accolades, including as a BAFTA Breakthrough Brit in 2013 and the Creative English Trailblazer Award in 2014.</p>
-        <p>Mitu has a particular interest in encouraging diversity in game development and STEM-related fields, and has served on the advisory committee for the Advocacy Track at Game Developers' Conference since 2014. She has also served on the board of directors at Feminist Frequency, and is a AAAS IF/THEN Ambassador to champion more middle school and teen girls into game development.</p>
-      </div>
-    </article>
-
-    <article class="BoardMember">
-      <img
-        class="BoardMember-photo"
-        src="img/zan-emerson.jpg"
-        width=300
-        height=300>
-
-      <div class="BoardMember-body">
-        <div class="BoardMember-name">Zan Emerson</div>
-        <p>Zan Emerson (they/them) is a marketing director, manager, and creative consultant for today’s pre-eminent adventurous art. Primarily, they have worked behind the scenes in almost every role in almost every setting in NYC live music save Madison Square Garden – from 100-piece orchestras in rented cathedrals, to DIY punk shows, to legendary underplays on Bleecker Street.</p>
-        <p>A deep believer in both workers’ rights and the life-altering power of live music, Zan strives to harness their passion for this line of work, not only to connect art with audiences, but to uplift the entire industry on stage and behind the scenes.</p>
-      </div>
-    </article>
-
-    <article class="BoardMember">
-      <img
-        class="BoardMember-photo"
-        src="img/clay-shirky.png"
-        width=300
-        height=300>
-
-      <div class="BoardMember-body">
-        <div class="BoardMember-name">Clay Shirky</div>
-        <p>Clay Shirky is Vice Provost. In this role, he designs, develops, and enhances all academic aspects of technology-based teaching and learning, University-wide; oversees the development of NYU’s instructional technology strategy, working with deans, faculty, NYU IT, and other university offices; maintains an inventory of online education offerings; and helps schools use educational technology to recruit new students, help existing students learn and progress, and generate costs savings or new revenues. He chairs the University’s Future of Technology-Enhanced Education Committee.</p>
-        <p>Shirky is Associate Professor at the Arthur L. Carter Center of Journalism in FAS and Associate Arts Professor in Tisch School of the Arts’ Interactive Telecommunications Program. From 2014 to 2017, he served as Chief Information Officer at NYU Shanghai. Before joining NYU’s full-time faculty in fall 2004, he was a partner at an international investment company, and was the original Professor of New Media at Hunter College, where he helped design its MFA in Integrated Media Arts program. Currently, Shirky is a faculty associate at Harvard University’s Berkman Center for Internet and Society, and was the 2010 Edward R. Murrow Visiting Lecturer at Harvard's Joan Shorenstein Center on the Press, Politics, and Public Policy.</p>
-        <p>Shirky holds a B.A. in Fine Art from Yale University. A leading voice on the social and economic impact of internet technologies, he is the author of Little Rice: Smartphones, Xiaomi, and the Chinese Dream (2015), Cognitive Surplus: Creativity and Generosity in a Connected Age (2010), and Here Comes Everybody: The Power of Organizing Without Organizations (2008). In 2010, he was named one of Foreign Policy’s “Top 100 Global Thinkers.” He has had regular columns in Business 2.0 and FEED, among other publications, and his writings have appeared in The New York Times, the Wall Street Journal, Harvard Business Review, Wired, Computerworld, and Foreign Affairs.</p>
-      </div>
-    </article>
-
-    <article class="BoardMember">
-      <div class="BoardMember-body">
-        <div class="BoardMember-name">Mark Klebak</div>
-        <p>Mark Kleeb is the co-founder of Wonderville and founder of Death By Audio Arcade. With a background in electrical engineering, Mark started fabricating custom arcade cabinets in 2010 and has built over 50 arcade cabinets for independent game developers. Additionally he is an adjunct professor at New York University, teaching Analog and Digital Electronics Lab at Steinhardt’s Music Technology program, as well as The New Arcade at ITP. This class teaches the basics of arcade game design and culminates in a group arcade cabinet project that is showcased publicly.</p>
-      </div>
-    </article>
-
-    <article class="BoardMember">
-      <div class="BoardMember-body">
-        <div class="BoardMember-name">Stephanie Gross</div>
-        <p>Stephanie is the co-founder of Wonderville. She has over 10 years of experience working with local arts organizations, helping them to navigate the bureaucracy of the city and file paperwork to become non-profits. She’s also worked with the Department of Consumer Affairs and is currently a senior director at the Department of Finance. Stephanie and her husband Mark met at the underground music venue Death By Audio back in 2010. They wanted to take their experience from the DIY scene and create a new type of venue - one that exists legally, with all of the proper licensing and permits, but also strives to showcase independent games, music, and art.</p>
-      </div>
-    </article>
+    {%- for member in collections.board %}
+      {% render "home/BoardMember.liquid", member: member %}
+    {%- endfor %}
   </div>
 </section>
 
