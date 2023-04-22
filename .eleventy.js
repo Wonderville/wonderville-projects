@@ -15,6 +15,7 @@ module.exports = function (config) {
     dir: {
       input: srcDir,
       output: dstDir,
+      layouts: "_layouts",
     },
   }
 }
