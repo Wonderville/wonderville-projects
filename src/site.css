@@ -9,6 +9,11 @@
 /* -- pages --*/
 @import "_includes/home.css";
 
+/* -- resets (more) -- */
+* {
+  box-sizing: border-box;
+}
+
 /* -- .Page -- */
 .Page {
   font-size: $fontSize-base;
@@ -20,9 +25,16 @@
   font-size: $fontSize2;
   font-weight: bold;
   font-style: italic;
-  margin-top: $spacing2;
-  margin-left: $spacing2;
-  margin-right: $spacing2;
+  padding-top: $spacing2;
+  padding-left: $spacing-margin;
+  padding-right: $spacing-margin;
+}
+
+@media (min-width: $desktop) {
+  .Page-logo {
+    padding-left: $spacing-marginDesktop;
+    padding-right: $spacing-marginDesktop;
+  }
 }
 
 .Page-content {
@@ -31,6 +43,15 @@
   align-items: center;
   padding-top: $spacing3;
   padding-bottom: $spacing3;
+  padding-left: $spacing-margin;
+  padding-right: $spacing-margin;
+}
+
+@media (min-width: $desktop) {
+  .Page-content {
+    padding-left: $spacing-marginDesktop;
+    padding-right: $spacing-marginDesktop;
+  }
 }
 
 /* -- .Nav -- */
@@ -40,8 +61,19 @@
   justify-content: center;
   top: 0;
   gap: $spacing2;
-  padding: $spacing2;
+  padding-top: $spacing2;
+  padding-bottom: $spacing2;
+  padding-left: $spacing-margin;
+  padding-right: $spacing-margin;
   background-color: white;
+}
+
+@media (min-width: $desktop) {
+  .Nav {
+    padding-left: $spacing-marginDesktop;
+    padding-right: $spacing-marginDesktop;
+    border-bottom: 1px solid black;
+  }
 }
 
 .Nav-link {
@@ -50,10 +82,4 @@
 
 .Nav-link:visited {
   color: black;
-}
-
-@media (min-width: $desktop) {
-  .Nav {
-    border-bottom: 1px solid black;
-  }
 }
