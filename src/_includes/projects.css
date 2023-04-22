@@ -1,0 +1,12 @@
+/* -- .Projects -- */
+.ProjectsSection + .ProjectsSection {
+  margin-top: $spacing3;
+  padding-top: $spacing3;
+  border-top: 1px dashed black;
+}
+
+.ProjectsSection-title {
+  display: flex;
+  justify-content: center;
+  font-size: $fontSize1;
+}

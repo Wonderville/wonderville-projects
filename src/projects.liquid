@@ -3,7 +3,42 @@ layout: Page.liquid
 title: projects
 class: Projects
 ---
-projects
+<section class="ProjectsSection">
+  <h1 class="ProjectsSection-title">
+    Playtest Night
+  </h1>
 
-{% render "projects/Project.liquid", name: "Playtest Night" %}
-{% render "projects/Project.liquid", name: "Game Jams" %}
+  {%- for project in collections.playtests %}
+    {% render "projects/Project.liquid", project: project %}
+  {%- endfor %}
+</section>
+
+<section class="ProjectsSection">
+  <h1 class="ProjectsSection-title">
+    Game Jams
+  </h1>
+
+  {%- for project in collections.jams %}
+    {% render "projects/Project.liquid", project: project %}
+  {%- endfor %}
+</section>
+
+<section class="ProjectsSection">
+  <h1 class="ProjectsSection-title">
+    Residencies
+  </h1>
+
+  {%- for project in collections.residencies %}
+    {% render "projects/Project.liquid", project: project %}
+  {%- endfor %}
+</section>
+
+<section class="ProjectsSection">
+  <h1 class="ProjectsSection-title">
+    Internship
+  </h1>
+
+  {%- for project in collections.internships %}
+    {% render "projects/Project.liquid", project: project %}
+  {%- endfor %}
+</section>

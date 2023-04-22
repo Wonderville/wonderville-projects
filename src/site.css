@@ -1,6 +1,7 @@
 /* -- includes --*/
 @import "_includes/shared.css";
 @import "_includes/home.css";
+@import "_includes/projects.css";
 
 /* -- resets (more) -- */
 * {
