@@ -1,12 +1,19 @@
-<article class="BoardMember">
-  <img
-    class="BoardMember-photo"
-    src="{{member.data.image}}"
-    width=300
-    height=300>
+<div class="BoardMember">
+  <div class="BoardMember-card">
+    <img class="BoardMember-photo" src="{{member.data.image}}">
 
-  <div class="BoardMember-body">
-    <h1 class="BoardMember-name">{{ member.data.name }}</h1>
-    {{ member.content }}
+    <div class="BoardMember-name">
+      {{ member.data.name }}
+    </div>
   </div>
-</article>
+
+  <details class="BoardMember-details">
+    <summary class="BoardMember-summary">
+      {{ member.content | truncate: 200 }}
+    </summary>
+
+    <div class="BoardMember-body">
+      {{ member.content }}
+    </div>
+  </details>
+</div>

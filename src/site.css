@@ -25,6 +25,7 @@ h6 {
 /* -- .Page -- */
 .Page {
   font-size: $fontSize-base;
+  font-family: $fontSans;
 }
 
 .Page-logo {
@@ -71,15 +72,15 @@ h6 {
 
 /* -- .PageSection -- */
 .PageSection + .PageSection {
-  margin-top: $spacing3;
-  padding-top: $spacing3;
-  border-top: 1px dashed black;
+  margin-top: $spacing4;
+  padding-top: $spacing4;
 }
 
 .PageSection-title {
   display: flex;
   justify-content: center;
-  font-size: $fontSize1;
+  font-family: $fontSans;
+  font-size: $fontSize2;
   margin-bottom: $spacing1;
 }
 
@@ -95,6 +96,7 @@ h6 {
   padding-left: $spacing-margin;
   padding-right: $spacing-margin;
   background-color: white;
+  z-index: 1;
 }
 
 @media (min-width: $desktop) {

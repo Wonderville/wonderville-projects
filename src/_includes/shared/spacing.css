@@ -3,7 +3,11 @@ $spacing0: 10px;
 $spacing1: 15px;
 $spacing2: 20px;
 $spacing3: 30px;
+$spacing4: 45px;
 
 /* -- page margin -- */
 $spacing-margin: 20px;
 $spacing-marginDesktop: 70px;
+
+/* -- misc -- */
+$borderRadius: 12px;
