@@ -1,5 +1,6 @@
 ---
-name: Mark Klebak
+name: Mark Kleback
+image: img/mark-kleback.jpg
 tags: board
 date: "03"
 ---
