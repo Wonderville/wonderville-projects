@@ -96,10 +96,13 @@ h6 {
 
 /* -- .PageHeader -- */
 .PageHeader {
+  display: flex;
+  justify-content: center;
   height: 600px;
 }
 
 .PageHeader-image {
+  position: absolute;
   display: block;
   width: 100%;
   height: 690px;
@@ -108,17 +111,22 @@ h6 {
 }
 
 .PageHeader-logo {
-  filter: invert();
   position: absolute;
+  display: block;
   height: 300px;
-  top: 10px;
-  left: -10px;
+  transform: translateX(-30px);
+  filter: invert();
+}
+
+@media (min-width: $desktop) {
+  .PageHeader-logo {
+    top: 190px;
+  }
 }
 
 /* -- .PageFooter -- */
-.Page-footer {
-  width: 100%;
-  height: fit-content;
+.PageFooter {
+  position: relative;
 }
 
 .PageFooter-image {
@@ -128,7 +136,7 @@ h6 {
 }
 
 .PageFooter-credits {
-  position: relative;
+  position: absolute;
   bottom: 32px;
   left: 32px;
 }
@@ -140,11 +148,6 @@ h6 {
   justify-content: center;
   height: 91px;
   top: -1px;
-  padding-top: $spacing2;
-  padding-bottom: $spacing2;
-  padding-left: $margin;
-  padding-right: $margin;
-  padding: $margin;
   border-bottom: 2px solid black;
   font-size: $fontSize2;
   z-index: 1;
@@ -159,7 +162,7 @@ h6 {
   opacity: 0;
   transition: opacity 0.3s;
   background: repeating-linear-gradient(
-    90deg,
+    -45deg,
     $gray0 0px,
     $gray0 1px,
     $white 1px,
@@ -174,6 +177,8 @@ h6 {
 .Nav-links {
   display: flex;
   gap: $spacing2;
+  padding-top: $spacing2;
+  padding-bottom: $spacing2;
   z-index: 1;
 }
 
