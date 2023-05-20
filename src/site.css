@@ -202,13 +202,17 @@ h6 {
 /* -- .Box -- */
 .Box {
   padding: $spacing1;
-  border: 2px dashed black;
+  border: 2px dashed;
   border-radius: $borderRadius1;
+}
+
+.Box--home {
   background: repeating-linear-gradient(
     -45deg,
     $white 0px,
     $white 1px,
-    $pink 1px,
-    $pink 8px
+    $pink0 1px,
+    $pink0 8px
   );
+  border-color: $pink1;
 }

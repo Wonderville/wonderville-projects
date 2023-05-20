@@ -2,7 +2,7 @@
   font-size: $fontSize2;
   padding: $spacing1;
   border-radius: $borderRadius1;
-  background-color: $pink;
+  background-color: $pink0;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -23,7 +23,7 @@
   position: absolute;
   padding: $spacing1;
   border-radius: $borderRadius1;
-  background-color: $pink;
+  background-color: $pink0;
   max-width: 450px;
 }
 

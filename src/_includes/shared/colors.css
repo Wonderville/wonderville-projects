@@ -1,6 +1,8 @@
-$pink: #fdf3f3;
-$pinkSofter: #ece2e2;
+/* -- colors -- */
+$pink0: #fdf3f3;
+$pink1: #ff7a7a;
 $green: #00ff00;
 
+/* -- grayscale -- */
 $white: #ffffff;
 $gray0: #eeeeee;
