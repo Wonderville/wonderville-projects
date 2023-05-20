@@ -150,7 +150,14 @@ h6 {
   z-index: 1;
 }
 
-.Nav[stuck] {
+.Nav-background {
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
   background: repeating-linear-gradient(
     90deg,
     $gray0 0px,
@@ -160,9 +167,14 @@ h6 {
   );
 }
 
+.Nav[stuck] .Nav-background {
+  opacity: 1;
+}
+
 .Nav-links {
   display: flex;
   gap: $spacing2;
+  z-index: 1;
 }
 
 @media (min-width: $desktop) {
