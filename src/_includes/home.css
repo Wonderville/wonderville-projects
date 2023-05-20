@@ -12,13 +12,14 @@
   }
 }
 
-/* -- .Mission-* -- */
+/* -- .Mission-chunk -- */
 @media (min-width: $desktop) {
   .Mission-chunk > * {
     max-width: 350px;
   }
 }
 
+/* -- .Mission-title -- */
 .Mission-chunk:nth-child(1) {
   display: flex;
   align-items: center;
@@ -31,22 +32,18 @@
   }
 }
 
+/* -- .Mission-line -- */
 .Mission-line {
-  padding: $spacing1;
-  border-radius: $borderRadius1;
-  /* background-color: $pink; */
-  background: repeating-linear-gradient(
-    60deg,
-    $pinkSofter 0px,
-    $pinkSofter 2px,
-    $pink 2px,
-    $pink 8px
-  );
-  transition: 500ms ease-out 100ms;
+  transition: transform 500ms ease-out 100ms;
 }
 
 .Mission-chunk[class] > .Mission-line:hover {
   transform: scale(1.2);
+}
+
+/* -- .Mission-* [indexed]  -- */
+.Mission-title {
+  transform: rotate(3deg);
 }
 
 .Mission-chunk:nth-child(2) > .Mission-line {
@@ -81,7 +78,8 @@
   .Mission-chunk:nth-child(3) {
     order: 3;
     flex: 1;
-    margin-left: 144px;
+    margin-top: -40px;
+    margin-left: 104px;
   }
 
   .Mission-chunk:nth-child(4) {
@@ -102,7 +100,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: $spacing3;
+  gap: $spacing4;
 }
 
 /* -- .BoardMember -- */
@@ -110,8 +108,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-top: $spacing2;
-  margin-bottom: $spacing2;
 }
 
 @media (min-width: $desktop) {
@@ -121,34 +117,29 @@
   }
 }
 
+/* -- .BoardMember-* -- */
 .BoardMember-card {
   position: relative;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: $sizeCard;
 }
 
 .BoardMember-photo {
-  width: 300px;
-  height: 300px;
+  display: block;
+  width: $sizeCard;
+  height: $sizeCard;
   object-fit: cover;
   border-radius: $borderRadius0;
 }
 
 .BoardMember-name {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  max-width: 120px;
-  background-color: $pink;
-  padding: $spacing1;
-  border-radius: $borderRadius1;
+  max-width: 180px;
 }
 
 .BoardMember-brief {
-  margin-left: $spacing1;
-  margin-right: $spacing1;
-  padding: $spacing1;
-  background-color: $pink;
-  border-radius: $borderRadius1;
+  width: 270px;
 }
 
 .BoardMember-summary::marker {
@@ -156,6 +147,73 @@
   content: "";
 }
 
+/* -- .BoardMember-* [indexed] -- */
+.BoardMember:nth-child(1) .BoardMember-name {
+  top: -10px;
+  left: -50px;
+  transform: rotate(-2deg);
+}
+
+.BoardMember:nth-child(1) .BoardMember-brief {
+  margin-left: -20px;
+  margin-top: -25px;
+  transform: rotate(-3deg);
+}
+
+.BoardMember:nth-child(2) .BoardMember-name {
+  top: -30px;
+  right: 15px;
+  transform: rotate(-18deg);
+}
+
+.BoardMember:nth-child(2) .BoardMember-brief {
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: -20px;
+  transform: rotate(2deg);
+}
+
+.BoardMember:nth-child(3) .BoardMember-name {
+  align-self: center;
+  margin-left: -10px;
+  margin-top: -30px;
+  transform: rotate(-1deg);
+}
+
+.BoardMember:nth-child(3) .BoardMember-brief {
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: -20px;
+  transform: rotate(-2deg);
+}
+
+.BoardMember:nth-child(4) .BoardMember-name {
+  margin-left: -20px;
+  margin-top: 60px;
+  transform: rotate(1deg);
+}
+
+.BoardMember:nth-child(4) .BoardMember-brief {
+  align-self: flex-end;
+  margin-right: -20px;
+  margin-top: -30px;
+  transform: rotate(-0.5deg);
+}
+
+.BoardMember:nth-child(5) .BoardMember-name {
+  margin-left: -75px;
+  margin-top: 55px;
+  transform: rotate(-45deg);
+}
+
+.BoardMember:nth-child(5) .BoardMember-brief {
+  align-self: flex-end;
+  margin-right: -65px;
+  margin-top: -50px;
+  transform: rotate(-15deg);
+}
+
+/* -- .BoardMember-modal -- */
 .BoardMember-overlay {
   opacity: 0;
   transition: opacity 0.3s;
@@ -187,7 +245,7 @@
 }
 
 .BoardMember-body {
-  width: 400px;
+  max-width: 500px;
   padding: $spacing1;
   background-color: $green;
   border-radius: 10px;

@@ -24,14 +24,19 @@ h6 {
 
 /* -- .Page -- */
 .Page {
+  background: repeating-linear-gradient(
+    45deg,
+    $gray0 0px,
+    $gray0 1px,
+    $white 1px,
+    $white 8px
+  );
+
   font-size: $fontSize-base;
   font-family: $fontSans;
 }
 
 /* -- .Page-header -- */
-.Page-header {
-}
-
 .Page-logo {
   display: flex;
   justify-content: center;
@@ -39,14 +44,14 @@ h6 {
   font-weight: bold;
   font-style: italic;
   padding-top: $spacing2;
-  padding-left: $spacing-margin;
-  padding-right: $spacing-margin;
+  padding-left: $margin;
+  padding-right: $margin;
 }
 
 @media (min-width: $desktop) {
   .Page-logo {
-    padding-left: $spacing-marginDesktop;
-    padding-right: $spacing-marginDesktop;
+    padding-left: $marginDesktop;
+    padding-right: $marginDesktop;
   }
 }
 
@@ -62,15 +67,16 @@ h6 {
   align-items: stretch;
   padding-top: $spacing3;
   padding-bottom: $spacing3;
-  padding-left: $spacing-margin;
-  padding-right: $spacing-margin;
+  padding-left: $margin;
+  padding-right: $margin;
 }
 
 @media (min-width: $desktop) {
   .Page-content {
     max-width: $desktop-maxWidth;
-    padding-left: $spacing-marginDesktop;
-    padding-right: $spacing-marginDesktop;
+    padding-top: $marginDesktop;
+    padding-left: $marginDesktop;
+    padding-right: $marginDesktop;
   }
 }
 
@@ -136,9 +142,9 @@ h6 {
   top: -1px;
   padding-top: $spacing2;
   padding-bottom: $spacing2;
-  padding-left: $spacing-margin;
-  padding-right: $spacing-margin;
-  padding: $spacing-margin;
+  padding-left: $margin;
+  padding-right: $margin;
+  padding: $margin;
   border-bottom: 2px solid black;
   font-size: $fontSize2;
   z-index: 1;
@@ -147,10 +153,10 @@ h6 {
 .Nav[stuck] {
   background: repeating-linear-gradient(
     90deg,
-    #afb1b0 0px,
-    #afb1b0 2px,
-    #c2c4c0 2px,
-    #c2c4c0 8px
+    $gray0 0px,
+    $gray0 1px,
+    $white 1px,
+    $white 8px
   );
 }
 
@@ -162,8 +168,8 @@ h6 {
 @media (min-width: $desktop) {
   .Nav-links {
     max-width: $desktop-maxWidth;
-    padding-left: $spacing-marginDesktop;
-    padding-right: $spacing-marginDesktop;
+    padding-left: $marginDesktop;
+    padding-right: $marginDesktop;
   }
 }
 
@@ -174,4 +180,18 @@ h6 {
 
 .Nav-link:visited {
   color: black;
+}
+
+/* -- .Box -- */
+.Box {
+  padding: $spacing1;
+  border: 2px dashed black;
+  border-radius: $borderRadius1;
+  background: repeating-linear-gradient(
+    -45deg,
+    $white 0px,
+    $white 1px,
+    $pink 1px,
+    $pink 8px
+  );
 }

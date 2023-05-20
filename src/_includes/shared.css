@@ -1,5 +1,6 @@
 @import "shared/reset.css";
 @import "shared/media.css";
 @import "shared/fonts.css";
-@import "shared/spacing.css";
+@import "shared/sizes.css";
 @import "shared/colors.css";
+@import "shared/misc.css";
