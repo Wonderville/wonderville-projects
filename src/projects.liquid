@@ -2,31 +2,21 @@
 layout: Page.liquid
 title: Projects
 ---
-<!-- ~*~ Playtest Night ~*~ -->
+
+<!-- ~*~ Internship ~*~ -->
 <section class="PageSection">
-  <h1 class="PageSection-title">
-    Playtest Night
+  <h1 class="ProjectSection-title">
+    Internship
   </h1>
 
-  {%- for project in collections.playtests %}
-    {% render "projects/Project.liquid", project: project %}
-  {%- endfor %}
-</section>
-
-<!-- ~*~ Game Jams ~*~ -->
-<section class="PageSection">
-  <h1 class="PageSection-title">
-    Game Jams
-  </h1>
-
-  {%- for project in collections.jams %}
+  {%- for project in collections.internships %}
     {% render "projects/Project.liquid", project: project %}
   {%- endfor %}
 </section>
 
 <!-- ~*~ Residencies ~*~ -->
 <section class="PageSection">
-  <h1 class="PageSection-title">
+  <h1 class="ProjectSection-title">
     Residencies
   </h1>
 
@@ -35,13 +25,24 @@ title: Projects
   {%- endfor %}
 </section>
 
-<!-- ~*~ Internship ~*~ -->
+<!-- ~*~ Game Jams ~*~ -->
 <section class="PageSection">
-  <h1 class="PageSection-title">
-    Internship
+  <h1 class="ProjectSection-title">
+    Game Jams
   </h1>
 
-  {%- for project in collections.internships %}
+  {%- for project in collections.jams %}
+    {% render "projects/Project.liquid", project: project %}
+  {%- endfor %}
+</section>
+
+<!-- ~*~ Playtest Night ~*~ -->
+<section class="PageSection">
+  <h1 class="ProjectSection-title">
+    Playtest Night
+  </h1>
+
+  {%- for project in collections.playtests %}
     {% render "projects/Project.liquid", project: project %}
   {%- endfor %}
 </section>

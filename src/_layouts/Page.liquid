@@ -16,17 +16,21 @@
 
     <!-- assets -->
     <link rel="stylesheet" href="/site.css">
+    <script type="module" src="/site.js"></script>
   </head>
 
   <body class="Page">
-    <h1 class="Page-logo">
-      Wonderville Projects
-    </h1>
+    <header class="PageHeader Page-header">
+      <img height="296" class="PageHeader-image" src="/img/patio.png" alt="a patio with four tree trunk cross cut looking tabletops, the sun illuminates a small spot on the left of the image">
+      <img class="PageHeader-logo" src="/img/wv-logo-white.png" alt="the word wonderville, but the w looks like a sound signal">
+    </header>
 
-    <nav class="Nav">
-      <a class="Nav-link" href="/">Home</a>
-      <a class="Nav-link" href="/projects">Projects</a>
-      <a class="Nav-link" href="/donate">Donate</a>
+    <nav id="nav" class="Nav">
+      <div class="Nav-links">
+        <a class="Nav-link" href="/">Home</a>
+        <a class="Nav-link" href="/projects">Programming</a>
+        <a class="Nav-link" href="/donate">Donate</a>
+      </div>
     </nav>
 
     <div class="Page-center">
@@ -34,5 +38,12 @@
         {{ content }}
       </main>
     </div>
+
+    <footer class="Page-footer">
+      <img class="PageFooter-image" src="/img/footer.png" alt="teal shoes with wonderville logo pattern on wood background">
+      <div class="PageFooter-credits">
+        website made by <a href="https://boshi.flowers">the boshi's</a>
+      </div>
+    </footer>
   </body>
 </html>

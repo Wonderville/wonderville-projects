@@ -1,54 +1,108 @@
 /* -- .Mission -- */
-.Mission-lines {
-  max-width: 1000px;
+.Mission {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing3;
 }
 
-.Mission-header-line {
+@media (min-width: $desktop) {
+  .Mission {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* -- .Mission-* -- */
+@media (min-width: $desktop) {
+  .Mission-chunk > * {
+    max-width: 350px;
+  }
+}
+
+.Mission-chunk:nth-child(1) {
   display: flex;
   align-items: center;
-  margin-left: 9em;
+  justify-content: center;
 }
 
-.Mission-title {
-  margin-top: 1em;
+@media (min-width: $desktop) {
+  .Mission-chunk:nth-child(1) {
+    justify-content: unset;
+  }
 }
 
 .Mission-line {
-  margin-top: $spacing3;
-  background-color: $pink;
   padding: $spacing1;
-  border-radius: $borderRadius;
-  width: 22em;
+  border-radius: $borderRadius1;
+  /* background-color: $pink; */
+  background: repeating-linear-gradient(
+    60deg,
+    $pinkSofter 0px,
+    $pinkSofter 2px,
+    $pink 2px,
+    $pink 8px
+  );
   transition: 500ms ease-out 100ms;
 }
 
-.Mission-line:hover {
+.Mission-chunk[class] > .Mission-line:hover {
   transform: scale(1.2);
 }
 
-.Mission-line-1 {
-  margin-left: 5em;
+.Mission-chunk:nth-child(2) > .Mission-line {
   transform: rotate(-2deg);
 }
 
-.Mission-line-2 {
-  margin-left: 9em;
+.Mission-chunk:nth-child(3) > .Mission-line {
   transform: rotate(3deg);
 }
 
-.Mission-line-3 {
-  margin-left: 15em;
+.Mission-chunk:nth-child(4) > .Mission-line {
   transform: rotate(-2deg);
 }
 
-.Mission-line-4 {
-  margin-left: 8em;
+.Mission-chunk:nth-child(5) > .Mission-line {
   transform: rotate(2deg);
+}
+
+/* -- .Mission-chunk [desktop] -- */
+@media (min-width: $desktop) {
+  .Mission-chunk:nth-child(1) {
+    order: 2;
+    margin-left: 200px;
+  }
+
+  .Mission-chunk:nth-child(2) {
+    order: 1;
+    flex-basis: 100%;
+    margin-left: 80px;
+  }
+
+  .Mission-chunk:nth-child(3) {
+    order: 3;
+    flex: 1;
+    margin-left: 144px;
+  }
+
+  .Mission-chunk:nth-child(4) {
+    order: 4;
+    flex-basis: 100%;
+    margin-left: 240px;
+  }
+
+  .Mission-chunk:nth-child(5) {
+    order: 5;
+    flex-basis: 100%;
+    margin-left: 128px;
+  }
 }
 
 /* -- .Board -- */
 .Board-members {
-  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing3;
 }
 
 /* -- .BoardMember -- */
@@ -56,7 +110,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: $spacing2;
   margin-top: $spacing2;
   margin-bottom: $spacing2;
 }
@@ -68,34 +121,47 @@
   }
 }
 
-.BoardMember-photo {
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
-  width: unset;
-}
-
 .BoardMember-card {
   position: relative;
+  width: 300px;
+}
+
+.BoardMember-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: $borderRadius0;
 }
 
 .BoardMember-name {
   position: absolute;
-  bottom: -10px;
-  right: -10px;
-  width: 8em;
+  top: 0px;
+  left: 0px;
+  max-width: 120px;
   background-color: $pink;
   padding: $spacing1;
-  border-radius: $borderRadius;
+  border-radius: $borderRadius1;
 }
 
-@media (min-width: $desktop) {
-  .BoardMember-photo {
-    width: 200px;
-    height: 200px;
-  }
+.BoardMember-brief {
+  margin-left: $spacing1;
+  margin-right: $spacing1;
+  padding: $spacing1;
+  background-color: $pink;
+  border-radius: $borderRadius1;
 }
 
-.BoardMember-details[open] > .BoardMember-summary {
+.BoardMember-summary::marker {
+  display: none;
+  content: "";
+}
+
+.BoardMember-overlay {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.BoardMember[open] .BoardMember-overlay {
   color: transparent;
   background-color: #00ff00;
   opacity: 0.4;
@@ -107,20 +173,33 @@
   z-index: 2;
 }
 
-.BoardMember-body {
+.BoardMember-modal {
   position: fixed;
-  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.BoardMember-body {
   width: 400px;
   padding: $spacing1;
   background-color: $green;
   border-radius: 10px;
-  z-index: 3;
+  pointer-events: all;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.BoardMember[open] .BoardMember-body {
+  opacity: 1;
 }
 
 .BoardMember-body > * + * {
   margin-top: $spacing0;
-}
-
-.BoardMember-name {
-  font-weight: bold;
 }

@@ -28,6 +28,10 @@ h6 {
   font-family: $fontSans;
 }
 
+/* -- .Page-header -- */
+.Page-header {
+}
+
 .Page-logo {
   display: flex;
   justify-content: center;
@@ -84,31 +88,88 @@ h6 {
   margin-bottom: $spacing1;
 }
 
+/* -- .PageHeader -- */
+.PageHeader {
+  height: 600px;
+}
+
+.PageHeader-image {
+  display: block;
+  width: 100%;
+  height: 690px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.PageHeader-logo {
+  filter: invert();
+  position: absolute;
+  height: 300px;
+  top: 10px;
+  left: -10px;
+}
+
+/* -- .PageFooter -- */
+.Page-footer {
+  width: 100%;
+  height: fit-content;
+}
+
+.PageFooter-image {
+  display: block;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.PageFooter-credits {
+  position: relative;
+  bottom: 32px;
+  left: 32px;
+}
+
 /* -- .Nav -- */
 .Nav {
-  position: sticky;
   display: flex;
+  position: sticky;
   justify-content: center;
-  top: 0;
-  gap: $spacing2;
+  height: 91px;
+  top: -1px;
   padding-top: $spacing2;
   padding-bottom: $spacing2;
   padding-left: $spacing-margin;
   padding-right: $spacing-margin;
-  background-color: white;
+  padding: $spacing-margin;
+  border-bottom: 2px solid black;
+  font-size: $fontSize2;
   z-index: 1;
 }
 
+.Nav[stuck] {
+  background: repeating-linear-gradient(
+    90deg,
+    #afb1b0 0px,
+    #afb1b0 2px,
+    #c2c4c0 2px,
+    #c2c4c0 8px
+  );
+}
+
+.Nav-links {
+  display: flex;
+  gap: $spacing2;
+}
+
 @media (min-width: $desktop) {
-  .Nav {
+  .Nav-links {
+    max-width: $desktop-maxWidth;
     padding-left: $spacing-marginDesktop;
     padding-right: $spacing-marginDesktop;
-    border-bottom: 1px solid black;
   }
 }
 
 .Nav-link {
   color: black;
+  background: white;
 }
 
 .Nav-link:visited {

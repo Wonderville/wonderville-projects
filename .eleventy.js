@@ -10,6 +10,7 @@ module.exports = function (config) {
   // -- assets --
   config.addPlugin(PostCSSPlugin)
   config.addPassthroughCopy(`${srcDir}/img`)
+  config.addPassthroughCopy(`${srcDir}/*.js`)
 
   // -- filters --
   config.addFilter("camelize", (value) =>

@@ -10,4 +10,5 @@ $spacing-margin: 20px;
 $spacing-marginDesktop: 70px;
 
 /* -- misc -- */
-$borderRadius: 12px;
+$borderRadius0: 6px;
+$borderRadius1: 12px;

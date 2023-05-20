@@ -2,6 +2,7 @@
 name: Clay Shirky
 image: img/clay-shirky.png
 tags: board
+brief: Clay Shirky is Vice Provost.
 date: "02"
 ---
 

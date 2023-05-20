@@ -2,6 +2,7 @@
 name: Dr. Mitu Khandaker
 image: img/mitu-khandaker.jpg
 tags: board
+brief: Dr. Mitu Khandaker is a game designer, engineer, scholar, entrepreneur, and an Associate Arts Professor at the NYU Game Center.
 date: "00"
 ---
 

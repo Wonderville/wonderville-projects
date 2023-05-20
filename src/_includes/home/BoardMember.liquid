@@ -1,19 +1,28 @@
-<div class="BoardMember">
-  <div class="BoardMember-card">
-    <img class="BoardMember-photo" src="{{member.data.image}}">
+<details class="BoardMember">
+  <summary class="BoardMember-summary">
+    <div class="BoardMember-card">
+      <img
+        class="BoardMember-photo"
+        src="{{member.data.image}}"
+        width=300
+        height=300
+      >
 
-    <div class="BoardMember-name">
-      {{ member.data.name }}
+      <div class="BoardMember-name">
+        {{ member.data.name }}
+      </div>
+
+      <div class="BoardMember-brief">
+        {{ member.data.brief }}
+      </div>
     </div>
-  </div>
 
-  <details class="BoardMember-details">
-    <summary class="BoardMember-summary">
-      {{ member.content | truncate: 200 }}
-    </summary>
+    <div class="BoardMember-overlay"></div>
+  </summary>
 
-    <div class="BoardMember-body">
+  <div class="BoardMember-modal">
+    <article class="BoardMember-body">
       {{ member.content }}
-    </div>
-  </details>
-</div>
+    </article>
+  </div>
+</details>

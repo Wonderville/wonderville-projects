@@ -2,6 +2,7 @@
 name: Zan Emerson
 image: img/zan-emerson.jpg
 tags: board
+brief: Zan Emerson (they/them) is a marketing director, manager, and creative consultant.
 date: "01"
 ---
 

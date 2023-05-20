@@ -1,0 +1,38 @@
+.ProjectSection-title {
+  font-size: $fontSize2;
+  padding: $spacing1;
+  border-radius: $borderRadius1;
+  background-color: $pink;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Project-image {
+  width: 560px;
+  height: 400px;
+}
+
+.Project-description {
+  position: absolute;
+  padding: $spacing1;
+  border-radius: $borderRadius1;
+  background-color: $pink;
+  max-width: 450px;
+}
+
+.Project-description.right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.Project-description.left {
+  bottom: 10px;
+  left: 10px;
+}
