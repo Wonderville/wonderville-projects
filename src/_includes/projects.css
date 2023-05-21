@@ -1,6 +1,6 @@
 .ProjectSection-title {
   font-size: $fontSize2;
-  padding: $spacing1;
+  padding: $spacing2;
   border-radius: $borderRadius1;
   background-color: $pink0;
   margin-bottom: 20px;
@@ -21,7 +21,7 @@
 
 .Project-description {
   position: absolute;
-  padding: $spacing1;
+  padding: $spacing2;
   border-radius: $borderRadius1;
   background-color: $pink0;
   max-width: 450px;

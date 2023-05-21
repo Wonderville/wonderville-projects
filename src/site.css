@@ -24,6 +24,7 @@ h6 {
 
 /* -- .Page -- */
 .Page {
+  overflow-x: hidden;
   background: repeating-linear-gradient(
     45deg,
     $gray0 0px,
@@ -40,9 +41,9 @@ h6 {
 .Page-logo {
   display: flex;
   justify-content: center;
-  padding-top: $spacing2;
-  padding-left: $margin;
-  padding-right: $margin;
+  padding-top: $spacing3;
+  padding-left: $marginHorizontal;
+  padding-right: $marginHorizontal;
   font-size: $fontSize2;
   font-weight: bold;
   font-style: italic;
@@ -50,8 +51,8 @@ h6 {
 
 @media (min-width: $desktop) {
   .Page-logo {
-    padding-left: $marginDesktop;
-    padding-right: $marginDesktop;
+    padding-left: $marginDesktopHorizontal;
+    padding-right: $marginDesktopHorizontal;
   }
 }
 
@@ -65,25 +66,34 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-top: $spacing3;
-  padding-bottom: $spacing3;
-  padding-left: $margin;
-  padding-right: $margin;
+  padding-top: $marginVertical;
+  padding-bottom: $marginVertical;
 }
 
 @media (min-width: $desktop) {
   .Page-content {
     max-width: $desktop-maxWidth;
-    padding-top: $marginDesktop;
-    padding-left: $marginDesktop;
-    padding-right: $marginDesktop;
+    padding-top: $marginDesktopVertical;
+    padding-bottom: $marginDesktopVertical;
   }
 }
 
 /* -- .PageSection -- */
+.PageSection {
+  padding-left: $marginHorizontal;
+  padding-right: $marginHorizontal;
+}
+
+@media (min-width: $desktop) {
+  .PageSection {
+    padding-left: $marginDesktopHorizontal;
+    padding-right: $marginDesktopHorizontal;
+  }
+}
+
 .PageSection + .PageSection {
-  margin-top: $spacing4;
-  padding-top: $spacing4;
+  margin-top: $spacing5;
+  padding-top: $spacing5;
 }
 
 .PageSection-title {
@@ -91,7 +101,13 @@ h6 {
   justify-content: center;
   font-family: $fontSans;
   font-size: $fontSize2;
-  margin-bottom: $spacing1;
+  margin-bottom: $spacing2;
+}
+
+@media (min-width: $desktop) {
+  .PageSection-title {
+    margin-bottom: $spacing5;
+  }
 }
 
 /* -- .PageHeader -- */
@@ -99,7 +115,13 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: $sizeHeader;
+}
+
+@media (min-width: $desktop) {
+  .PageHeader {
+    height: $sizeHeaderDesktop;
+  }
 }
 
 .PageHeader-image {
@@ -107,22 +129,28 @@ h6 {
   display: block;
   top: 0;
   width: 100%;
-  height: 690px;
+  height: $sizeHeaderImage;
   opacity: 0.5;
   object-fit: cover;
+}
+
+@media (min-width: $desktop) {
+  .PageHeader-image {
+    height: $sizeHeaderImageDesktop;
+  }
 }
 
 .PageHeader-logo {
   display: flex;
   max-height: 200px;
-  margin-left: $margin;
-  margin-right: $margin;
+  margin-left: $marginHorizontal;
+  margin-right: $marginHorizontal;
 }
 
 @media (min-width: $desktop) {
   .PageHeader-logo {
-    margin-left: $marginDesktop;
-    margin-right: $marginDesktop;
+    margin-left: $marginDesktopHorizontal;
+    margin-right: $marginDesktopHorizontal;
   }
 }
 
@@ -159,24 +187,28 @@ h6 {
 
 /* -- .Nav -- */
 .Nav {
+  overflow: hidden;
   display: flex;
   position: sticky;
   justify-content: center;
-  height: 91px;
+  height: $sizeNav;
   top: -1px;
   border-bottom: 2px solid black;
-  font-size: $fontSize2;
   z-index: 1;
+}
+
+@media (min-width: $desktop) {
+  .Nav {
+    height: $sizeNavDesktop;
+  }
 }
 
 .Nav-background {
   position: absolute;
-  top: 1px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0;
-  transition: opacity 0.3s;
   background: repeating-linear-gradient(
     -45deg,
     $gray0 0px,
@@ -184,42 +216,88 @@ h6 {
     $white 1px,
     $white 8px
   );
+
+  transform: translateY(100%);
+  transition: transform 0.2s;
 }
 
 .Nav[stuck] .Nav-background {
-  opacity: 1;
+  transform: none;
 }
 
 .Nav-links {
   display: flex;
-  gap: $spacing2;
-  padding-top: $spacing2;
-  padding-bottom: $spacing2;
+  align-items: center;
+  gap: $spacing3;
   z-index: 1;
 }
 
 @media (min-width: $desktop) {
   .Nav-links {
     max-width: $desktop-maxWidth;
-    padding-left: $marginDesktop;
-    padding-right: $marginDesktop;
+    padding-left: $marginDesktopHorizontal;
+    padding-right: $marginDesktopHorizontal;
   }
 }
 
-.Nav-link {
-  color: black;
-  background: white;
+.NavLink {
+  font-size: $fontSize1;
+  color: $black;
+  background: $white;
+  padding-top: $spacing0;
+  padding-bottom: $spacing0;
+  padding-left: $spacing1;
+  padding-right: $spacing1;
 }
 
-.Nav-link:visited {
-  color: black;
+.NavLink:visited {
+  color: $black;
+}
+
+@media (min-width: $desktop) {
+  .NavLink {
+    font-size: $fontSize2;
+  }
+}
+
+.NavLink--home:hover {
+  color: $pink0;
+  background-color: $pink1;
+}
+
+.Home .NavLink--home {
+  color: $pink0;
+  background-color: $pink1;
+  pointer-events: none;
 }
 
 /* -- .Box -- */
 .Box {
-  padding: $spacing1;
+  padding: $spacing2;
   border: 2px dashed;
   border-radius: $borderRadius1;
+}
+
+.Box--big {
+  padding: $spacing4;
+}
+
+@media (min-width: $desktop) {
+  .Box {
+    transition: transform 350ms ease-out 100ms;
+  }
+
+  .Box[class]:hover {
+    transform: scale(1.2);
+  }
+
+  .Box--big {
+    transition: none;
+  }
+
+  .Box--big[class]:hover {
+    transform: none;
+  }
 }
 
 .Home .Box {
@@ -230,5 +308,6 @@ h6 {
     $pink0 1px,
     $pink0 8px
   );
+
   border-color: $pink1;
 }

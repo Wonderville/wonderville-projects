@@ -1,13 +1,27 @@
 /* -- sizes -- */
+$sizeHeader: 300px;
+$sizeHeaderDesktop: 600px;
+
+$sizeNav: 61px;
+$sizeNavDesktop: 91px;
+
+/* headerImage.height = header.height + nav.height - 1 */
+/* (the -1 is for the intersection observer) */
+$sizeHeaderImage: 360px;
+$sizeHeaderImageDesktop: 690px;
+
 $sizeCard: 300px;
 
 /* -- margins -- */
-$margin: 20px;
-$marginDesktop: 70px;
+$marginVertical: 30px;
+$marginHorizontal: 20px;
+$marginDesktopVertical: 100px;
+$marginDesktopHorizontal: 70px;
 
 /* -- spacings -- */
-$spacing0: 10px;
-$spacing1: 15px;
-$spacing2: 20px;
-$spacing3: 30px;
-$spacing4: 45px;
+$spacing0: 5px;
+$spacing1: 10px;
+$spacing2: 15px;
+$spacing3: 20px;
+$spacing4: 30px;
+$spacing5: 45px;

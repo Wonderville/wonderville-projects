@@ -19,7 +19,7 @@
     <script type="module" src="/site.js"></script>
   </head>
 
-  <body class="Page">
+  <body class="Page {{ title | camelize }}">
     <header class="PageHeader Page-header">
       <img
         class="PageHeader-image"
@@ -39,14 +39,14 @@
     <nav id="nav" class="Nav">
       <div class="Nav-background"></div>
       <div class="Nav-links">
-        <a class="Nav-link" href="/">Home</a>
-        <a class="Nav-link" href="/projects">Programming</a>
-        <a class="Nav-link" href="/donate">Donate</a>
+        <a class="NavLink NavLink--home" href="/">Home</a>
+        <a class="NavLink NavLink--projects" href="/projects">Programs</a>
+        <a class="NavLink NavLink--donate" href="/donate">Donate</a>
       </div>
     </nav>
 
     <div class="Page-center">
-      <main class="Page-content {{ title | camelize }}">
+      <main class="Page-content">
         {{ content }}
       </main>
     </div>
