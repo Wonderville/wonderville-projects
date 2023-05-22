@@ -1,6 +1,6 @@
 /* -- sizes -- */
 $sizeHeader: 300px;
-$sizeHeaderDesktop: 600px;
+$sizeHeaderDesktop: 500px;
 
 $sizeNav: 61px;
 $sizeNavDesktop: 91px;
@@ -8,9 +8,11 @@ $sizeNavDesktop: 91px;
 /* headerImage.height = header.height + nav.height - 1 */
 /* (the -1 is for the intersection observer) */
 $sizeHeaderImage: 360px;
-$sizeHeaderImageDesktop: 690px;
+$sizeHeaderImageDesktop: 590px;
 
-$sizeCard: 300px;
+/* sizeCardContent = sizeCard - $spacing2 * 2 */
+$sizeCard: 280px;
+$sizeCardContent: 250px;
 
 /* -- margins -- */
 $marginVertical: 30px;

@@ -139,10 +139,11 @@
 }
 
 .BoardMember-brief {
-  width: 270px;
+  width: $sizeCardContent;
 }
 
-.BoardMember-summary::marker {
+.BoardMember-summary::marker,
+.BoardMember-summary::-webkit-details-marker {
   display: none;
   content: "";
 }
