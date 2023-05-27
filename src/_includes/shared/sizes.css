@@ -1,14 +1,19 @@
 /* -- sizes -- */
+$sizeLogo: 881px;
+
 $sizeHeader: 300px;
-$sizeHeaderDesktop: 500px;
+$sizeHeaderDesktop: 550px;
 
 $sizeNav: 61px;
 $sizeNavDesktop: 91px;
 
+$sizeNavHalf: 30px;
+$sizeNavDesktopHalf: 45px;
+
 /* headerImage.height = header.height + nav.height - 1 */
 /* (the -1 is for the intersection observer) */
 $sizeHeaderImage: 360px;
-$sizeHeaderImageDesktop: 590px;
+$sizeHeaderImageDesktop: 640px;
 
 /* sizeCardContent = sizeCard - $spacing2 * 2 */
 $sizeCard: 280px;
@@ -16,7 +21,7 @@ $sizeCardContent: 250px;
 
 /* -- margins -- */
 $marginVertical: 30px;
-$marginHorizontal: 20px;
+$marginHorizontal: 30px;
 $marginDesktopVertical: 100px;
 $marginDesktopHorizontal: 70px;
 

@@ -98,6 +98,7 @@ h6 {
 }
 
 .PageSection-title {
+  position: relative;
   display: flex;
   justify-content: center;
   font-family: $fontSans;
@@ -116,6 +117,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: $sizeHeader;
 }
 
@@ -125,7 +127,7 @@ h6 {
   }
 }
 
-.PageHeader-image {
+.PageHeader-bg {
   position: absolute;
   display: block;
   top: 0;
@@ -136,36 +138,81 @@ h6 {
 }
 
 @media (min-width: $desktop) {
-  .PageHeader-image {
+  .PageHeader-bg {
     height: $sizeHeaderImageDesktop;
   }
 }
 
-.PageHeader-logo {
+.PageHeader-title {
+  position: relative;
   display: flex;
-  max-height: 200px;
+  flex-direction: column;
+  align-items: center;
+  max-width: $sizeLogo;
+  margin-top: $sizeNavHalf;
   margin-left: $marginHorizontal;
   margin-right: $marginHorizontal;
 }
 
 @media (min-width: $desktop) {
-  .PageHeader-logo {
+  .PageHeader-title {
+    margin-top: $sizeNavDesktopHalf;
     margin-left: $marginDesktopHorizontal;
     margin-right: $marginDesktopHorizontal;
   }
+}
+
+.PageHeader-logo {
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
 }
 
 .PageHeader-logoImage {
   display: block;
   width: 100%;
   object-fit: contain;
-  filter: invert();
 }
 
 @media (min-width: $desktop) {
-  .PageHeader-logo {
+  .PageHeader-title {
     /* rebalance the logo visually */
-    transform: translateX(-30px);
+    transform: translateX(-3vw);
+  }
+}
+
+.PageHeader-subtitle {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  align-self: flex-end;
+  gap: $spacing4;
+}
+
+.PageHeader-projects {
+  margin-right: -$spacing1; /* letter-spacing is added after the last character... */
+  font-size: 2.5em;
+  letter-spacing: $spacing1;
+}
+
+@media (min-width: $desktop) {
+  .PageHeader-projects {
+    font-size: 6em;
+  }
+}
+
+.PageHeader-org {
+  position: absolute;
+  top: $marginVertical;
+  left: $marginHorizontal;
+  font-size: 1.2em;
+}
+
+@media (min-width: $desktop) {
+  .PageHeader-org {
+    top: $spacing4;
+    left: $spacing4;
+    font-size: 2em;
   }
 }
 
@@ -174,7 +221,7 @@ h6 {
   position: relative;
 }
 
-.PageFooter-image {
+.PageFooter-bg {
   display: block;
   width: 100%;
   opacity: 0.4;
@@ -218,12 +265,22 @@ h6 {
     $white 8px
   );
 
-  transform: translateY(100%);
+  transform: translateX(-100%);
+  transition: none;
+}
+
+.Nav[stuck="enter"] .Nav-background {
+  transform: none;
   transition: transform 0.2s;
 }
 
-.Nav[stuck] .Nav-background {
+.Nav[stuck=""] .Nav-background {
   transform: none;
+}
+
+.Nav[stuck="exit"] .Nav-background {
+  transform: translateY(100%);
+  transition: transform 0.3s;
 }
 
 .Nav-links {

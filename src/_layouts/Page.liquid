@@ -23,18 +23,27 @@
     <div class="Page {{ title | camelize }}">
       <header class="PageHeader Page-header">
         <img
-          class="PageHeader-image"
+          class="PageHeader-bg"
           src="/img/patio.png"
           alt="a patio with four tree trunk cross cut looking tabletops, the sun illuminates a small spot on the left of the image"
         >
 
-        <div class="PageHeader-logo">
-          <img
-            class="PageHeader-logoImage"
-            src="/img/wv-logo-white.png"
-            alt="the word wonderville, but the w looks like a sound signal"
-          >
+        <div class="PageHeader-title">
+          <h1 class="PageHeader-logo">
+            <img
+              class="PageHeader-logoImage"
+              src="/img/logo.svg"
+              alt="the word 'wonderville', but the w looks like a sound signal"
+            >
+          </h1>
+
+          <div class="PageHeader-subtitle">
+            <h2 class="PageHeader-projects">projects</h2>
+          </div>
+
         </div>
+
+        <p class="PageHeader-org">a 501c3 org<p>
       </header>
 
       <nav id="nav" class="Nav">
@@ -53,7 +62,11 @@
       </div>
 
       <footer class="PageFooter">
-        <img class="PageFooter-image" src="/img/footer.png" alt="teal shoes with wonderville logo pattern on wood background">
+        <img
+          class="PageFooter-bg"
+          src="/img/footer.png"
+          alt="teal shoes with wonderville logo pattern on wood background"
+        >
 
         <span class="PageFooter-credits">
           website made by <a href="https://boshi.flowers">the boshi's</a>
