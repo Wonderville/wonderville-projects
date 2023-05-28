@@ -2,7 +2,7 @@
 @import "_includes/shared.css";
 @import "_includes/donate.css";
 @import "_includes/home.css";
-@import "_includes/projects.css";
+@import "_includes/programs.css";
 
 /* -- resets (more) -- */
 * {
@@ -189,15 +189,15 @@ h6 {
   gap: $spacing4;
 }
 
-.PageHeader-projects {
+.PageHeader-programs {
   margin-right: -$spacing1; /* letter-spacing is added after the last character... */
   font-size: 2.5em;
   letter-spacing: $spacing1;
 }
 
 @media (min-width: $desktop) {
-  .PageHeader-projects {
-    font-size: 6em;
+  .PageHeader-programs {
+    font-size: 5.5em;
   }
 }
 
@@ -318,12 +318,18 @@ h6 {
   }
 }
 
-.NavLink--home:hover {
+.NavLink:hover {
   color: $pink0;
   background-color: $pink1;
 }
 
 .Home .NavLink--home {
+  color: $pink0;
+  background-color: $pink1;
+  pointer-events: none;
+}
+
+.Home .NavLink--programs {
   color: $pink0;
   background-color: $pink1;
   pointer-events: none;

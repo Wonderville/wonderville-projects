@@ -1,0 +1,17 @@
+<article class="Program">
+  {% if program.data.image != null %}
+    <img class="Program-image" src="{{program.data.image}}" />
+  {% endif %}
+  <div class="Program-description {{program.data.align}}">
+    <h1>{{ program.data.name }}</h1>
+    {% if program.data.organizer != null %}
+      <h2>by {{ program.data.organizer }}</h2>
+    {% endif %}
+
+    {% if program.content != "" %}
+      <div class="Program-body">
+        {{ program.content }}
+      </div>
+    {% endif %}
+  </div>
+</article>

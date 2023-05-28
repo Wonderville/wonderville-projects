@@ -1,4 +1,4 @@
-.ProjectSection-title {
+.ProgramSection-title {
   font-size: $fontSize2;
   padding: $spacing2;
   border-radius: $borderRadius1;
@@ -7,19 +7,19 @@
   text-align: center;
 }
 
-.Project {
+.Program {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.Project-image {
+.Program-image {
   width: 560px;
   height: 400px;
 }
 
-.Project-description {
+.Program-description {
   position: absolute;
   padding: $spacing2;
   border-radius: $borderRadius1;
@@ -27,12 +27,12 @@
   max-width: 450px;
 }
 
-.Project-description.right {
+.Program-description.right {
   bottom: 10px;
   right: 10px;
 }
 
-.Project-description.left {
+.Program-description.left {
   bottom: 10px;
   left: 10px;
 }

@@ -1,0 +1,48 @@
+---
+layout: Page.liquid
+title: Programs
+---
+
+<!-- ~*~ Internship ~*~ -->
+<section class="PageSection">
+  <h1 class="ProgramSection-title">
+    Internship
+  </h1>
+
+  {%- for program in collections.internships %}
+    {% render "programs/Program.liquid", program: program %}
+  {%- endfor %}
+</section>
+
+<!-- ~*~ Residencies ~*~ -->
+<section class="PageSection">
+  <h1 class="ProgramSection-title">
+    Residencies
+  </h1>
+
+  {%- for program in collections.residencies %}
+    {% render "programs/Program.liquid", program: program %}
+  {%- endfor %}
+</section>
+
+<!-- ~*~ Game Jams ~*~ -->
+<section class="PageSection">
+  <h1 class="ProgramSection-title">
+    Game Jams
+  </h1>
+
+  {%- for program in collections.jams %}
+    {% render "programs/Program.liquid", program: program %}
+  {%- endfor %}
+</section>
+
+<!-- ~*~ Playtest Night ~*~ -->
+<section class="PageSection">
+  <h1 class="ProgramSection-title">
+    Playtest Night
+  </h1>
+
+  {%- for program in collections.playtests %}
+    {% render "programs/Program.liquid", program: program %}
+  {%- endfor %}
+</section>
