@@ -91,6 +91,17 @@
 }
 
 /* -- .Board -- */
+.Board-title {
+  transform: rotate(-3deg);
+}
+
+@media (min-width: $desktop) {
+  .Board-title {
+    margin-left: 150px;
+    transform: rotate(-3deg);
+  }
+}
+
 .Board-members {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +220,8 @@
 
 @media (min-width: $desktop) {
   .BoardMember:nth-child(3) .BoardMember-card {
-    margin-left: 55px;
+    margin-left: -20px;
+    margin-right: 35px;
     margin-top: 15px;
   }
 }
@@ -235,7 +247,7 @@
 
 @media (min-width: $desktop) {
   .BoardMember:nth-child(4) .BoardMember-card {
-    margin-left: 25px;
+    margin-left: 5px;
     margin-top: -15px;
   }
 }
@@ -260,19 +272,19 @@
 
 @media (min-width: $desktop) {
   .BoardMember:nth-child(5) .BoardMember-card {
-    margin-left: 70px;
+    margin-left: 15px;
   }
 }
 
 .BoardMember:nth-child(5) .BoardMember-name {
-  margin-left: -75px;
+  margin-left: -55px;
   margin-top: 55px;
   transform: rotate(-45deg);
 }
 
 .BoardMember:nth-child(5) .BoardMember-brief {
   align-self: flex-end;
-  margin-right: -65px;
+  margin-right: -50px;
   margin-top: -50px;
   transform: rotate(-15deg);
 }
@@ -331,4 +343,16 @@
 
 .BoardMember-body > * + * {
   margin-top: $spacing1;
+}
+
+/* -- .Contact -- */
+.Contact-title {
+  margin-right: 10px;
+  transform: rotate(2deg);
+}
+
+.Contact-body {
+  display: flex;
+  justify-content: center;
+  font-size: $fontSize1;
 }

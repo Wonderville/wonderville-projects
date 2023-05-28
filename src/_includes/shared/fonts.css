@@ -7,6 +7,7 @@ $fontSize-base: 16px;
 $fontSize0: 1.1em;
 $fontSize1: 1.5em;
 $fontSize2: 2.5em;
+$fontSize3: 3em;
 
 /* -- fonts -- */
 @font-face {
