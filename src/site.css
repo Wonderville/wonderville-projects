@@ -323,13 +323,7 @@ h6 {
   background-color: $pink1;
 }
 
-.Home .NavLink--home {
-  color: $pink0;
-  background-color: $pink1;
-  pointer-events: none;
-}
-
-.Home .NavLink--programs {
+.Home .NavLink--home, .Programs .NavLink--programs, .Donate .NavLink--donate {
   color: $pink0;
   background-color: $pink1;
   pointer-events: none;
