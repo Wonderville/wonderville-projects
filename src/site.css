@@ -204,8 +204,8 @@ h6 {
 
 .PageHeader-org {
   position: absolute;
-  top: $marginVertical;
-  left: $marginHorizontal;
+  top: $spacing3;
+  left: $spacing3;
   font-size: 1.2em;
 }
 
