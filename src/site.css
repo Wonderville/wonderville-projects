@@ -234,6 +234,10 @@ h6 {
   left: 32px;
 }
 
+.PageFooter-credits.Box {
+  transform: rotate(-2deg);
+}
+
 /* -- .Nav -- */
 .Nav {
   overflow: hidden;

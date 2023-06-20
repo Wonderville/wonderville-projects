@@ -360,3 +360,7 @@
   justify-content: center;
   font-size: $fontSize1;
 }
+
+.Contact-body > .Box {
+  transform: rotate(-1deg);
+}
