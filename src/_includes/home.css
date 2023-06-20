@@ -158,6 +158,10 @@
   width: $sizeCardContent;
 }
 
+.BoardMember-readMore {
+  color: $pink1;
+}
+
 .BoardMember-summary::marker,
 .BoardMember-summary::-webkit-details-marker {
   display: none;
