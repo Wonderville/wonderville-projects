@@ -28,11 +28,17 @@
     <div class="Page {{ name | camelize }}">
       {% if name == "home" %}
         <header class="PageHeader Page-header">
-          <img
+          <video
             class="PageHeader-bg"
-            src="/img/patio.png"
-            alt="a patio with four tree trunk cross cut looking tabletops, the sun illuminates a small spot on the left of the image"
+            src="/img/header.mp4"
+            autoplay
+            loop
+            muted
           >
+            <img
+              src="/img/header-still.png"
+            >
+          </video>
 
           <div class="PageHeader-title">
             <h1 class="PageHeader-logo">
