@@ -357,11 +357,14 @@
   left: 0;
   right: 0;
   z-index: 3;
+  padding: $spacing2;
   pointer-events: none;
 }
 
 .BoardMember-body {
+  overflow-y: scroll;
   max-width: 500px;
+  max-height: 100%;
   padding: $spacing2;
   border-radius: 10px;
   pointer-events: all;
