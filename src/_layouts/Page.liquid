@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
 
+    <!-- title -->
+    {% if title == null %}
+      {% assign title = name | camelize %}
+    {% endif %}
+
     <!-- page -->
     <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,31 +25,33 @@
   </head>
 
   <body>
-    <div class="Page {{ title | camelize }}">
-      <header class="PageHeader Page-header">
-        <img
-          class="PageHeader-bg"
-          src="/img/patio.png"
-          alt="a patio with four tree trunk cross cut looking tabletops, the sun illuminates a small spot on the left of the image"
-        >
+    <div class="Page {{ name | camelize }}">
+      {% if name == "home" %}
+        <header class="PageHeader Page-header">
+          <img
+            class="PageHeader-bg"
+            src="/img/patio.png"
+            alt="a patio with four tree trunk cross cut looking tabletops, the sun illuminates a small spot on the left of the image"
+          >
 
-        <div class="PageHeader-title">
-          <h1 class="PageHeader-logo">
-            <img
-              class="PageHeader-logoImage"
-              src="/img/logo.svg"
-              alt="the word 'wonderville', but the w looks like a sound signal"
-            >
-          </h1>
+          <div class="PageHeader-title">
+            <h1 class="PageHeader-logo">
+              <img
+                class="PageHeader-logoImage"
+                src="/img/logo.svg"
+                alt="the word 'wonderville', but the w looks like a sound signal"
+              >
+            </h1>
 
-          <div class="PageHeader-subtitle">
-            <h2 class="PageHeader-programs">projects</h2>
+            <div class="PageHeader-subtitle">
+              <h2 class="PageHeader-programs">projects</h2>
+            </div>
+
           </div>
 
-        </div>
-
-        <p class="PageHeader-org">a 501c3 org<p>
-      </header>
+          <p class="PageHeader-org">a 501c3 org<p>
+        </header>
+      {% endif %}
 
       <nav id="nav" class="Nav">
         <div class="Nav-background"></div>
