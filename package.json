@@ -17,5 +17,8 @@
     "eleventy-plugin-postcss": "^1.0.4",
     "postcss-import": "^15.1.0",
     "postcss-simple-vars": "^7.0.1"
+  },
+  "overrides": {
+    "semver": ">=7.5.2"
   }
 }
