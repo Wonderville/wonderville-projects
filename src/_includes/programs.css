@@ -1,12 +1,32 @@
-.ProgramSection-title {
-  font-size: $fontSize2;
-  padding: $spacing2;
-  border-radius: $borderRadius1;
-  background-color: $pink0;
-  margin-bottom: 20px;
-  text-align: center;
+/* -- theme -- */
+.Programs a {
+  color: $colorPrograms1;
 }
 
+.Programs .Box {
+  background: repeating-linear-gradient(
+    -45deg,
+    $white 0px,
+    $white 1px,
+    $colorPrograms0 1px,
+    $colorPrograms0 8px
+  );
+
+  border-color: $colorPrograms1;
+}
+
+.NavLink--programs:hover {
+  color: $colorPrograms0;
+  background-color: $colorPrograms1;
+}
+
+.Programs .NavLink--programs {
+  color: $colorPrograms0;
+  background-color: $colorPrograms1;
+  pointer-events: none;
+}
+
+/* -- programs -- */
 .Program {
   position: relative;
   display: flex;
@@ -23,7 +43,7 @@
   position: absolute;
   padding: $spacing2;
   border-radius: $borderRadius1;
-  background-color: $pink0;
+  background-color: $colorPrograms0;
   max-width: 450px;
 }
 

@@ -26,6 +26,7 @@
 
   <body>
     <div class="Page {{ name | camelize }}">
+      <!-- ~*~ Header ~*~ -->
       {% if name == "home" %}
         <header class="PageHeader Page-header">
           <video
@@ -52,13 +53,13 @@
             <div class="PageHeader-subtitle">
               <h2 class="PageHeader-programs">projects</h2>
             </div>
-
           </div>
 
           <p class="PageHeader-org">a 501c3 org<p>
         </header>
       {% endif %}
 
+      <!-- ~*~ Nav ~*~ -->
       <nav id="nav" class="Nav">
         <div class="Nav-background"></div>
         <div class="Nav-links">
@@ -68,12 +69,14 @@
         </div>
       </nav>
 
+      <!-- ~*~ Content ~*~ -->
       <div class="Page-center">
         <main class="Page-content">
           {{ content }}
         </main>
       </div>
 
+      <!-- ~*~ Footer ~*~ -->
       <footer class="PageFooter">
         <img
           class="PageFooter-bg"
@@ -81,6 +84,13 @@
           alt="teal shoes with wonderville logo pattern on wood background"
         >
 
+        <!-- ~*~ Contact ~*~ -->
+        <p class="PageFooter-contact Box">Email us at&nbsp
+          <a href="mailto:hello@wonderville.nyc">hello@wonderville.nyc</a>
+        </p>
+
+
+        <!-- ~*~ =) ~*~ -->
         <span class="PageFooter-credits Box">
           website made by <a href="https://boshis-place.github.io/">boshi's builders</a>
         </span>

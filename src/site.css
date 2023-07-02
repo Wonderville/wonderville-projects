@@ -220,12 +220,30 @@ h6 {
 /* -- .PageFooter -- */
 .PageFooter {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $sizeFooter;
 }
 
 .PageFooter-bg {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   opacity: 0.4;
+  object-fit: cover;
+}
+
+.Contact-title {
+  margin-right: 10px;
+  transform: rotate(2deg);
+}
+
+.PageFooter-contact {
+  font-size: $fontSize1;
+  transform: rotate(-1deg);
 }
 
 .PageFooter-credits {
@@ -323,17 +341,6 @@ h6 {
   }
 }
 
-.NavLink:hover {
-  color: $pink0;
-  background-color: $pink1;
-}
-
-.Home .NavLink--home, .Programs .NavLink--programs, .Donate .NavLink--donate {
-  color: $pink0;
-  background-color: $pink1;
-  pointer-events: none;
-}
-
 /* -- .Box -- */
 .Box {
   padding: $spacing2;
@@ -363,16 +370,16 @@ h6 {
   }
 }
 
-.Home .Box {
+.Programs .Box {
   background: repeating-linear-gradient(
     -45deg,
     $white 0px,
     $white 1px,
-    $pink0 1px,
-    $pink0 8px
+    $colorPrograms0 1px,
+    $colorPrograms0 8px
   );
 
-  border-color: $pink1;
+  border-color: $colorPrograms1;
 }
 
 /* -- .Divider -- */

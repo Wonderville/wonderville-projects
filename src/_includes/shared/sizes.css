@@ -14,6 +14,8 @@ $sizeNavDesktopHalf: 45px;
 $sizeHeaderImage: 460px;
 $sizeHeaderImageDesktop: 640px;
 
+$sizeFooter: 600px;
+
 /* sizeCardContent = sizeCard - $spacing2 * 2 */
 $sizeCard: 280px;
 $sizeCardContent: 250px;
