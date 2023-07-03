@@ -14,3 +14,32 @@
   background-color: $colorDonate1;
   pointer-events: none;
 }
+
+/* -- .Donate -- */
+@media (min-width: $desktop) {
+  .Donate .Page-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* -- .Donation -- */
+.Donation {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 500px;
+}
+
+@media (min-width: $desktop) {
+  .Donate .Page-content {
+    flex-direction: row;
+  }
+}
+
+.Donation-form {
+  display: flex;
+}
+
+.Donation-widget {
+}
