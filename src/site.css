@@ -39,7 +39,40 @@ h6 {
 
 /* -- .Page > native -- */
 .Page a {
+  cursor: pointer;
+}
+
+/* -- TODO: nicer way to select non-special links -- */
+.Page a:not(.NavLink):not(.Button) {
+  display: inline-block;
   color: var(--color1);
+  animation: none;
+}
+
+.Page a:not(.NavLink):not(.Button):hover {
+  animation: Shaking 0.4s infinite;
+}
+
+@keyframes Shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(0.5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-0.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* -- .Page-header -- */
@@ -241,24 +274,56 @@ h6 {
   object-fit: cover;
 }
 
-.Contact-title {
-  margin-right: 10px;
-  transform: rotate(2deg);
+.PageFooter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: $spacing2;
+  margin-right: $spacing2;
+  z-index: 1;
+}
+
+.PageFooter-content > * + * {
+  margin-top: $spacing2;
+}
+
+.PageFooter-thanks {
+  font-size: $fontSize1;
+}
+
+.PageFooter-donate {
+  color: $colorDonate0;
+  background-color: $colorDonate1;
+  transform: rotate(1deg);
+  transition: opacity 0.3s;
+}
+
+.PageFooter-donate:active {
+  opacity: 0.7;
 }
 
 .PageFooter-contact {
   font-size: $fontSize1;
+  text-align: center;
   transform: rotate(-1deg);
+}
+
+.PageFooter-or {
+  font-size: $fontSize1;
 }
 
 .PageFooter-credits {
   position: absolute;
-  bottom: 32px;
-  left: 32px;
+  font-size: 0.8em;
+  bottom: 10px;
+  transform: rotate(-2deg);
 }
 
-.PageFooter-credits.Box {
-  transform: rotate(-2deg);
+@media (min-width: $desktop) {
+  .PageFooter-credits {
+    bottom: 32px;
+    left: 32px;
+  }
 }
 
 /* -- .Nav -- */
@@ -346,10 +411,24 @@ h6 {
   }
 }
 
+/* -- .Button -- */
+.Button {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  padding-left: $spacing1;
+  padding-right: $spacing1;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: $borderRadius1;
+  font-size: $fontSize2;
+  text-decoration: none;
+}
+
 /* -- .Box -- */
 .Box {
   padding: $spacing2;
-  border: 2px dashed;
+  border-width: 2px;
+  border-style: dashed;
   border-color: var(--color1);
   border-radius: $borderRadius1;
   background: repeating-linear-gradient(
@@ -365,21 +444,20 @@ h6 {
   padding: $spacing4;
 }
 
+.Box--small {
+  padding: $spacing1;
+}
+
+/* -- .Box/.Button -- */
 @media (min-width: $desktop) {
-  .Box {
+  .Box,
+  .Button {
     transition: transform 350ms ease-out 100ms;
   }
 
-  .Box[class]:hover {
+  .Box[class]:hover,
+  .Button[class]:hover {
     transform: scale(1.2);
-  }
-
-  .Box--big {
-    transition: none;
-  }
-
-  .Box--big[class]:hover {
-    transform: none;
   }
 }
 
