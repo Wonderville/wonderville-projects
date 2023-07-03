@@ -37,6 +37,11 @@ h6 {
   font-family: $fontSans;
 }
 
+/* -- .Page > native -- */
+.Page a {
+  color: var(--color1);
+}
+
 /* -- .Page-header -- */
 .Page-logo {
   display: flex;
@@ -345,7 +350,15 @@ h6 {
 .Box {
   padding: $spacing2;
   border: 2px dashed;
+  border-color: var(--color1);
   border-radius: $borderRadius1;
+  background: repeating-linear-gradient(
+    -45deg,
+    $white 0px,
+    $white 1px,
+    var(--color0) 1px,
+    var(--color0) 8px
+  );
 }
 
 .Box--big {
@@ -368,18 +381,6 @@ h6 {
   .Box--big[class]:hover {
     transform: none;
   }
-}
-
-.Programs .Box {
-  background: repeating-linear-gradient(
-    -45deg,
-    $white 0px,
-    $white 1px,
-    $colorPrograms0 1px,
-    $colorPrograms0 8px
-  );
-
-  border-color: $colorPrograms1;
 }
 
 /* -- .Divider -- */

@@ -1,18 +1,7 @@
 /* -- theme -- */
-.Programs a {
-  color: $colorPrograms1;
-}
-
-.Programs .Box {
-  background: repeating-linear-gradient(
-    -45deg,
-    $white 0px,
-    $white 1px,
-    $colorPrograms0 1px,
-    $colorPrograms0 8px
-  );
-
-  border-color: $colorPrograms1;
+.Programs {
+  --color0: $colorPrograms0;
+  --color1: $colorPrograms1;
 }
 
 .NavLink--programs:hover {

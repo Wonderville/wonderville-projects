@@ -1,10 +1,12 @@
 /* -- colors -- */
-$colorHome0: #fdf3f3;
-$colorHome1: #ff7a7a;
-$colorPrograms0: #fdf3fc;
-$colorPrograms1: #e87aff;
-$colorDonate0: #f3fdf7;
-$colorDonate1: #5afda1;
+$colorHome0: #fff4f8;
+$colorHome1: #ffa1c6;
+
+$colorPrograms0: #f3fdf7;
+$colorPrograms1: #65e8d2;
+
+$colorDonate0: #fdf3fc;
+$colorDonate1: #e484ff;
 
 /* -- grayscale -- */
 $black: #000000;

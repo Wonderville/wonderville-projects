@@ -1,18 +1,7 @@
 /* -- theme -- */
-.Donate a {
-  color: $colorDonate1;
-}
-
-.Donate .Box {
-  background: repeating-linear-gradient(
-    -45deg,
-    $white 0px,
-    $white 1px,
-    $colorDonate0 1px,
-    $colorDonate0 8px
-  );
-
-  border-color: $colorDonate1;
+.Donate {
+  --color0: $colorDonate0;
+  --color1: $colorDonate1;
 }
 
 .NavLink--donate:hover {

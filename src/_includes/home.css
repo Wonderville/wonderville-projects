@@ -1,18 +1,7 @@
 /* -- theme -- */
-.Home a {
-  color: $colorHome1;
-}
-
-.Home .Box {
-  background: repeating-linear-gradient(
-    -45deg,
-    $white 0px,
-    $white 1px,
-    $colorHome0 1px,
-    $colorHome0 8px
-  );
-
-  border-color: $colorHome1;
+.Home {
+  --color0: $colorHome0;
+  --color1: $colorHome1;
 }
 
 .NavLink--home:hover {
