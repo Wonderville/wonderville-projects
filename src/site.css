@@ -440,12 +440,12 @@ h6 {
   );
 }
 
-.Box--big {
-  padding: $spacing4;
-}
-
 .Box--small {
   padding: $spacing1;
+}
+
+.Box--big {
+  padding: $spacing4;
 }
 
 /* -- .Box/.Button -- */
@@ -458,6 +458,14 @@ h6 {
   .Box[class]:hover,
   .Button[class]:hover {
     transform: scale(1.2);
+  }
+
+  .Box--big {
+    transition: none;
+  }
+
+  .Box--big[class]:hover {
+    transform: none;
   }
 }
 
