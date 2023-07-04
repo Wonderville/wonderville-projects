@@ -100,13 +100,15 @@ h6 {
 }
 
 .Page-content {
-  overflow-x: hidden;
+  overflow: hidden;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   padding-top: $marginVertical;
   padding-bottom: $marginVertical;
+  padding-left: $marginHorizontal;
+  padding-right: $marginHorizontal;
 }
 
 @media (min-width: $desktop) {
@@ -114,21 +116,14 @@ h6 {
     max-width: $desktop-maxWidth;
     padding-top: $marginDesktopVertical;
     padding-bottom: $marginDesktopVertical;
+    padding-left: $marginDesktopHorizontal;
+    padding-right: $marginDesktopHorizontal;
   }
 }
 
 /* -- .PageSection -- */
 .PageSection {
-  padding-left: $marginHorizontal;
-  padding-right: $marginHorizontal;
   z-index: 1;
-}
-
-@media (min-width: $desktop) {
-  .PageSection {
-    padding-left: $marginDesktopHorizontal;
-    padding-right: $marginDesktopHorizontal;
-  }
 }
 
 .PageSection + .PageSection {
@@ -165,6 +160,10 @@ h6 {
     margin-bottom: $spacing5;
     font-size: $fontSize3;
   }
+}
+
+.PageSection-subtitle {
+  font-size: $fontSize1;
 }
 
 /* -- .PageHeader -- */
