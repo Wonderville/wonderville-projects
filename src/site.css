@@ -33,8 +33,9 @@ h6 {
     $white 8px
   );
 
-  font-size: $fontSize-base;
   font-family: $fontSans;
+  font-size: $fontSize-base;
+  font-weight: $fontWeightRegular;
 }
 
 /* -- .Page > native -- */

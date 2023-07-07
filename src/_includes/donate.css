@@ -29,7 +29,7 @@
   .Donate .PageSection + .PageSection {
     margin-top: 0;
     padding-top: 0;
-    margin-left: $spacing6;
+    margin-left: $spacing7;
   }
 }
 

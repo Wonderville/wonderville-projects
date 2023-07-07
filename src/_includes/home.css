@@ -16,94 +16,98 @@
 }
 
 /* -- .Mission -- */
-.Mission {
+/* -- .Mission-title -- */
+.Mission-title {
+  padding-top: $spacing5;
+  padding-bottom: $spacing5;
+  font-size: $fontSize2;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $colorHome1;
+  transform: rotate(0.5deg);
+}
+
+@media (min-width: $desktop) {
+  .Mission-title {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: $fontSize3;
+  }
+}
+
+/* -- .Mission-lines -- */
+.Mission-lines {
   display: flex;
   flex-direction: column;
-  gap: $spacing4;
-}
-
-@media (min-width: $desktop) {
-  .Mission {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-/* -- .Mission-chunk -- */
-@media (min-width: $desktop) {
-  .Mission-chunk > * {
-    max-width: 350px;
-  }
-}
-
-/* -- .Mission-title -- */
-.Mission-chunk:nth-child(1) {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  margin-top: $marginVertical;
+  gap: $spacing6;
 }
 
 @media (min-width: $desktop) {
-  .Mission-chunk:nth-child(1) {
-    justify-content: unset;
-  }
-
-  .Mission-title[class] {
-    margin-bottom: 0;
+  .Mission-lines {
+    margin-top: $marginDesktopVertical;
   }
 }
 
-/* -- .Mission-* [indexed]  -- */
-.Mission-title {
-  transform: rotate(3deg);
+/* -- .MissionLine  -- */
+.MissionLine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.Mission-chunk:nth-child(2) > .Mission-line {
-  transform: rotate(-2deg);
+.MissionLine-image {
+  align-self: stretch;
+  max-width: 100%;
+  max-height: 210px;
+  aspect-ratio: 2 / 1;
+  margin-left: -$spacing0;
+  border-radius: $borderRadius0;
+  object-fit: cover;
 }
 
-.Mission-chunk:nth-child(3) > .Mission-line {
-  transform: rotate(3deg);
-}
-
-.Mission-chunk:nth-child(4) > .Mission-line {
-  transform: rotate(-2deg);
-}
-
-.Mission-chunk:nth-child(5) > .Mission-line {
-  transform: rotate(2deg);
-}
-
-/* -- .Mission-chunk [desktop] -- */
 @media (min-width: $desktop) {
-  .Mission-chunk:nth-child(1) {
-    order: 2;
-    margin-left: 200px;
+  .MissionLine-image {
+    margin-left: 0;
   }
+}
 
-  .Mission-chunk:nth-child(2) {
-    order: 1;
-    flex-basis: 100%;
-    margin-left: 80px;
+.MissionLine-name {
+  position: absolute;
+  width: 80%;
+  top: -$spacing4;
+  left: -$spacing3;
+  font-size: $fontSize4;
+  font-weight: $fontWeightMedium;
+  color: $colorHome1;
+  transform: rotate(-5deg);
+  word-break: break-word;
+  mix-blend-mode: color-dodge;
+}
+
+@media (min-width: $desktop) {
+  .MissionLine-name {
+    top: -$spacing5;
+    left: -$spacing5;
+    font-size: $fontSize5;
   }
+}
 
-  .Mission-chunk:nth-child(3) {
-    order: 3;
-    flex: 1;
-    margin-top: -40px;
-    margin-left: 104px;
-  }
+.MissionLine-text {
+  max-width: 100%;
+  margin-top: -$spacing4;
+  margin-right: -$spacing2;
+  transform: rotate(-3deg);
+}
 
-  .Mission-chunk:nth-child(4) {
-    order: 4;
-    flex-basis: 100%;
-    margin-left: 240px;
-  }
-
-  .Mission-chunk:nth-child(5) {
-    order: 5;
-    flex-basis: 100%;
-    margin-left: 128px;
+@media (min-width: $desktop) {
+  .MissionLine-text {
+    max-width: 380px;
+    margin-top: -$spacing5;
+    margin-right: -$spacing4;
   }
 }
 

@@ -8,6 +8,12 @@ $fontSize0: 1.1em;
 $fontSize1: 1.5em;
 $fontSize2: 2.5em;
 $fontSize3: 3em;
+$fontSize4: 4.2em;
+$fontSize5: 6em;
+
+/* -- weights -- */
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
 
 /* -- fonts -- */
 @font-face {
