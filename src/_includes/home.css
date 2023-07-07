@@ -30,8 +30,8 @@
 
 @media (min-width: $desktop) {
   .Mission-title {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: $spacing3;
+    padding-bottom: $spacing3;
     font-size: $fontSize3;
   }
 }
