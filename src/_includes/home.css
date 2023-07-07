@@ -83,7 +83,6 @@
   font-size: $fontSize4;
   font-weight: $fontWeightMedium;
   color: $colorHome1;
-  transform: rotate(-5deg);
   word-break: break-word;
   mix-blend-mode: color-dodge;
 }
@@ -100,7 +99,6 @@
   max-width: 100%;
   margin-top: -$spacing4;
   margin-right: -$spacing2;
-  transform: rotate(-3deg);
 }
 
 @media (min-width: $desktop) {
@@ -109,6 +107,45 @@
     margin-top: -$spacing5;
     margin-right: -$spacing4;
   }
+}
+
+/* -- .MissionLine (indexed) -- */
+.MissionLine:nth-child(1) .MissionLine-name {
+  transform: translateY(-8px) rotate(-5deg);
+}
+
+.MissionLine:nth-child(1) .MissionLine-text {
+  transform: rotate(1deg);
+}
+
+.MissionLine:nth-child(2) .MissionLine-name {
+  transform: translateY(-12px) rotate(2deg);
+}
+
+.MissionLine:nth-child(2) .MissionLine-text {
+  transform: rotate(-3deg);
+}
+
+@media (min-width: $desktop) {
+  .MissionLine:nth-child(2) .MissionLine-name {
+    transform: translateY(-2px) rotate(2deg);
+  }
+}
+
+.MissionLine:nth-child(3) .MissionLine-name {
+  transform: translateY(-10px) rotate(-5deg);
+}
+
+.MissionLine:nth-child(3) .MissionLine-text {
+  transform: rotate(-1deg);
+}
+
+.MissionLine:nth-child(4) .MissionLine-name {
+  transform: translateY(-5px) rotate(1deg);
+}
+
+.MissionLine:nth-child(4) .MissionLine-text {
+  transform: rotate(1deg);
 }
 
 /* -- .Board -- */
