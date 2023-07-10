@@ -18,7 +18,6 @@
 /* -- .Donate -- */
 @media (min-width: $desktop) {
   .Donate .Page-content {
-    flex-direction: row;
     align-items: flex-start;
   }
 
@@ -42,7 +41,6 @@
 
 @media (min-width: $desktop) {
   .Donate .Page-content {
-    flex-direction: row;
   }
 }
 
@@ -52,4 +50,12 @@
 }
 
 .Donation-widget {
+}
+
+.Donation-section {
+  
+}
+
+.Wishlist-section {
+
 }
