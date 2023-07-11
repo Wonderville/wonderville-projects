@@ -18,44 +18,42 @@
 /* -- .Donate -- */
 @media (min-width: $desktop) {
   .Donate .Page-content {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .Donate .PageSection {
     flex: 1;
+    display: flex;
+    flex-direction: row;
   }
 
   .Donate .PageSection + .PageSection {
     margin-top: 0;
     padding-top: 0;
-    margin-left: $spacing7;
+    margin-top: $spacing7;
+  }
+
+  .Donate .Donate-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    margin-right: $spacing5;
   }
 }
 
-/* -- .Donation -- */
-.Donation {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
+/* -- .Wishlist -- */
 @media (min-width: $desktop) {
-  .Donate .Page-content {
+  .Donate .WishList-items {
+    width: 320px; /*matching the width of the donation widget*/
   }
-}
-
-.Donation-form {
-  display: flex;
-  align-self: center;
-}
-
-.Donation-widget {
-}
-
-.Donation-section {
   
-}
+  .Donate .WishList-items .Wish {
+    margin-top: $spacing1;
+    font-size: $fontSize1;
+  }
 
-.Wishlist-section {
-
+  .Donate .WishList-items .Wish .Wish-body {
+    font-size: $fontSize0; /*do em values compound? Why is this bigger than .Wish?*/
+  }
 }

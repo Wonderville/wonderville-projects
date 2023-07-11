@@ -7,14 +7,15 @@ name: donate
 
 <!-- ~*~ Donate ~*~ -->
 <section class="Donation PageSection Donation-section">
-  <h1 class="PageSection-title">
-    <span class="PageSection-titleText">Donation</span>
-  </h1>
+  <div class="Donate-block">
+    <h1 class="PageSection-title">
+      <span class="PageSection-titleText">Donation</span>
+    </h1>
 
-  <h2 class="PageSection-subtitle">
-    If you would like to make a financial contribution, we would greatly appreciate it.
-  </h2>
-
+    <h2 class="PageSection-subtitle">
+      If you would like to make a financial contribution, we would greatly appreciate it.
+    </h2>
+  </div>  
   <div class="Donation-form">
     <iframe
       class="Donation-widget"
@@ -33,14 +34,15 @@ name: donate
 
 <!-- ~*~ WishList ~*~ -->
 <section class="WishList PageSection">
-  <h1 class="PageSection-title">
-    <span class="PageSection-titleText">Wish List</span>
-  </h1>
+  <div class="Donate-block">
+    <h1 class="PageSection-title">
+      <span class="PageSection-titleText">Wish List</span>
+    </h1>
 
-  <h2 class="PageSection-subtitle">
-    If you have contacts or know any companies interested in providing in-kind donations, below is a list of items we could use for programming and projects. Thank you in advance for considering helping our organization!
-  </h2>
-
+    <h2 class="PageSection-subtitle">
+      If you have contacts or know any companies interested in providing in-kind donations, here is a list of items we could use for programming and projects. Thank you in advance for considering helping our organization!
+    </h2>
+  </div>
   <ul class="WishList-items Box">
     {%- for wish in collections.wishes %}
       <li>{% render "donate/Wish.liquid", wish: wish %}</li>
