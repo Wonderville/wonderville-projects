@@ -17,22 +17,23 @@
 
 /* -- programs -- */
 .Program {
-  position: relative;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Program-description {
-  width: 300px;
-  margin-bottom: 20px;
+  width: 600px;
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
 }
 
 .Program-image {
   height: 500px;
+  width: 400px;
   border-radius: $borderRadius0;
+  object-fit: cover;
 }
 
 .Program-description.right {
