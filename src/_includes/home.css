@@ -109,6 +109,14 @@
   }
 }
 
+a.MissionLine-link {
+  text-decoration: none;
+}
+
+a.MissionLine-link:active, a.MissionLine-link:visited {
+  color: black;
+}
+
 /* -- .MissionLine (indexed) -- */
 .MissionLine:nth-child(1) .MissionLine-name {
   transform: translateY(-8px) rotate(-5deg);

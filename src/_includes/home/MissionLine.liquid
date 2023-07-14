@@ -1,15 +1,17 @@
 <article class="MissionLine">
-  <img
-    class="MissionLine-image"
-    src="{{ src }}"
-    alt="{{ alt }}"
-  >
+  <a class="MissionLine-link" href="/programs#{{ anchor }}">
+    <img
+      class="MissionLine-image"
+      src="{{ src }}"
+      alt="{{ alt }}"
+    >
 
-  <h1 class="MissionLine-name">
-    {{ name }}
-  </h1>
+    <h1 class="MissionLine-name">
+      {{ name }}
+    </h1>
 
-  <p class="MissionLine-text Box">
-    {{ body }}
-  </p>
+    <p class="MissionLine-text Box">
+      {{ body }}
+    </p>
+  </a>
 </article>

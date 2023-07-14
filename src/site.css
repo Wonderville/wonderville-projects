@@ -44,13 +44,13 @@ h6 {
 }
 
 /* -- TODO: nicer way to select non-special links -- */
-.Page a:not(.NavLink):not(.Button) {
+.Page a:not(.NavLink):not(.Button):not(.MissionLine-link) {
   display: inline-block;
   color: var(--color1);
   animation: none;
 }
 
-.Page a:not(.NavLink):not(.Button):hover {
+.Page a:not(.NavLink):not(.Button):not(.MissionLine-link):hover {
   animation: Shaking 0.4s infinite;
 }
 
@@ -125,6 +125,7 @@ h6 {
 /* -- .PageSection -- */
 .PageSection {
   z-index: 1;
+  scroll-margin-top: 94px;
 }
 
 .PageSection + .PageSection {
