@@ -1,19 +1,11 @@
-<article class="Program">
-  {% if program.data.image != null %}
-    <img class="Program-image" src="{{program.data.image}}" />
-  {% endif %}
-
-  <div class="Program-name {{program.data.align}} Box">
-    <h1>{{ program.data.name }}</h1>
-
-    {% if program.data.organizer != null %}
-      <h2>by {{ program.data.organizer }}</h2>
-    {% endif %}
+<section class="PageSection" id="internship">
+  <h1 class="PageSection-title">
+    <span class="PageSection-titleText">{{ title }}</span>
+  </h1>
+  <div class="Program-description Box">
+    {{ description }}
   </div>
-
-  {% if program.content != "" %}
-    <div class="Program-body Box">
-      {{ program.content }}
-    </div>
-  {% endif %}
-</article>
+  {%- for img in imgs %}
+    <img class="Program-image" src={{ img }} alt={{ img.alt }} />
+  {%- endfor %}
+</section>

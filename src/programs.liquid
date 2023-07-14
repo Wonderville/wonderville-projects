@@ -4,45 +4,51 @@ name: programs
 ---
 
 <!-- ~*~ Internship ~*~ -->
-<section class="PageSection">
+<section class="PageSection" id="internship">
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">Internship</span>
   </h1>
-
-  {%- for program in collections.internships %}
-    {% render "programs/Program.liquid", program: program %}
-  {%- endfor %}
+  <div class="Program-description Box">
+    Wonderville Projects works with the NYU Game Center each semester to curate unique game showcases each month
+  </div>
+  <img class="Program-image" src="/img/internship1.jpg" />
+  <img class="Program-image" src="/img/internship2.jpg" />
 </section>
 
 <!-- ~*~ Residencies ~*~ -->
-<section class="PageSection">
+<section class="PageSection" id="residencies">
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">Residencies</span>
   </h1>
-
-  {%- for program in collections.residencies %}
-    {% render "programs/Program.liquid", program: program %}
-  {%- endfor %}
+  <div class="Program-description Box">
+    Wonderville Projects collaborates with Death By Audio Arcade to select games for two residency programs four times per year
+  </div>
+  <img class="Program-image" src="/img/residency1.jpg" />
+  <img class="Program-image" src="/img/residency2.jpg" />
+  <img class="Program-image" src="/img/residency3.jpg" />
 </section>
 
-<!-- ~*~ Game Jams ~*~ -->
-<section class="PageSection">
+<!-- ~*~ Game jams ~*~ -->
+<section class="PageSection" id="game-jams">
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">Game Jams</span>
   </h1>
-
-  {%- for program in collections.jams %}
-    {% render "programs/Program.liquid", program: program %}
-  {%- endfor %}
+  <div class="Program-description Box">
+    Once a month we host an all-ages game jam on a Saturday afternoon to introduce the community to new tools in game development (hosted by Blake Andrews)
+  </div>
+  <img class="Program-image" src="/img/smush-bois-controllers.jpg" />
+  <img class="Program-image" src="/img/soil-keyboards.jpg" />
 </section>
 
-<!-- ~*~ Playtest Night ~*~ -->
-<section class="PageSection">
+<!-- ~*~ Playtest night ~*~ -->
+<section class="PageSection" id="playtest-night">
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">Playtest Night</span>
   </h1>
+  <div class="Program-description Box">
+    Once a month we invite developers to Playtest Night to show their works in progress and get feedback from the rest of the community
+  </div>
+  <img class="Program-image" src="/img/playtest1.jpg" />
+  <img class="Program-image" src="/img/playtest2.jpg" />
 
-  {%- for program in collections.playtests %}
-    {% render "programs/Program.liquid", program: program %}
-  {%- endfor %}
 </section>

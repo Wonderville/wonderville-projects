@@ -23,17 +23,16 @@
   margin-top: 20px;
 }
 
-.Program-image {
-  width: 560px;
-  height: 400px;
+.Program-description {
+  width: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.Program-description {
-  position: absolute;
-  padding: $spacing2;
-  border-radius: $borderRadius1;
-  background-color: $colorPrograms0;
-  max-width: 450px;
+.Program-image {
+  height: 500px;
+  border-radius: $borderRadius0;
 }
 
 .Program-description.right {
