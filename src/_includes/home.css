@@ -19,8 +19,7 @@
 /* -- .Mission -- */
 /* -- .Mission-title -- */
 .Mission-title {
-  padding-top: $spacing5;
-  padding-bottom: $spacing5;
+  padding-bottom: 25px;
   font-size: $fontSize2;
   text-align: center;
   text-decoration: underline;
@@ -177,8 +176,23 @@
 }
 
 /* -- .Board -- */
+.Mission + .PageDivider {
+  transform: rotate(-1deg);
+}
+
+@media (min-width: $desktop) {
+  .Mission + .PageDivider {
+    margin-left: -60px;
+  }
+}
+
 .Board-title {
   transform: rotate(1deg);
+}
+
+.Board-title > span::after {
+  top: 10px;
+  left: 10px;
 }
 
 @media (min-width: $desktop) {

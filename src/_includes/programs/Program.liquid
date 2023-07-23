@@ -2,9 +2,11 @@
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">{{ title }}</span>
   </h1>
+
   <div class="Program-description Box">
     {{ description }}
   </div>
+
   {%- for img in imgs %}
     <img class="Program-image" src={{ img }} alt={{ img.alt }} />
   {%- endfor %}

@@ -148,9 +148,9 @@ body.is-modal {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: $spacing5;
   font-family: $fontSans;
   font-size: $fontSize2;
-  margin-bottom: $spacing2;
 }
 
 .PageSection-titleText {
@@ -160,8 +160,8 @@ body.is-modal {
 .PageSection-titleText:after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color2);
@@ -177,6 +177,35 @@ body.is-modal {
 
 .PageSection-subtitle {
   font-size: $fontSize1;
+}
+
+/* -- .PageDivider -- */
+.PageDivider {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing5;
+  margin-bottom: $spacing5;
+}
+
+.PageDivider::after {
+  content: "";
+  flex: 1;
+  max-width: 400px;
+  height: 10px;
+  background: repeating-linear-gradient(
+    -60deg,
+    var(--color1) 0px,
+    var(--color1) 1px,
+    $clear 1px,
+    $clear 4px
+  );
+}
+
+@media (min-width: $desktop) {
+  .PageDivider {
+    margin-top: $spacing7;
+    margin-bottom: $spacing7;
+  }
 }
 
 /* -- .PageHeader -- */
@@ -498,13 +527,6 @@ body.is-modal {
   }
 }
 
-/* -- .Divider -- */
-.Divider {
-  border-top: 4px dotted black;
-  margin-top: $spacing7;
-  margin-bottom: $spacing7;
-}
-
 /* -- .Loader -- */
 .Loading {
   position: fixed;
@@ -526,21 +548,11 @@ body.is-modal {
 }
 
 @keyframes Loading {
-  from {
-    width: 0%;
-  }
-
-  to {
-    width: 69%;
-  }
+  from { width: 0%; }
+  to   { width: 69%; }
 }
 
 @keyframes Loading-wait {
-  from {
-    width: 69%;
-  }
-
-  to {
-    width: 69.5%;
-  }
+  from { width: 69%; }
+  to   { width: 69.5%; }
 }

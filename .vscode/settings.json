@@ -1,3 +1,5 @@
 {
-  "liquid.format.enable": false
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "liquid.format.enable": false,
 }
