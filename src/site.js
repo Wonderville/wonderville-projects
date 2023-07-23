@@ -3,19 +3,32 @@ const NAV_ANIM_MILLIS = 300
 const NAV_ATTR_STUCK = "stuck"
 
 // -- props --
+let $scroll = null
 let timeout = null
 
 // -- main --
 function Main() {
   // get elements
+  $scroll = document.body
   const $nav = document.getElementById("nav")
+  const $board = document.getElementById("board")
 
-  // bind events
-  const intersection = new IntersectionObserver(OnNavIntersectionChanged, {
+  // observe nav intersection
+  const intersectionConfig = {
     threshold: [1],
-  })
+  }
 
+  const intersection = new IntersectionObserver(OnNavIntersectionChanged, intersectionConfig)
   intersection.observe($nav)
+
+  // observe observe modal open state
+  const mutationConfig = {
+    subtree: true,
+    attributeFilter: ["open"]
+  }
+
+  const mutationObserver = new MutationObserver(OnBoardMemberOpenChanged)
+  mutationObserver.observe($board, mutationConfig)
 }
 
 // -- commands --
@@ -49,6 +62,11 @@ function OnNavIntersectionChanged([e]) {
   } else {
     StartNavTransition($el, "exit", null)
   }
+}
+
+function OnBoardMemberOpenChanged([m]) {
+  const isOpen = m.target.hasAttribute("open")
+  $scroll.classList.toggle("is-modal", isOpen)
 }
 
 // -- bootstrap --

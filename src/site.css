@@ -22,6 +22,11 @@ h6 {
   line-height: 1;
 }
 
+/* -- states -- */
+body.is-modal {
+  overflow: hidden;
+}
+
 /* -- .Page -- */
 .Page {
   position: relative;
@@ -96,8 +101,10 @@ h6 {
 }
 
 .Page-center {
+  position: relative;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .Page-content {
@@ -279,6 +286,7 @@ h6 {
   justify-content: center;
   align-items: center;
   height: $sizeFooter;
+  z-index: 1;
 }
 
 .PageFooter-bg {
@@ -352,7 +360,7 @@ h6 {
   height: $sizeNav;
   top: -1px;
   border-bottom: 2px solid black;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media (min-width: $desktop) {

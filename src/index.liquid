@@ -57,7 +57,7 @@ title: Wonderville Projects
     <span class="PageSection-titleText">Board</span>
   </h1>
 
-  <div class="Board-members">
+  <div id="board" class="Board-members">
     {%- for member in collections.board %}
       {% render "home/BoardMember.liquid", member: member %}
     {%- endfor %}
