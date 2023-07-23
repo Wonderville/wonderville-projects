@@ -1,3 +1,5 @@
+import "/js/os.js"
+
 // -- constants --
 const NAV_ANIM_MILLIS = 300
 const NAV_ATTR_STUCK = "stuck"

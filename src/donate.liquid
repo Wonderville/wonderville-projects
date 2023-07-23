@@ -15,7 +15,8 @@ name: donate
     <h2 class="PageSection-subtitle">
       If you would like to make a financial contribution, we would greatly appreciate it.
     </h2>
-  </div>  
+  </div>
+
   <div class="Donation-form">
     <iframe
       class="Donation-widget"
@@ -43,6 +44,7 @@ name: donate
       If you have contacts or know any companies interested in providing in-kind donations, here is a list of items we could use for programming and projects. Thank you in advance for considering helping our organization!
     </h2>
   </div>
+
   <ul class="WishList-items Box">
     {%- for wish in collections.wishes %}
       <li>{% render "donate/Wish.liquid", wish: wish %}</li>
