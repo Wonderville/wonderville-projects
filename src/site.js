@@ -21,14 +21,16 @@ function Main() {
   const intersection = new IntersectionObserver(OnNavIntersectionChanged, intersectionConfig)
   intersection.observe($nav)
 
-  // observe observe modal open state
-  const mutationConfig = {
-    subtree: true,
-    attributeFilter: ["open"]
-  }
+  // observe board modal open state
+  if ($board != null) {
+    const mutationConfig = {
+      subtree: true,
+      attributeFilter: ["open"]
+    }
 
-  const mutationObserver = new MutationObserver(OnBoardMemberOpenChanged)
-  mutationObserver.observe($board, mutationConfig)
+    const mutationObserver = new MutationObserver(OnBoardMemberOpenChanged)
+    mutationObserver.observe($board, mutationConfig)
+  }
 }
 
 // -- commands --
