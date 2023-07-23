@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 
     <!-- preview -->
     {% assign previewTitle = "Wonderville Projects" %}
@@ -21,17 +21,19 @@
     {% assign path = "" %}
 
     {% if name != "home" %}
-      {% assign title = "{{previewTitle}} - {{title}}" %}
-      {% assign path = "{{name}}" %}
+      {% assign previewTitle = previewTitle | append: " - " | append: title %}
+      {% assign path = name %}
     {% endif %}
 
     <link rel="canonical" href="{{host}}">
-    <meta property="og:title" content="{{previewTitle}}">
-    <meta property="og:site_name" content="Wonderville Projects">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{host}}/{{path}}">
-    <meta property="og:image" content="{{host}}/{{image}}">
+    <meta property="og:site_name" content="Wonderville Projects">
+    <meta property="og:title" content="{{previewTitle}}">
     <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="{{host}}/{{image}}">
+    <meta property="og:image:width" content="488">
+    <meta property="og:image:height" content="488">
 
     <!-- assets -->
     <link rel="stylesheet" href="/site.css">
