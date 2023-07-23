@@ -2,6 +2,7 @@
 .Donate {
   --color0: $colorDonate0;
   --color1: $colorDonate1;
+  --color2: $colorDonate2;
 }
 
 .NavLink--donate:hover {

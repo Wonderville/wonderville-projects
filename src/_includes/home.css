@@ -2,6 +2,7 @@
 .Home {
   --color0: $colorHome0;
   --color1: $colorHome1;
+  --color2: $colorHome2;
 }
 
 .NavLink--home:hover {

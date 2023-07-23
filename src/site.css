@@ -48,6 +48,10 @@ body.is-modal {
   cursor: pointer;
 }
 
+::selection {
+  background: var(--color2);
+}
+
 /* -- TODO: nicer way to select non-special links -- */
 .Page a:not(.NavLink):not(.Button) {
   display: inline-block;
@@ -160,7 +164,7 @@ body.is-modal {
   left: 10px;
   width: 100%;
   height: 100%;
-  background-color: var(--color0);
+  background-color: var(--color2);
   z-index: -1;
 }
 
