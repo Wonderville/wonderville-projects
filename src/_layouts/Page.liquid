@@ -12,6 +12,9 @@
     <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
     <!-- preview -->
     {% assign previewTitle = "Wonderville Projects" %}
     {% assign host = "https://wonderville-projects.netlify.app" %}
@@ -22,7 +25,9 @@
       {% assign path = "{{name}}" %}
     {% endif %}
 
+    <link rel="canonical" href="{{host}}">
     <meta property="og:title" content="{{previewTitle}}">
+    <meta property="og:site_name" content="Wonderville Projects">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{host}}/{{path}}">
     <meta property="og:image" content="{{host}}/{{image}}">
