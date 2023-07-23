@@ -48,6 +48,7 @@
 @media (min-width: $desktop) {
   .Mission-lines {
     margin-top: $marginDesktopVertical;
+    gap: $spacing7;
   }
 }
 
@@ -109,11 +110,6 @@
   }
 }
 
-a.MissionLine-link, a.MissionLine-link:active, a.MissionLine-link:visited {
-  text-decoration: none;
-  color: black;
-}
-
 /* -- .MissionLine (indexed) -- */
 .MissionLine:nth-child(1) .MissionLine-name {
   transform: translateY(-8px) rotate(-5deg);
@@ -121,6 +117,12 @@ a.MissionLine-link, a.MissionLine-link:active, a.MissionLine-link:visited {
 
 .MissionLine:nth-child(1) .MissionLine-text {
   transform: rotate(1deg);
+}
+
+@media (min-width: $desktop) {
+  .MissionLine:nth-child(1) {
+    transform: translate(max(-4vw, -80px), 0);
+  }
 }
 
 .MissionLine:nth-child(2) .MissionLine-name {
@@ -132,6 +134,10 @@ a.MissionLine-link, a.MissionLine-link:active, a.MissionLine-link:visited {
 }
 
 @media (min-width: $desktop) {
+  .MissionLine:nth-child(2) {
+    transform: translate(min(8vw, 160px), 0);
+  }
+
   .MissionLine:nth-child(2) .MissionLine-name {
     transform: translateY(-2px) rotate(2deg);
   }
@@ -145,6 +151,16 @@ a.MissionLine-link, a.MissionLine-link:active, a.MissionLine-link:visited {
   transform: rotate(-1deg);
 }
 
+@media (min-width: $desktop) {
+  .MissionLine:nth-child(3) {
+    transform: translate(max(-8vw, -160px), 0);
+  }
+
+  .MissionLine:nth-child(2) .MissionLine-name {
+    transform: translateY(-2px) rotate(2deg);
+  }
+}
+
 .MissionLine:nth-child(4) .MissionLine-name {
   transform: translateY(-5px) rotate(1deg);
 }
@@ -153,15 +169,21 @@ a.MissionLine-link, a.MissionLine-link:active, a.MissionLine-link:visited {
   transform: rotate(1deg);
 }
 
+@media (min-width: $desktop) {
+  .MissionLine:nth-child(4) {
+    transform: translate(min(4vw, 80px), 0);
+  }
+}
+
 /* -- .Board -- */
 .Board-title {
-  transform: rotate(-3deg);
+  transform: rotate(1deg);
 }
 
 @media (min-width: $desktop) {
   .Board-title {
-    margin-left: 150px;
-    transform: rotate(-3deg);
+    margin-left: -60px;
+    transform: rotate(1deg);
   }
 }
 
