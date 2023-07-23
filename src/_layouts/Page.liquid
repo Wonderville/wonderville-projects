@@ -13,11 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- preview -->
-    <meta property="og:title" content="{{title}}">
+    {% assign previewTitle = "Wonderville Projects" %}
+    {% assign host = "https://wonderville-projects.netlify.app" %}
+    {% assign path = "" %}
+
+    {% if name != "home" %}
+      {% assign title = "{{previewTitle}} - {{title}}" %}
+      {% assign path = "{{name}}" %}
+    {% endif %}
+
+    <meta property="og:title" content="{{previewTitle}}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="">
+    <meta property="og:url" content="{{host}}/{{path}}">
+    <meta property="og:image" content="{{host}}/{{image}}">
+    <meta property="og:description" content="{{description}}">
 
     <!-- assets -->
     <link rel="stylesheet" href="/site.css">
