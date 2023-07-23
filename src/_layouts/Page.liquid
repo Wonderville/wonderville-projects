@@ -42,12 +42,13 @@
 
   <body>
     <div id="page" class="Page {{ name | camelize }}">
-      <!-- ~*~ Header ~*~ -->
       {% if name == "home" %}
+        <!-- ~*~ Header ~*~ -->
         <header class="PageHeader Page-header">
           <video
             class="PageHeader-bg"
             src="/img/header.mp4"
+            poster="/img/header-still.png"
             autoplay
             loop
             muted
