@@ -27,6 +27,13 @@ body.is-modal {
   overflow: hidden;
 }
 
+@media (min-width: $desktop) {
+  /* account for scrollbar gutter */
+  .is-modal .Page > * {
+    padding-right: 15px;
+  }
+}
+
 /* -- .Page -- */
 .Page {
   position: relative;

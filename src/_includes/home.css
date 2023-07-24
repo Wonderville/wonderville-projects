@@ -429,8 +429,15 @@
   left: 0;
   right: 0;
   z-index: 3;
+  margin-top: $sizeNav;
   padding: $spacing2;
   pointer-events: none;
+}
+
+@media (min-width: $desktop) {
+  .BoardMember-modal {
+    margin-top: 0;
+  }
 }
 
 .BoardMember-body[class] {
@@ -449,6 +456,13 @@
   overflow-y: scroll;
   padding: $spacing4;
 }
+
+@media (min-width: $desktop) {
+  .BoardMember-content {
+    overflow-y: hidden;
+  }
+}
+
 
 .BoardMember[open] .BoardMember-body {
   opacity: 1;

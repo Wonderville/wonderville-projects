@@ -9,11 +9,10 @@ let $scroll = null
 let timeout = null
 
 // -- main --
-function Main() {
+function Start() {
   // get elements
   $scroll = document.body
   const $nav = document.getElementById("nav")
-  const $board = document.getElementById("board")
 
   // observe nav intersection
   const intersectionConfig = {
@@ -24,15 +23,13 @@ function Main() {
   intersection.observe($nav)
 
   // observe board modal open state
-  if ($board != null) {
-    const mutationConfig = {
-      subtree: true,
-      attributeFilter: ["open"]
-    }
-
-    const mutationObserver = new MutationObserver(OnBoardMemberOpenChanged)
-    mutationObserver.observe($board, mutationConfig)
+  const mutationConfig = {
+    subtree: true,
+    attributeFilter: ["open"]
   }
+
+  const mutationObserver = new MutationObserver(OnBoardMemberOpenChanged)
+  mutationObserver.observe(document.body, mutationConfig)
 }
 
 // -- commands --
@@ -74,4 +71,4 @@ function OnBoardMemberOpenChanged([m]) {
 }
 
 // -- bootstrap --
-Main()
+Start()
