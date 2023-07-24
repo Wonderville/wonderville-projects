@@ -37,17 +37,16 @@ body.is-modal {
 /* -- .Page -- */
 .Page {
   position: relative;
+  font-family: $fontSans;
+  font-size: $fontSize-base;
+  font-weight: $fontWeightRegular;
   background: repeating-linear-gradient(
-    45deg,
+    $angle,
     $gray0 0px,
     $gray0 1px,
     $white 1px,
     $white 8px
   );
-
-  font-family: $fontSans;
-  font-size: $fontSize-base;
-  font-weight: $fontWeightRegular;
 }
 
 /* -- .Page > native -- */
@@ -416,7 +415,7 @@ body.is-modal {
   left: 0;
   right: 0;
   background: repeating-linear-gradient(
-    -45deg,
+    -$angle,
     $gray0 0px,
     $gray0 1px,
     $white 1px,
@@ -497,7 +496,7 @@ body.is-modal {
   border-color: var(--color1);
   border-radius: $borderRadius1;
   background: repeating-linear-gradient(
-    -45deg,
+    -$angle,
     $white 0px,
     $white 1px,
     var(--color0) 1px,
