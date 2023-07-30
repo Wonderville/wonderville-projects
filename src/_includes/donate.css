@@ -43,6 +43,17 @@
   }
 }
 
+@media (max-width: $desktop) {
+  .Donate .Donation-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Donate .Donation-form .Donation-widget {
+    margin-top: $spacing2;
+  }
+}
+
 /* -- .Wishlist -- */
 @media (min-width: $desktop) {
   .Donate .WishList-items {
