@@ -11,8 +11,11 @@ let timeout = null
 // -- main --
 function Start() {
   // get elements
-  $scroll = document.body
+  const $body = document.body
   const $nav = document.getElementById("nav")
+
+  // set props
+  $scroll = $body
 
   // observe nav intersection
   const intersectionConfig = {
