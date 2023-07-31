@@ -27,27 +27,24 @@
   margin-bottom: 35px;
 }
 
-.Program:nth-child(1) > .Program-title > span::after {
+.Program-title > span::after {
   top: 10px;
   left: 10px;
+}
+
+.Program:nth-child(1) > .Program-title {
   transform: rotate(-1deg);
 }
 
-.Program:nth-child(2) > .Program-title > span::after {
-  top: 10px;
-  left: -10px;
+.Program:nth-child(2) > .Program-title {
   transform: rotate(2deg);
 }
 
-.Program:nth-child(3) > .Program-title > span::after {
-  top: 5px;
-  left: 0px;
+.Program:nth-child(3) > .Program-title {
   transform: rotate(-2deg);
 }
 
-.Program:nth-child(4) > .Program-title > span::after {
-  top: 10px;
-  left: -10px;
+.Program:nth-child(4) > .Program-title {
   transform: rotate(2deg);
 }
 
