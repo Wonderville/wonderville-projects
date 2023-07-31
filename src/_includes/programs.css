@@ -23,18 +23,60 @@
   align-items: center;
 }
 
+.Program > .PageSection-title {
+  margin-bottom: 35px;
+}
+
+.Program:nth-child(1) > .Program-title > span::after {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-1deg);
+}
+
+.Program:nth-child(2) > .Program-title > span::after {
+  top: 10px;
+  left: -10px;
+  transform: rotate(2deg);
+}
+
+.Program:nth-child(3) > .Program-title > span::after {
+  top: 5px;
+  left: 0px;
+  transform: rotate(-2deg);
+}
+
+.Program:nth-child(4) > .Program-title > span::after {
+  top: 10px;
+  left: -10px;
+  transform: rotate(2deg);
+}
+
 .Program-description {
-  width: 600px;
+  max-width: 600px;
   margin-bottom: 35px;
   display: flex;
   align-items: center;
 }
 
 .Program-image {
-  height: 500px;
+  height: 400px;
   width: 400px;
   border-radius: $borderRadius0;
   object-fit: cover;
+}
+
+@media (min-width: $desktop) {
+  .Program-images {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .Program-image {
+    height: 500px;
+    min-width: 200px;
+  }
 }
 
 .Program-description.right {

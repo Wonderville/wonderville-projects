@@ -1,13 +1,14 @@
-<section class="PageSection" id="internship">
-  <h1 class="PageSection-title">
-    <span class="PageSection-titleText">{{ title }}</span>
+<section class="PageSection Program" id="{{ program.data.id }}">
+  <h1 class="Program-title PageSection-title">
+    <span class="PageSection-titleText">{{ program.data.name }}</span>
   </h1>
 
-  <div class="Program-description Box">
-    {{ description }}
+  <div class="PageSection-subtitle Program-description">
+    {{ program.data.description }}
   </div>
 
-  {%- for img in imgs %}
-    <img class="Program-image" src={{ img }} alt={{ img.alt }} />
-  {%- endfor %}
+  <div>
+    <img class="Program-image" src="/img/internship1.jpg" />
+    <img class="Program-image" src="/img/internship2.jpg" />
+  </div>
 </section>
