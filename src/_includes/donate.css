@@ -43,6 +43,17 @@
   }
 }
 
+@media (max-width: $desktop) {
+  .Donate .Donation-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Donate .Donation-form .Donation-widget {
+    margin-top: $spacing2;
+  }
+}
+
 /* -- .Wishlist -- */
 @media (min-width: $desktop) {
   .Donate .WishList-items {
@@ -56,5 +67,24 @@
 
   .Donate .WishList-items .Wish .Wish-body {
     font-size: $fontSize0; /*do em values compound? Why is this bigger than .Wish?*/
+  }
+}
+
+@media (max-width: $desktop) {
+  .Donate .WishList-items {
+    width: 100%;
+  }
+
+  .Donate .WishList-items .Wish {
+    margin-top: $spacing1;
+    font-size: $fontSize1;
+  }
+
+  .Donate .WishList-items .Wish .Wish-body {
+    font-size: $fontSize0; /*do em values compound? Why is this bigger than .Wish?*/
+  }
+
+  .Donate .WishList .Box {
+    margin-top: $spacing2;
   }
 }

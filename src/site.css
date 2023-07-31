@@ -344,11 +344,8 @@ body.is-modal {
   align-items: center;
   margin-left: $spacing2;
   margin-right: $spacing2;
+  gap: $spacing2;
   z-index: 1;
-}
-
-.PageFooter-content > * + * {
-  margin-top: $spacing2;
 }
 
 .PageFooter-thanks {
@@ -379,8 +376,9 @@ body.is-modal {
 .PageFooter-credits {
   position: absolute;
   font-size: 0.8em;
-  bottom: 10px;
+  bottom: max($spacing2, env(safe-area-inset-bottom));
   transform: rotate(-2deg);
+  transition: bottom 0.3s ease-in;
 }
 
 @media (min-width: $desktop) {
