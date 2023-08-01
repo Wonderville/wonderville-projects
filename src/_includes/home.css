@@ -84,7 +84,6 @@
   font-size: $fontSize4;
   font-weight: $fontWeightMedium;
   color: $colorHome1;
-  word-break: break-word;
   mix-blend-mode: color-dodge;
 }
 
