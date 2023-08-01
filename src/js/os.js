@@ -145,8 +145,20 @@ class Os {
       parent.replaceChild(script, inert)
     }
 
+    // get scroll anchor
+    let $anchor = null
+
+    const anchorId = document.location.hash.slice(1)
+    if (anchorId != null && anchorId !== "") {
+      $anchor = document.getElementById(anchorId)
+    }
+
     // set scroll position
-    window.scrollTo(0, 0)
+    if ($anchor != null) {
+      $anchor.scrollIntoView()
+    } else {
+      window.scrollTo(0, 0)
+    }
 
     // run post visit events
     m.didFinishVisit()
