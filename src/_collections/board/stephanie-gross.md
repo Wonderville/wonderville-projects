@@ -1,6 +1,6 @@
 ---
 name: Stephanie Gross
-image: img/stephanie-gross.jpg
+image: stephanie-gross.jpg
 tags: board
 brief: Stephanie is the co-founder of Wonderville.
 date: "04"

@@ -1,6 +1,6 @@
 ---
 name: Clay Shirky
-image: img/clay-shirky.png
+image: clay-shirky.png
 tags: board
 brief: Clay Shirky is Vice Provost at NYU.
 date: "02"
