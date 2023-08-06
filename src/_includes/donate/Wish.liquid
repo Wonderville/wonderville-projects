@@ -1,9 +1,9 @@
-<article class="Wish">
-  <h1>{{ wish.data.name }}</h1>
+<li class="Wish">
+  <p>{{ wish.data.name }}</p>
 
   {% if wish.content != "" %}
     <div class="Wish-body">
       {{ wish.content }}
     </div>
   {% endif %}
-</article>
+</li>

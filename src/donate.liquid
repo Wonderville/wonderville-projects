@@ -8,9 +8,9 @@ description: If you would like to make a financial contribution to Wonderville P
 <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
 
 <!-- ~*~ Donate ~*~ -->
-<section class="Donation PageSection Donation-section">
+<section class="Donation PageSection">
   <div class="Donate-block">
-    <h1 class="PageSection-title">
+    <h1 class="Donation-title PageSection-title">
       <span class="PageSection-titleText">Donation</span>
     </h1>
 
@@ -36,20 +36,23 @@ description: If you would like to make a financial contribution to Wonderville P
 </section>
 
 <!-- ~*~ WishList ~*~ -->
+<div class="PageDivider"></div>
+
 <section class="WishList PageSection">
   <div class="Donate-block">
-    <h1 class="PageSection-title">
+    <h1 class="WishList-title PageSection-title">
       <span class="PageSection-titleText">Wish List</span>
     </h1>
 
     <h2 class="PageSection-subtitle">
-      If you have contacts or know any companies interested in providing in-kind donations, here is a list of items we could use for programming and projects. Thank you in advance for considering helping our organization!
+      <p>If you have contacts or know any companies interested in providing in-kind donations, here is a list of items we could use for programming and projects.</p>
+      <p>Thank you in advance for considering helping our organization!</p>
     </h2>
   </div>
 
   <ul class="WishList-items Box">
     {%- for wish in collections.wishes %}
-      <li>{% render "donate/Wish.liquid", wish: wish %}</li>
+      {% render "donate/Wish.liquid", wish: wish %}
     {%- endfor %}
   </ul>
 </section>

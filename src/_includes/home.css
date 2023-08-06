@@ -17,6 +17,16 @@
 }
 
 /* -- .Mission -- */
+.Mission + .PageDivider {
+  transform: rotate(-1deg);
+}
+
+@media (min-width: $desktop) {
+  .Mission + .PageDivider {
+    margin-left: -60px;
+  }
+}
+
 /* -- .Mission-title -- */
 .Mission-title {
   padding-bottom: 25px;
@@ -33,6 +43,7 @@
     padding-top: $spacing3;
     padding-bottom: $spacing3;
     font-size: $fontSize3;
+    line-height: 1;
   }
 }
 
@@ -109,82 +120,71 @@
   }
 }
 
-/* -- .MissionLine (indexed) -- */
-.MissionLine:nth-child(1) .MissionLine-name {
+/* -- .MissionLine--internship -- */
+.MissionLine--internship .MissionLine-name {
   transform: translateY(-8px) rotate(-5deg);
 }
 
-.MissionLine:nth-child(1) .MissionLine-text {
+.MissionLine--internship .MissionLine-text {
   transform: rotate(1deg);
 }
 
 @media (min-width: $desktop) {
-  .MissionLine:nth-child(1) {
+  .MissionLine--internship {
     transform: translate(max(-4vw, -80px), 0);
   }
 }
 
-.MissionLine:nth-child(2) .MissionLine-name {
+/* -- .MissionLine--residencies -- */
+.MissionLine--residencies .MissionLine-name {
   transform: translateY(-12px) rotate(2deg);
 }
 
-.MissionLine:nth-child(2) .MissionLine-text {
+.MissionLine--residencies .MissionLine-text {
   transform: rotate(-3deg);
 }
 
 @media (min-width: $desktop) {
-  .MissionLine:nth-child(2) {
+  .MissionLine--residencies {
     transform: translate(min(8vw, 160px), 0);
   }
 
-  .MissionLine:nth-child(2) .MissionLine-name {
+  .MissionLine--residencies .MissionLine-name {
     transform: translateY(-2px) rotate(2deg);
   }
 }
 
-.MissionLine:nth-child(3) .MissionLine-name {
+/* -- .MissionLine--gameJams -- */
+.MissionLine--gameJams .MissionLine-name {
   transform: translateY(-10px) rotate(-5deg);
 }
 
-.MissionLine:nth-child(3) .MissionLine-text {
+.MissionLine--gameJams .MissionLine-text {
   transform: rotate(-1deg);
 }
 
 @media (min-width: $desktop) {
-  .MissionLine:nth-child(3) {
+  .MissionLine--gameJams {
     transform: translate(max(-8vw, -160px), 0);
-  }
-
-  .MissionLine:nth-child(2) .MissionLine-name {
-    transform: translateY(-2px) rotate(2deg);
   }
 }
 
-.MissionLine:nth-child(4) .MissionLine-name {
+/* -- .MissionLine--playtestNight -- */
+.MissionLine--playtestNight .MissionLine-name {
   transform: translateY(-5px) rotate(1deg);
 }
 
-.MissionLine:nth-child(4) .MissionLine-text {
+.MissionLine--playtestNight .MissionLine-text {
   transform: rotate(1deg);
 }
 
 @media (min-width: $desktop) {
-  .MissionLine:nth-child(4) {
+  .MissionLine--playtestNight {
     transform: translate(min(4vw, 80px), 0);
   }
 }
 
 /* -- .Board -- */
-.Mission + .PageDivider {
-  transform: rotate(-1deg);
-}
-
-@media (min-width: $desktop) {
-  .Mission + .PageDivider {
-    margin-left: -60px;
-  }
-}
-
 .Board-title {
   transform: rotate(1deg);
 }

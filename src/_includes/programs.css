@@ -16,36 +16,22 @@
   pointer-events: none;
 }
 
-/* -- programs -- */
+/* -- Programs --*/
+.Programs .PageDivider {
+  margin-top: $spacing6;
+}
+
+@media (min-width: $desktop) {
+  .Programs .PageDivider {
+    margin-top: $spacing8;
+  }
+}
+
+/* -- Program -- */
 .Program {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.Program > .PageSection-title {
-  margin-bottom: 35px;
-}
-
-.Program-title > span::after {
-  top: 10px;
-  left: 10px;
-}
-
-.Program:nth-child(1) > .Program-title {
-  transform: rotate(-1deg);
-}
-
-.Program:nth-child(2) > .Program-title {
-  transform: rotate(2deg);
-}
-
-.Program:nth-child(3) > .Program-title {
-  transform: rotate(-2deg);
-}
-
-.Program:nth-child(4) > .Program-title {
-  transform: rotate(2deg);
 }
 
 .Program-description {
@@ -55,33 +41,108 @@
   align-items: center;
 }
 
+@media (min-width: $desktop) {
+  .Program-description {
+    margin-bottom: $spacing5;
+  }
+}
+
+/* -- Program-images -- */
+.Program-images {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing3;
+}
+
+@media (min-width: $desktop) {
+  .Program-images {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: $spacing4;
+  }
+}
+
+/* -- Program-image -- */
 .Program-image {
-  height: 400px;
-  width: 400px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: $borderRadius0;
   object-fit: cover;
 }
 
 @media (min-width: $desktop) {
-  .Program-images {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    width: 100%;
-  }
-
   .Program-image {
     height: 500px;
     min-width: 200px;
+    aspect-ratio: initial;
   }
 }
 
-.Program-description.right {
-  bottom: 10px;
-  right: 10px;
+/* -- Program-image (indexed) -- */
+.Program-image:nth-child(1) {
+  transform: translate(-3px, 0px) rotate(-0.5deg);
 }
 
-.Program-description.left {
-  bottom: 10px;
+.Program-image:nth-child(2) {
+  transform: translate(0px, 7px) rotate(-0.1deg);
+}
+
+.Program-image:nth-child(3) {
+  transform: translate(0px, 5px) rotate(1deg);
+}
+
+/* -- Internship -- */
+.Internship-title {
+  transform: rotate(-1deg);
+}
+
+.Internship-title > span::after {
+  top: 10px;
   left: 10px;
+}
+
+.Internship + .PageDivider {
+  transform: rotate(-1deg);
+}
+
+/* -- Residencies -- */
+.Residencies-title {
+  transform: rotate(2deg);
+}
+
+.Residencies-title > span::after {
+  top: 5px;
+  left: -10px;
+}
+
+.Residencies + .PageDivider {
+  transform: rotate(1deg);
+}
+
+/* -- GameJams -- */
+.GameJams-title {
+  transform: rotate(-2deg);
+}
+
+.GameJams-title > span::after {
+  top: -2px;
+  left: 10px;
+  transform: rotate(-1deg);
+}
+
+.GameJams + .PageDivider {
+  transform: rotate(-1deg);
+}
+
+/* -- PlaytestNight -- */
+.PlaytestNight-title {
+  transform: rotate(2deg);
+}
+
+.PlaytestNight-title > span::after {
+  top: 2px;
+  left: 10px;
+  transform: rotate(1deg);
 }

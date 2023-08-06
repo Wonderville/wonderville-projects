@@ -18,23 +18,17 @@
 
 /* -- .Donate -- */
 @media (min-width: $desktop) {
-  .Donate .Page-content {
-    align-items: center;
-  }
-
   .Donate .PageSection {
     flex: 1;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
   }
 
-  .Donate .PageSection + .PageSection {
-    margin-top: 0;
-    padding-top: 0;
-    margin-top: $spacing8;
+  .Donate .PageSection-title {
+    margin-bottom: $spacing5;
   }
 
-  .Donate .Donate-block {
+  .Donate-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,48 +37,82 @@
   }
 }
 
-@media (max-width: $desktop) {
-  .Donate .Donation-form {
-    display: flex;
-    justify-content: center;
-  }
+/* -- .Donation -- */
+.Donation-title {
+  transform: translateX(-5px) rotate(-1deg);
+}
 
-  .Donate .Donation-form .Donation-widget {
-    margin-top: $spacing2;
+.Donation-title > span::after {
+  top: -5px;
+  left: -12px;
+  transform: rotate(-1deg);
+}
+
+.Donation-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 476px;
+  margin-top: $spacing5;
+  transform: rotate(-1deg);
+}
+
+@media (min-width: $desktop) {
+  .Donation-form {
+    width: 320px;
   }
+}
+
+.Donation-widget {
+  position: absolute;
+  transition: height 0.3s;
+}
+
+.Donation + .PageDivider {
+  transform: rotate(0.5deg);
 }
 
 /* -- .Wishlist -- */
-@media (min-width: $desktop) {
-  .Donate .WishList-items {
-    width: 320px; /*matching the width of the donation widget*/
-  }
+.WishList-title {
+  transform: translateX(5px) rotate(-1deg);
+}
 
-  .Donate .WishList-items .Wish {
-    margin-top: $spacing1;
-    font-size: $fontSize1;
-  }
+.WishList-title > span::after {
+  left: -4px;
+  transform: rotate(1deg);
+}
 
-  .Donate .WishList-items .Wish .Wish-body {
-    font-size: $fontSize0; /*do em values compound? Why is this bigger than .Wish?*/
-  }
+.WishList-items {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing1;
+  margin-top: $spacing4;
+  transform: rotate(1deg);
+}
+
+.WishList .PageSection-subtitle > p + p {
+  margin-top: $spacing2;
 }
 
 @media (max-width: $desktop) {
-  .Donate .WishList-items {
+  .WishList-items {
     width: 100%;
   }
+}
 
-  .Donate .WishList-items .Wish {
-    margin-top: $spacing1;
-    font-size: $fontSize1;
+@media (min-width: $desktop) {
+  .WishList-items {
+    width: 320px; /* matching the width of the donation widget */
   }
+}
 
-  .Donate .WishList-items .Wish .Wish-body {
-    font-size: $fontSize0; /*do em values compound? Why is this bigger than .Wish?*/
-  }
+/* -- .Wish -- */
+.Wish {
+  font-size: $fontSize1;
+}
 
-  .Donate .WishList .Box {
-    margin-top: $spacing2;
-  }
+.Wish-body {
+  font-size: $fontSize0;
 }

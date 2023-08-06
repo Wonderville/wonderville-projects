@@ -14,12 +14,24 @@ module.exports = function (config) {
   config.addPassthroughCopy(`${srcDir}/**/*.js`)
 
   // -- filters --
-  config.addFilter("camelize", (value) =>
-    value
+  function camelize(value, isLower) {
+    return value
       .split(/\s+/)
-      .map((s) => s.slice(0, 1).toUpperCase() + s.slice(1, s.length))
+      .map((s, i) => {
+        let first = s.slice(0, 1)
+        if (i === 0 && isLower) {
+          first = first.toLowerCase()
+        } else {
+          first = first.toUpperCase()
+        }
+
+        return first + s.slice(1, s.length)
+      })
       .join("")
-  )
+  }
+
+  config.addFilter("camelize", (value) => camelize(value, false))
+  config.addFilter("camelizeLower", (value) => camelize(value, true))
 
   // -- build --
   // remove the _collections dir from the site output

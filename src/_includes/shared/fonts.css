@@ -4,12 +4,12 @@ $fontSans: $fontBrand, sans;
 $fontSize-base: 16px;
 
 /* -- sizes -- */
-$fontSize0: 1.1em;
-$fontSize1: 1.3em;
-$fontSize2: 2.5em;
-$fontSize3: 3em;
-$fontSize4: 4em;
-$fontSize5: 5.4em;
+$fontSize0: 1.1rem;
+$fontSize1: 1.3rem;
+$fontSize2: 2.5rem;
+$fontSize3: 3rem;
+$fontSize4: 4rem;
+$fontSize5: 5.4rem;
 
 /* -- weights -- */
 $fontWeightRegular: 400;
