@@ -1,7 +1,7 @@
 ---
 tags: mission
 name: Playtest Night
-src: playtest-night/playtest2.jpg
+image: playtest-night/playtest2.jpg
 alt: People milling around and playtesting video games at handful of tables in the middle of an arcade.
 anchor: playtest-night
 date: "03"

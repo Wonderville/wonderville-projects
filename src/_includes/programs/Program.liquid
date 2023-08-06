@@ -1,14 +1,17 @@
-<section class="PageSection Program" id="{{ program.data.id }}">
-  <h1 class="Program-title PageSection-title">
-    <span class="PageSection-titleText">{{ program.data.name }}</span>
+{% assign class = program.data.name | camelize %}
+
+<section class="{{class}} Program PageSection" id="{{program.data.anchor}}">
+  <h1 class="{{class}}-title PageSection-title">
+    <span class="PageSection-titleText">{{program.data.name}}</span>
   </h1>
 
-  <div class="PageSection-subtitle Program-description">
-    {{ program.data.description }}
-  </div>
+  <h2 class="PageSection-subtitle Program-description">
+    {{program.content}}
+  </h2>
 
-  <div>
-    <img class="Program-image" src="/img/internship1.jpg" />
-    <img class="Program-image" src="/img/internship2.jpg" />
+  <div class="Program-images">
+    {%- for image in program.data.images %}
+      <img class="Program-image" src="/img/{{image}}" />
+    {%- endfor %}
   </div>
 </section>

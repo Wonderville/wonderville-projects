@@ -1,77 +1,15 @@
 ---
 layout: Page.liquid
 name: programs
-image: img/playtest1.jpg
+image: img/playtest-night/playtest1.jpg
 description: Wonderville Projects is a Brooklyn-based nonprofit that runs a vareity a programs for the NYC community of independent game developers and creative technologists
 ---
 
-<!-- ~*~ Internship ~*~ -->
-<section class="Internship Program PageSection" id="internship">
-  <h1 class="Internship-title PageSection-title">
-    <span class="PageSection-titleText">Internship</span>
-  </h1>
+<!-- ~*~ Programs ~*~ -->
+{%- for program in collections.programs %}
+  {%- unless forloop.first %}
+    <div class="PageDivider"></div>
+  {%- endunless %}
 
-  <h2 class="PageSection-subtitle Program-description">
-    Wonderville Projects works with the NYU Game Center each semester to curate unique game showcases each month.
-  </h2>
-
-  <div class="Program-images">
-    <img class="Program-image" src="/img/internship/internship1.jpg" />
-    <img class="Program-image" src="/img/internship/internship2.jpg" />
-  </div>
-</section>
-
-<!-- ~*~ Residencies ~*~ -->
-<div class="PageDivider"></div>
-
-<section class="Residencies Program PageSection" id="residencies">
-  <h1 class="Residencies-title PageSection-title">
-    <span class="PageSection-titleText">Residencies</span>
-  </h1>
-
-  <h2 class="PageSection-subtitle Program-description">
-    Wonderville Projects collaborates with Death By Audio Arcade to select games for two residency programs four times per year.
-  </h2>
-
-  <div class="Program-images">
-    <img class="Program-image" src="/img/residencies/residency1.jpg" />
-    <img class="Program-image" src="/img/residencies/residency2.jpg" />
-    <img class="Program-image" src="/img/residencies/residency3.jpg" />
-  </div>
-</section>
-
-<!-- ~*~ GameJams ~*~ -->
-<div class="PageDivider"></div>
-
-<section class="GameJams Program PageSection" id="game-jams">
-  <h1 class="GameJams-title PageSection-title">
-    <span class="PageSection-titleText">Game Jams</span>
-  </h1>
-
-  <h2 class="PageSection-subtitle Program-description">
-    Once a month we host an all-ages game jam on a Saturday afternoon to introduce the community to new tools in game development (hosted by Blake Andrews).
-  </h2>
-
-  <div class="Program-images">
-    <img class="Program-image" src="/img/game-jams/smush-bois-controllers.jpg" />
-    <img class="Program-image" src="/img/game-jams/soil-keyboards.jpg" />
-  </div>
-</section>
-
-<!-- ~*~ PlaytestNight ~*~ -->
-<div class="PageDivider"></div>
-
-<section class="PlaytestNight Program PageSection" id="playtest-night">
-  <h1 class="PlaytestNight-title PageSection-title">
-    <span class="PageSection-titleText">Playtest Night</span>
-  </h1>
-
-  <h2 class="PageSection-subtitle Program-description">
-    Once a month we invite developers to Playtest Night to show their works in progress and get feedback from the rest of the community.
-  </h2>
-
-  <div class="Program-images">
-    <img class="Program-image" src="/img/playtest-night/playtest1.jpg" />
-    <img class="Program-image" src="/img/playtest-night/playtest2.jpg" />
-  </div>
-</section>
+  {% render "programs/Program.liquid", program: program %}
+{%- endfor %}

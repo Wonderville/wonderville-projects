@@ -1,7 +1,7 @@
 ---
 tags: mission
 name: Internship
-src: internship/internship1.jpg
+image: internship/internship1.jpg
 alt: Two people smiling and playing a video game at a curated exhibition
 date: "00"
 ---

@@ -1,7 +1,7 @@
 ---
 tags: mission
 name: Game Jams
-src: playtest-night/playtest1.jpg
+image: playtest-night/playtest1.jpg
 alt: People milling around and playtesting video games at handful of tables in the middle of an arcade.
 anchor: game-jams
 date: "02"
