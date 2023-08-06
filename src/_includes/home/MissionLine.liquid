@@ -1,16 +1,16 @@
-<article class="MissionLine MissionLine--{{name | camelizeLower}}">
+<article class="MissionLine MissionLine--{{line.data.name | camelizeLower}}">
   <img
     class="MissionLine-image"
-    src="/img/{{ src }}"
-    alt="{{ alt }}"
+    src="/img/{{ line.data.src }}"
+    alt="{{ line.data.alt }}"
   >
 
   <h1 class="MissionLine-name">
-    {{ name }}
+    {{ line.data.name }}
   </h1>
 
-  <p class="MissionLine-text Box">
-    {{ body }}
-    <a href="/programs#{{ anchor }}">Read more...</a>
-  </p>
+  <div class="MissionLine-text Box">
+    {{ line.content }}
+    <a href="/programs#{{ line.data.anchor }}">Read more...</a>
+  </div>
 </article>

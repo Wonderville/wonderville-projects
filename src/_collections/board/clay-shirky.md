@@ -1,7 +1,7 @@
 ---
+tags: board
 name: Clay Shirky
 image: clay-shirky.png
-tags: board
 brief: Clay Shirky is Vice Provost at NYU.
 date: "02"
 ---

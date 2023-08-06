@@ -112,6 +112,10 @@
   margin-right: -$spacing2;
 }
 
+.MissionLine-text aside {
+  display: inline;
+}
+
 @media (min-width: $desktop) {
   .MissionLine-text {
     max-width: 380px;

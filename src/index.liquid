@@ -13,41 +13,9 @@ description: Wonderville Projects is a Brooklyn-based nonprofit focused on foste
   </h1>
 
   <div class="Mission-lines">
-    {%
-      render "home/MissionLine.liquid",
-        src: "internship/internship1.jpg",
-        alt: "Two people smiling and playing a video game at a curated exhibition",
-        name: "Internship",
-        body: "Wonderville Projects works with the NYU Game Center each semester to curate unique game showcases each month",
-        anchor: "internship"
-    %}
-
-    {%
-      render "home/MissionLine.liquid",
-        src: "residencies/residency1.jpg",
-        alt: "A custom arcade cabinet with 'Wondercab' printed on the control deck and 'Smush bois' on the nameplate. The display shows the Smush bois title screen.",
-        name: "Residencies",
-        body: "Wonderville Projects collaborates with Death By Audio Arcade to select games for two residency programs four times per year",
-        anchor: "residencies"
-    %}
-
-    {%
-      render "home/MissionLine.liquid",
-        src: "playtest-night/playtest1.jpg",
-        alt: "People milling around and playtesting video games at handful of tables in the middle of an arcade.",
-        name: "Game Jams",
-        body: "Once a month we host an all-ages game jam on a Saturday afternoon to introduce the community to new tools in game development (hosted by Blake Andrews)",
-        anchor: "game-jams"
-    %}
-
-    {%
-      render "home/MissionLine.liquid",
-        src: "playtest-night/playtest2.jpg",
-        alt: "People milling around and playtesting video games at handful of tables in the middle of an arcade.",
-        name: "Playtest Night",
-        body: "Once a month we invite developers to Playtest Night to show their works in progress and get feedback from the rest of the community",
-        anchor: "playtest-night"
-    %}
+    {%- for line in collections.mission %}
+      {% render "home/MissionLine.liquid", line: line %}
+    {%- endfor %}
   </div>
 </section>
 
