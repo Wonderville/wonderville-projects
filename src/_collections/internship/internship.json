@@ -1,5 +1,10 @@
 {
   "tags": "internship",
+  "root": "programs",
+  "back": {
+    "name": "Internship",
+    "href": "/programs/internship"
+  },
   "layout": "PageProgramEvent.liquid",
   "permalink": "programs/internship/{{ name | slugify }}.html"
 }

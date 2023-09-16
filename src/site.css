@@ -3,7 +3,7 @@
 @import "_includes/donate.css";
 @import "_includes/home.css";
 @import "_includes/programs.css";
-@import "_includes/program-events.css";
+@import "_includes/program-detail.css";
 
 /* -- resets (more) -- */
 * {

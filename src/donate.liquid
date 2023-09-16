@@ -1,6 +1,6 @@
 ---
 layout: Page.liquid
-name: donate
+root: donate
 image: img/playtest-night/playtest2.jpg
 description: If you would like to make a financial contribution to Wonderville Projects, we would greatly appreciate it.
 ---
@@ -51,8 +51,6 @@ description: If you would like to make a financial contribution to Wonderville P
   </div>
 
   <ul class="WishList-items Box">
-    {%- for wish in collections.wishes %}
-      {% render "donate/Wish.liquid", wish: wish %}
-    {%- endfor %}
+    {% render "donate/Wish.liquid" for colleciton.wishes as wish %}
   </ul>
 </section>

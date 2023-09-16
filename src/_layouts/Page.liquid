@@ -5,7 +5,10 @@
 
     <!-- title -->
     {% if title == null %}
-      {% assign title = name | camelize %}
+      {% assign title = root | camelize %}
+      {% if name != null %}
+        {% assign title = title | append: " - " | append: name %}
+      {% endif %}
     {% endif %}
 
     <!-- page -->
@@ -17,17 +20,15 @@
 
     <!-- preview -->
     {% assign previewTitle = "Wonderville Projects" %}
-    {% assign host = "https://wonderville-projects.netlify.app" %}
-    {% assign path = "" %}
+    {% assign host = "https://wondervilleprojects.org" %}
 
-    {% if name != "home" %}
+    {% if root != "home" %}
       {% assign previewTitle = previewTitle | append: " - " | append: title %}
-      {% assign path = name %}
     {% endif %}
 
     <link rel="canonical" href="{{host}}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{host}}/{{path}}">
+    <meta property="og:url" content="{{host}}{{page.url}}">
     <meta property="og:site_name" content="Wonderville Projects">
     <meta property="og:title" content="{{previewTitle}}">
     <meta property="og:description" content="{{description}}">
@@ -41,8 +42,8 @@
   </head>
 
   <body>
-    <div id="page" class="Page {{ name | camelize }}">
-      {% if name == "home" %}
+    <div id="page" class="Page {{ root | camelize }}">
+      {% if root == "home" %}
         <!-- ~*~ Header ~*~ -->
         <header class="PageHeader Page-header">
           <video

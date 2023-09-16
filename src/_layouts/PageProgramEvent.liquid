@@ -2,17 +2,16 @@
 layout: Page.liquid
 ---
 
-<h1 class="ProgramEvent-title">
-  {{name}}
-</h1>
+{% assign prev = collections[tags] | getPreviousCollectionItem %}
+{% assign next = collections[tags] | getNextCollectionItem %}
 
-<p class="ProgramEvent-date">
-  {{date | toShortDate}}
-</p>
-
-<img
-  class="ProgramEvent-poster"
-  src="/img/{{poster}}"
->
-
-{{content}}
+{%
+  render "programs/ProgramEventDetail.liquid",
+    name: name,
+    date: date,
+    poster: poster,
+    content: content,
+    back: back,
+    prev: prev,
+    next: next
+%}

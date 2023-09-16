@@ -13,6 +13,7 @@ module.exports = function (config) {
   config.addPassthroughCopy(`${srcDir}/**/*.js`)
 
   // -- filters --
+  /// camelize a string
   function camelize(value, isLower) {
     return value
       .split(/\s+/)
@@ -29,6 +30,11 @@ module.exports = function (config) {
       .join("")
   }
 
+  config.addFilter("camelize", (value) => camelize(value, false))
+  config.addFilter("camelizeLower", (value) => camelize(value, true))
+
+  // -- filters/date
+  /// format a date obj as a short date string
   function toShortDate(value)  {
     return value.toLocaleDateString("en-US", {
       year: 'numeric',
@@ -37,9 +43,15 @@ module.exports = function (config) {
     })
   }
 
-  config.addFilter("camelize", (value) => camelize(value, false))
-  config.addFilter("camelizeLower", (value) => camelize(value, true))
   config.addFilter("toShortDate", toShortDate)
+
+  // -- filters/collections
+  /// grab an element from a collection by name
+  function named(collection, name) {
+    return collection.find((el) => el.data.name === name)
+  }
+
+  config.addFilter("named", named)
 
   // -- output --
   return {

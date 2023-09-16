@@ -1,6 +1,6 @@
 ---
 layout: Page.liquid
-name: home
+root: home
 title: Wonderville Projects
 image: img/header-still.png
 description: Wonderville Projects is a Brooklyn-based nonprofit focused on fostering a community of independent game developers and creative technologists
@@ -13,9 +13,7 @@ description: Wonderville Projects is a Brooklyn-based nonprofit focused on foste
   </h1>
 
   <div class="Mission-lines">
-    {%- for line in collections.mission %}
-      {% render "home/MissionLine.liquid", line: line %}
-    {%- endfor %}
+    {% render "home/MissionLine.liquid" for collections.mission as line %}
   </div>
 </section>
 
@@ -28,8 +26,6 @@ description: Wonderville Projects is a Brooklyn-based nonprofit focused on foste
   </h1>
 
   <div id="board" class="Board-members">
-    {%- for member in collections.board %}
-      {% render "home/BoardMember.liquid", member: member %}
-    {%- endfor %}
+    {% render "home/BoardMember.liquid" for collections.board as member %}
   </div>
 </section>

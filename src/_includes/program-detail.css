@@ -1,8 +1,8 @@
-/* -- .ProgramEvents -- */
-.ProgramEvents {
+/* -- .ProgramDetail -- */
+.ProgramDetail {
 }
 
-.ProgramEvents-list {
+.ProgramDetail-events {
   display: flex;
   flex-wrap: wrap;
   gap: $spacing4;

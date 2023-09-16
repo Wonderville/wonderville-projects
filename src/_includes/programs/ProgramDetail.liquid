@@ -1,0 +1,24 @@
+<p class="Page-back">
+  <a class="Page-backLink" href="{{program.data.back.href}}">
+    {{program.data.back.name}}
+  </a>
+</p>
+
+<section class="ProgramDetail PageSection">
+  <h1 class="PageSection-title">
+    <span class="PageSection-titleText">
+      {{program.data.name}}
+    </a>
+  </h1>
+
+  <h2 class="PageSection-subtitle Program-description">
+    {{program.content}}
+  </h2>
+
+  <!-- ~*~ Events ~*~ -->
+  <div class="ProgramDetail-events">
+    {%- for event in programEvents %}
+      {% render "programs/ProgramEvent.liquid", event: event %}
+    {%- endfor %}
+  </div>
+</section>
