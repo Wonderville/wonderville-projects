@@ -1,5 +1,4 @@
 ---
-tags: internship
 name: Sweetbitter Creatures
 poster: internship/sweetbitter-creatures/poster.png
 date: 2022-06-08

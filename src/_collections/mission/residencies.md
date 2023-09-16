@@ -1,9 +1,7 @@
 ---
-tags: mission
 name: Residencies
 image: residencies/residency1.jpg
 alt: A custom arcade cabinet with 'Wondercab' printed on the control deck and 'Smush bois' on the nameplate. The display shows the Smush bois title screen.
-anchor: residencies
 date: "01"
 ---
 

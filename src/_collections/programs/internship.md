@@ -1,7 +1,5 @@
 ---
-tags: programs
 name: Internship
-anchor: internship
 images:
 - internship/internship1.jpg
 - internship/internship2.jpg

@@ -1,4 +1,5 @@
 {
+  "tags": "internship",
   "layout": "PageProgramEvent.liquid",
   "permalink": "programs/internship/{{ name | slugify }}.html"
 }

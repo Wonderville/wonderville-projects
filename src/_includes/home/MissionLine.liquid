@@ -11,6 +11,6 @@
 
   <div class="MissionLine-text Box">
     {{ line.content }}
-    <a href="/programs#{{ line.data.anchor }}">Read more...</a>
+    <a href="/programs#{{ line.data.name | slugify }}">Read more...</a>
   </div>
 </article>

@@ -1,7 +1,5 @@
 ---
-tags: programs
 name: Residencies
-anchor: residencies
 images:
 - residencies/residency1.jpg
 - residencies/residency2.jpg

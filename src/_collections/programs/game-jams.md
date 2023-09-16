@@ -1,7 +1,5 @@
 ---
-tags: programs
 name: Game Jams
-anchor: game-jams
 images:
 - game-jams/smush-bois-controllers.jpg
 - game-jams/soil-keyboards.jpg

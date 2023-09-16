@@ -1,5 +1,4 @@
 ---
-tags: internship
 name: Sea Cave x Wonderville
 poster: internship/sea-cave-x-wonderville/poster.png
 date: 2022-05-12

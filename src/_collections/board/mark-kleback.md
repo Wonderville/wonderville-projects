@@ -1,5 +1,4 @@
 ---
-tags: board
 name: Mark Kleback
 image: mark-kleback.jpg
 brief: Mark Kleeb is the co-founder of Wonderville and founder of Death By Audio Arcade.

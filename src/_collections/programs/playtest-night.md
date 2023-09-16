@@ -1,7 +1,5 @@
 ---
-tags: programs
 name: Playtest Night
-anchor: playtest-night
 images:
 - playtest-night/playtest1.jpg
 - playtest-night/playtest2.jpg
