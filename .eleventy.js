@@ -1,5 +1,4 @@
 const PostCSSPlugin = require("eleventy-plugin-postcss")
-const { rm } = require("fs/promises")
 
 // -- config --
 module.exports = function (config) {
@@ -30,14 +29,17 @@ module.exports = function (config) {
       .join("")
   }
 
+  function toShortDate(value)  {
+    return value.toLocaleDateString("en-US", {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })
+  }
+
   config.addFilter("camelize", (value) => camelize(value, false))
   config.addFilter("camelizeLower", (value) => camelize(value, true))
-
-  // -- build --
-  // remove the _collections dir from the site output
-  config.on("eleventy.after", async () => {
-    await rm(`${dstDir}/_collections`, { recursive: true, force: true })
-  })
+  config.addFilter("toShortDate", toShortDate)
 
   // -- output --
   return {

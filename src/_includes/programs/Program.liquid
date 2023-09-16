@@ -2,7 +2,12 @@
 
 <section class="{{class}} Program PageSection" id="{{program.data.anchor}}">
   <h1 class="{{class}}-title PageSection-title">
-    <span class="PageSection-titleText">{{program.data.name}}</span>
+    <a
+      class="PageSection-titleText"
+      href="/programs/{{program.data.anchor}}"
+    >
+      {{program.data.name}}
+    </a>
   </h1>
 
   <h2 class="PageSection-subtitle Program-description">

@@ -1,0 +1,25 @@
+---
+layout: Page.liquid
+name: programs
+image: img/internship/playtest1.jpg
+description: Wonderville Projects is a Brooklyn-based nonprofit that runs a vareity a programs for the NYC community of independent game developers and creative technologists
+---
+
+<section class="ProgramEvents PageSection" id="{{program.data.anchor}}">
+  <p class="PageSection-parent">
+    Programs
+  </p>
+
+  <h1 class="PageSection-title">
+    <span class="PageSection-titleText">
+      Internship
+    </a>
+  </h1>
+
+  <!-- ~*~ Events ~*~ -->
+  <div class="ProgramEvents-list">
+    {%- for event in collections.internship %}
+      {% render "programs/ProgramEvent.liquid", event: event %}
+    {%- endfor %}
+  </div>
+</section>

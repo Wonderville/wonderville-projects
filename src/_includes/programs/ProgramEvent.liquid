@@ -1,0 +1,14 @@
+<article class="ProgramEvent">
+  <h1 class="ProgramEvent-title">
+    <a href="/programs/internship/{{event.fileSlug}}">{{event.data.name}}</a>
+  </h1>
+
+  <p class="ProgramEvent-date">
+    {{event.data.date | toShortDate}}
+  </p>
+
+  <img
+    class="ProgramEvent-poster"
+    src="/img/{{event.data.poster}}"
+  >
+</article>

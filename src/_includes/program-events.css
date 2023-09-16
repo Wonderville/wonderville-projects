@@ -1,0 +1,20 @@
+/* -- .ProgramEvents -- */
+.ProgramEvents {
+}
+
+.ProgramEvents-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing4;
+}
+
+/* -- .ProgramEvent -- */
+.ProgramEvent-title {
+  font-size: $fontSize1;
+}
+
+.ProgramEvent-poster {
+  width: 300px;
+  height: 300px;
+  margin-top: $spacing1;
+}

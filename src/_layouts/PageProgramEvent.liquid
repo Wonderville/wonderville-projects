@@ -1,0 +1,18 @@
+---
+layout: Page.liquid
+---
+
+<h1 class="ProgramEvent-title">
+  {{name}}
+</h1>
+
+<p class="ProgramEvent-date">
+  {{date | toShortDate}}
+</p>
+
+<img
+  class="ProgramEvent-poster"
+  src="/img/{{poster}}"
+>
+
+{{content}}
