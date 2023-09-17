@@ -1,0 +1,8 @@
+---
+name: Playtest Night
+image: playtest-night/playtest2.jpg
+---
+
+{% assign program = collections.programs | named: "Playtest Night" %}
+{% assign programEvents = collections.playtestNight %}
+{% render "programs/ProgramDetail.liquid", program: program, programEvents: programEvents %}

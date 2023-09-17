@@ -1,0 +1,8 @@
+---
+name: Residencies
+image: residencies/residency1.jpg
+---
+
+{% assign program = collections.programs | named: "Residencies" %}
+{% assign programEvents = collections.residencies %}
+{% render "programs/ProgramDetail.liquid", program: program, programEvents: programEvents %}
