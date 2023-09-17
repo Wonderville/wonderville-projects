@@ -2,7 +2,7 @@
   "tags": "internship",
   "root": "programs",
   "back": {
-    "name": "Internship",
+    "name": "Back to Internship",
     "href": "/programs/internship"
   },
   "layout": "PageProgramEvent.liquid",

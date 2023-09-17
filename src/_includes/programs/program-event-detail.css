@@ -1,0 +1,51 @@
+
+/* -- .ProgramEventDetail -- */
+.ProgramEventDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -- .ProgramEventDetail-date -- */
+.ProgramEventDetail-date {
+  max-width: 600px;
+  margin-bottom: 35px;
+  display: flex;
+  align-self: center;
+}
+
+@media (min-width: $desktop) {
+  .ProgramEventDetail-date {
+    margin-bottom: $spacing5;
+  }
+}
+
+/* -- .ProgramEventDetail-content -- */
+.ProgramEventDetail-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing3;
+}
+
+@media (min-width: $desktop) {
+  .ProgramEventDetail-content {
+    flex-direction: row;
+  }
+}
+
+/* -- .ProgramEventDetail-poster -- */
+.ProgramEventDetail-poster {
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+@media (min-width: $desktop) {
+  .ProgramEventDetail-poster {
+    width: 350px;
+  }
+}
+
+/* -- .ProgramEventDetail-body -- */
+.ProgramEventDetail-body > p + p {
+  margin-top: $spacing1;
+}

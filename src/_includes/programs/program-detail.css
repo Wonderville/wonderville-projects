@@ -1,0 +1,37 @@
+/* -- .ProgramDetail -- */
+.ProgramDetail {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -- .ProgramDetail-description -- */
+.ProgramDetail-description {
+  max-width: 600px;
+  margin-bottom: 35px;
+  display: flex;
+  align-self: center;
+}
+
+@media (min-width: $desktop) {
+  .ProgramDetail-description {
+    margin-bottom: $spacing5;
+  }
+}
+
+/* -- .ProgramDetail-events -- */
+.ProgramDetail-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing4;
+}
+
+/* -- .ProgramEvent -- */
+.ProgramEvent-title {
+  font-size: $fontSize1;
+}
+
+.ProgramEvent-poster {
+  width: 300px;
+  height: 300px;
+  margin-top: $spacing1;
+}

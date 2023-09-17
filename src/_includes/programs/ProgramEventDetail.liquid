@@ -4,23 +4,25 @@
   </a>
 </p>
 
-<section class="ProgramEventDetail PageSection">
+<article class="ProgramEventDetail PageSection">
   <h1 class="PageSection-title">
     <span class="PageSection-titleText">
       {{name}}
     </a>
   </h1>
 
-  <p class="ProgramDeventDetail-date">
+  <p class="ProgramEventDetail-date PageSection-subtitle">
     {{date | toShortDate}}
   </p>
 
-  <img
-    class="ProgramDeventDetail-poster"
-    src="/img/{{poster}}"
-  >
+  <div class="ProgramEventDetail-content">
+    <img
+      class="ProgramEventDetail-poster"
+      src="/img/{{poster}}"
+    >
 
-  <div class="PageSection-subtitle ProgramEventDetail-body">
-    {{content}}
-  <div>
-</section>
+    <section class="ProgramEventDetail-body">
+      {{content}}
+    <section>
+  </div>
+</article>

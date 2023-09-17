@@ -1,15 +1,17 @@
 {% assign class = program.data.name | camelize %}
-{% assign anchor = program.data.name | slugify %}
 
-<section class="{{class}} Program PageSection" id="{{anchor}}">
+<section class="{{class}} Program PageSection">
   <h1 class="{{class}}-title PageSection-title">
-    <a
-      class="PageSection-titleText"
-      href="/programs/{{anchor}}"
-    >
+    <span class="PageSection-titleText">
       {{program.data.name}}
-    </a>
+    </span>
   </h1>
+
+  <a
+    href="/programs/{{program.data.name | slugify}}"
+  >
+    See more!
+  </a>
 
   <h2 class="PageSection-subtitle Program-description">
     {{program.content}}
