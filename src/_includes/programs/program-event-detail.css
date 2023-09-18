@@ -7,15 +7,15 @@
 
 /* -- .ProgramEventDetail-date -- */
 .ProgramEventDetail-date {
-  max-width: 600px;
-  margin-bottom: 35px;
   display: flex;
   align-self: center;
+  max-width: 600px;
+  margin-top: $spacing2;
+  font-size: $fontSize1;
 }
 
 @media (min-width: $desktop) {
   .ProgramEventDetail-date {
-    margin-bottom: $spacing5;
   }
 }
 

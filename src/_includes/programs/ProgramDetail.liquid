@@ -1,15 +1,17 @@
-<p class="Page-back">
-  <a class="Page-backLink" href="{{program.data.back.href}}">
-    {{program.data.back.name}}
-  </a>
-</p>
-
 <section class="ProgramDetail PageSection">
-  <h1 class="PageSection-title">
-    <span class="PageSection-titleText">
-      {{program.data.name}}
-    </a>
-  </h1>
+  <header class="PageSection-header">
+    <div class="PageSection-title">
+      <p class="Page-back">
+        <a class="Page-backLink" href="{{program.data.back.href}}">
+          {{program.data.back.name}}
+        </a>
+      </p>
+
+      <h1 class="PageSection-titleText">
+        {{program.data.name}}
+      </h1>
+    </div>
+  </header>
 
   <h2 class="PageSection-subtitle ProgramDetail-description">
     {{program.content}}

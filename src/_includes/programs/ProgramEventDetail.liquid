@@ -1,19 +1,21 @@
-<p class="Page-back">
-  <a class="Page-backLink" href="{{back.href}}">
-    {{back.name}}
-  </a>
-</p>
-
 <article class="ProgramEventDetail PageSection">
-  <h1 class="PageSection-title">
-    <span class="PageSection-titleText">
-      {{name}}
-    </a>
-  </h1>
+  <header class="PageSection-header">
+    <div class="PageSection-title">
+      <p class="Page-back">
+        <a class="Page-backLink" href="{{back.href}}">
+          {{back.name}}
+        </a>
+      </p>
 
-  <p class="ProgramEventDetail-date PageSection-subtitle">
-    {{date | toShortDate}}
-  </p>
+      <h1 class="PageSection-titleText">
+        {{name}}
+      </h1>
+    </div>
+
+    <p class="ProgramEventDetail-date">
+      {{date | toShortDate}}
+    </p>
+  </header>
 
   <div class="ProgramEventDetail-content">
     <img

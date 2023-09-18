@@ -10,9 +10,11 @@ description: If you would like to make a financial contribution to Wonderville P
 <!-- ~*~ Donate ~*~ -->
 <section class="Donation PageSection">
   <div class="Donate-block">
-    <h1 class="Donation-title PageSection-title">
-      <span class="PageSection-titleText">Donation</span>
-    </h1>
+    <header class="PageSection-header">
+      <h1 class="Donation-title PageSection-title">
+        <span class="PageSection-titleText">Donation</span>
+      </h1>
+    </header>
 
     <h2 class="PageSection-subtitle">
       If you would like to make a financial contribution, we would greatly appreciate it.
@@ -40,9 +42,11 @@ description: If you would like to make a financial contribution to Wonderville P
 
 <section class="WishList PageSection">
   <div class="Donate-block">
-    <h1 class="WishList-title PageSection-title">
-      <span class="PageSection-titleText">Wish List</span>
-    </h1>
+    <header class="PageSection-header">
+      <h1 class="WishList-title PageSection-title">
+        <span class="PageSection-titleText">Wish List</span>
+      </h1>
+    </header>
 
     <h2 class="PageSection-subtitle">
       <p>If you have contacts or know any companies interested in providing in-kind donations, here is a list of items we could use for programming and projects.</p>
@@ -51,6 +55,6 @@ description: If you would like to make a financial contribution to Wonderville P
   </div>
 
   <ul class="WishList-items Box">
-    {% render "donate/Wish.liquid" for colleciton.wishes as wish %}
+    {% render "donate/Wish.liquid" for collections.wishes as wish %}
   </ul>
 </section>

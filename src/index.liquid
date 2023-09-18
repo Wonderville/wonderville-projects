@@ -21,9 +21,11 @@ description: Wonderville Projects is a Brooklyn-based nonprofit focused on foste
 <div class="PageDivider"></div>
 
 <section class="Board PageSection">
-  <h1 class="Board-title PageSection-title">
-    <span class="PageSection-titleText">Board</span>
-  </h1>
+  <header class="PageSection-header">
+    <h1 class="Board-title PageSection-title">
+      <span class="PageSection-titleText">Board</span>
+    </h1>
+  </header>
 
   <div id="board" class="Board-members">
     {% render "home/BoardMember.liquid" for collections.board as member %}
