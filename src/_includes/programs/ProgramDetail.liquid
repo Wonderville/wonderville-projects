@@ -1,6 +1,8 @@
-<section class="ProgramDetail PageSection">
+{% assign class = program.data.name | camelize %}
+
+<section class="{{class}} ProgramDetail PageSection">
   <header class="PageSection-header">
-    <div class="PageSection-title">
+    <div class="{{class}}-title PageSection-title">
       <p class="Page-back">
         <a class="Page-backLink" href="{{program.data.back.href}}">
           {{program.data.back.name}}
