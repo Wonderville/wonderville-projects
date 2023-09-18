@@ -53,6 +53,13 @@ module.exports = function (config) {
 
   config.addFilter("named", named)
 
+  // -- filters/misc
+  function rand(max) {
+    return Math.floor(Math.random() * max)
+  }
+
+  config.addFilter("rand", rand)
+
   // -- output --
   return {
     dir: {

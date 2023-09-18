@@ -26,6 +26,10 @@
 }
 
 /* -- .ProgramEvent -- */
+.ProgramEvent {
+  transform: rotate(calc(1deg * (var(--rand) * 2 - 1)));
+}
+
 .ProgramEvent-title {
   font-size: $fontSize1;
 }

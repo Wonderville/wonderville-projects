@@ -135,8 +135,14 @@ body.is-modal {
 /* -- .Page-back -- */
 .Page-back {
   position: absolute;
-  top: -40px;
-  left: -60px;
+  top: -30px;
+  left: max(-60px, -100vw + 100% + 60px); /* i mostly believe this will work & prevent the back link from going off screen on mobile */
+}
+
+@media (min-width: $desktop) {
+  .Page-back {
+    top: -40px;
+  }
 }
 
 /* we'd prefer to just say .Page-backLink here */
@@ -165,8 +171,14 @@ body.is-modal {
 /* -- .Page-more -- */
 .Page-more {
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   right: -40px;
+}
+
+@media (min-width: $desktop) {
+  .Page-more {
+    bottom: -40px;
+  }
 }
 
 /* we'd prefer to just say .Page-backLink here */
@@ -222,26 +234,32 @@ body.is-modal {
   position: relative;
 }
 
-.PageSection-title:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color2);
-  z-index: -1;
-}
-
 .PageSection-titleText {
   position: relative;
+  display: flex;
+  align-items: center;
   font-family: $fontSans;
   font-size: $fontSize2;
+  text-align: center;
+}
+
+.PageSection-titleText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: $fontSize2;
+  background-color: var(--color2);
+  z-index: -1;
 }
 
 @media (min-width: $desktop) {
   .PageSection-titleText {
     font-size: $fontSize3;
+  }
+
+  .PageSection-titleText::after {
+    height: $fontSize3;
   }
 }
 

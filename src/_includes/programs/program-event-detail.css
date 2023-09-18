@@ -1,8 +1,12 @@
-
 /* -- .ProgramEventDetail -- */
 .ProgramEventDetail {
   display: flex;
   flex-direction: column;
+}
+
+/* -- .ProgramEventDetail-title -- */
+.ProgramEventDetail-title {
+  transform: rotate(calc(1.5deg * (var(--rand) * 2 - 1)));
 }
 
 /* -- .ProgramEventDetail-date -- */
@@ -37,6 +41,7 @@
   width: 100%;
   object-fit: contain;
   object-position: top;
+  transform: rotate(calc(-1deg * (var(--rand) * 2 - 1)));
 }
 
 @media (min-width: $desktop) {
