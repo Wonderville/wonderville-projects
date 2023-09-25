@@ -1,6 +1,6 @@
 ---
 name: Haunted Arcade
-poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/1634829787079-3DZ9G8YPVWO50I5BJZI6/HAUNTED+ARCADE.png?format=2500w
+poster: internship/haunted-arcade/poster.png
 date: 2021-10-31
 ---
 
@@ -16,9 +16,9 @@ Haunted PS1 Demo Disc 2021
 
 (https://hauntedps1.itch.io/demodisc2021)
 
-You awake to find yourself in a room swathed in shadow, the memories of your arrival much too painful to confront in your uncertain state. The room is empty - save for one thing. A stone pedestal, nakedly imposing. Something wants you to approach. 
+You awake to find yourself in a room swathed in shadow, the memories of your arrival much too painful to confront in your uncertain state. The room is empty - save for one thing. A stone pedestal, nakedly imposing. Something wants you to approach.
 
-And you do. 
+And you do.
 
 On the pedestal lies a lone, cracked jewel case. Your fingers run across the surface…
 
@@ -38,7 +38,7 @@ The Devil
 
 by Aaron Taecker-Wyss, bb Tombo, Catherine Brinegar, Flan Falacci, Nic Freeman, & Shane Yach
 
-A classic survival horror game, in the lineage of Silent Hill, Resident Evil, and Siren.     
+A classic survival horror game, in the lineage of Silent Hill, Resident Evil, and Siren.
 
 -----------------------------
 
