@@ -8,17 +8,17 @@
       Rand--{{100 | rand}}
     "
   >
-      <h1 class="ProgramEvent-title">
-        {{event.data.name}}
-      </h1>
+    <h1 class="ProgramEvent-title">
+      {{event.data.name}}
+    </h1>
 
-      <p class="ProgramEvent-date">
-        {{event.data.date | toShortDate: event.data.season}}
-      </p>
+    <p class="ProgramEvent-date">
+      {{event.data.date | toShortDate: event.data.season}}
+    </p>
 
-      <img
-        class="ProgramEvent-poster"
-        src="/img/{{event.data.poster}}"
-      >
+    <img
+      class="ProgramEvent-poster"
+      src="{{event.data.poster | toImageUrl }}"
+    >
   </article>
 </a>

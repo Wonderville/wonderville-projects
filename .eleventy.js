@@ -50,6 +50,18 @@ module.exports = function (config) {
 
   config.addFilter("toShortDate", toShortDate)
 
+  // -- filters/image
+  /// resolve a relative or absolute image url
+  function toImageUrl(path) {
+    if (path.startsWith("http")) {
+      return path
+    } else {
+      return `/img/${path}`
+    }
+  }
+
+  config.addFilter("toImageUrl", toImageUrl)
+
   // -- filters/collections
   /// grab an element from a collection by name
   function named(collection, name) {

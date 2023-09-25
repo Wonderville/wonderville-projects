@@ -15,7 +15,7 @@ const kClass = {
 const kVisit = {
   None: 0,
   SameOrigin: 1,
-  SamePath: 2
+  SamePath: 2,
 }
 
 /// the os
@@ -74,7 +74,7 @@ class Os {
   }
 
   /// visit the url and update the game
-  async visit(url) {
+  async visit(url, isBack = false) {
     const m = this
 
     // run pre visit events
@@ -154,10 +154,12 @@ class Os {
     }
 
     // set scroll position
-    if ($anchor != null) {
-      $anchor.scrollIntoView()
-    } else {
-      window.scrollTo(0, 0)
+    if (!isBack) {
+      if ($anchor != null) {
+        $anchor.scrollIntoView()
+      } else {
+        window.scrollTo(0, 0)
+      }
     }
 
     // run post visit events
@@ -249,7 +251,7 @@ class Os {
     }
 
     // otherwise, visit the url
-    m.visit(url)
+    m.visit(url, true)
   }
 
   /// when a visit starts
