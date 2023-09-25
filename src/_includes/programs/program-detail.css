@@ -27,15 +27,28 @@
 
 /* -- .ProgramEvent -- */
 .ProgramEvent {
+  display: inline-flex;
+  flex-direction: column;
   transform: rotate(calc(1deg * (var(--rand) * 2 - 1)));
 }
 
 .ProgramEvent-title {
   font-size: $fontSize1;
+  text-decoration: underline;
+}
+
+.ProgramEvent-date {
+  color: $black;
 }
 
 .ProgramEvent-poster {
-  width: 300px;
-  height: 300px;
+  width: 285px;
+  height: 285px;
   margin-top: $spacing1;
+  object-fit: cover;
+  border-radius: $borderRadius0;
+}
+
+.ProgramEvent--bordered .ProgramEvent-poster {
+  border: 1px solid var(--color1);
 }

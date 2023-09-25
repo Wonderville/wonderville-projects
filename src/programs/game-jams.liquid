@@ -4,5 +4,5 @@ image: playtest-night/playtest1.jpg
 ---
 
 {% assign program = collections.programs | named: "Game Jams" %}
-{% assign programEvents = collections.gameJams %}
+{% assign programEvents = collections["game-jams"] %}
 {% render "programs/ProgramDetail.liquid", program: program, programEvents: programEvents %}

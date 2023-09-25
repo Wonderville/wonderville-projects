@@ -1,0 +1,10 @@
+{
+  "tags": "game-jams",
+  "root": "programs",
+  "back": {
+    "name": "Back to Game Jams",
+    "href": "/programs/game-jams"
+  },
+  "layout": "PageProgramEvent.liquid",
+  "permalink": "programs/game-jams/{{ name | slugify }}.html"
+}

@@ -1,0 +1,10 @@
+{
+  "tags": "residencies",
+  "root": "programs",
+  "back": {
+    "name": "Back to Residencies",
+    "href": "/programs/residencies"
+  },
+  "layout": "PageProgramEvent.liquid",
+  "permalink": "programs/residencies/{{ name | slugify }}.html"
+}

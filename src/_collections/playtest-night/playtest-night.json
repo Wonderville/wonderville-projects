@@ -1,0 +1,10 @@
+{
+  "tags": "playtest-night",
+  "root": "programs",
+  "back": {
+    "name": "Back to Playtest Night",
+    "href": "/programs/playtest-night"
+  },
+  "layout": "PageProgramEvent.liquid",
+  "permalink": "programs/playtest-night/{{ name | slugify }}.html"
+}

@@ -35,11 +35,16 @@ module.exports = function (config) {
 
   // -- filters/date
   /// format a date obj as a short date string
-  function toShortDate(value)  {
-    return value.toLocaleDateString("en-US", {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+  function toShortDate(date, season)  {
+    const utc = new Date(date.getTime() + date.getTimezoneOffset() * 60000)
+    if (season != null) {
+      return `${season} ${utc.toLocaleDateString("en-US", { year: "numeric"})}`
+    }
+
+    return utc.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
     })
   }
 

@@ -21,7 +21,7 @@
 
   <!-- ~*~ Events ~*~ -->
   <div class="ProgramDetail-events">
-    {%- for event in programEvents %}
+    {%- for event in programEvents reversed %}
       {% render "programs/ProgramEvent.liquid", event: event %}
     {%- endfor %}
   </div>

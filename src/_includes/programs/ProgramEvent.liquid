@@ -1,14 +1,24 @@
-<article class="ProgramEvent Rand--{{100 | rand}}">
-  <h1 class="ProgramEvent-title">
-    <a href="/programs/internship/{{event.fileSlug}}">{{event.data.name}}</a>
-  </h1>
-
-  <p class="ProgramEvent-date">
-    {{event.data.date | toShortDate}}
-  </p>
-
-  <img
-    class="ProgramEvent-poster"
-    src="/img/{{event.data.poster}}"
+<a href="/programs/{{event.data.tags}}/{{event.fileSlug}}">
+  <article
+    class="
+      ProgramEvent
+      {% if event.data.border %}
+        ProgramEvent--bordered
+      {% endif %}
+      Rand--{{100 | rand}}
+    "
   >
-</article>
+      <h1 class="ProgramEvent-title">
+        {{event.data.name}}
+      </h1>
+
+      <p class="ProgramEvent-date">
+        {{event.data.date | toShortDate: event.data.season}}
+      </p>
+
+      <img
+        class="ProgramEvent-poster"
+        src="/img/{{event.data.poster}}"
+      >
+  </article>
+</a>
