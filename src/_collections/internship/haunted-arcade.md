@@ -1,6 +1,6 @@
 ---
 name: Haunted Arcade
-poster: internship/haunted-arcade/poster.png
+poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/1634829787079-3DZ9G8YPVWO50I5BJZI6/HAUNTED+ARCADE.png?format=2500w
 date: 2021-10-31
 ---
 
