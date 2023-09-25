@@ -64,17 +64,17 @@ contains all the source files for the site. every `.liquid` template you see in 
 
 some special directories that begin with an `_` are not copied into the site.
 
-#### _collections
+#### [_collections](./src/_collections/)
 
 contains the site data. all of the content, represented as [markdown](https://www.markdownguide.org/) files (w/ the extention `.md`), lives here. if you're adding or editing content on the site, you'll likely be in this directory most of the time.
 
-#### _includes
+#### [_includes](./src/_includes/)
 
 contains any helper liquid templates that we use to avoid having to repeat blocks of html over and over again. any time a template uses [`{% render %}`](https://liquidjs.com/tags/render.html), it looks in this directory for the file to render.
 
 it also contains some page or element specific `.css` files so that we don't have to author [`site.css`](./src/site.css) as one gigantic file. site.css pulls all of those at the top of the file using [`@import`](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) rules (11ty resolves the imports when it builds the site).
 
-#### _layouts
+#### [_layouts](./src/_layouts/)
 
 contains another flavor of liquid template, but these ones wrap every page to provide them common structure.
 
