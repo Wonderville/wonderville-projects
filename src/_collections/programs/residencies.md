@@ -7,4 +7,4 @@ images:
 date: "01"
 ---
 
-Wonderville Projects collaborates with Death By Audio Arcade to select games for two residency programs four times per year.
+Wonderville Projects collaborates with [Death By Audio Arcade](https://www.deathbyaudioarcade.com/) to select games for two residency programs four times per year.
