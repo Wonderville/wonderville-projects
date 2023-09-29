@@ -2,7 +2,7 @@
 name: Trapped In Here With Me
 poster: residencies/trapped-in-here-with-me/poster.gif
 date: 2023-09-01
-season: Fall
+season: Fall 2023
 ---
 
 By James Korin
