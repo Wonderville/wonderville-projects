@@ -1,6 +1,6 @@
 ---
 name: Hypertext Games in Neocities
-poster: game-jams/hypertext-games/poster.png
+poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/bd20fada-eed5-4035-aae4-8a08bb831188/gameJam2+-+Blake+Andrews.png?format=2500w
 border: true
 date: 2023-04-08
 ---
@@ -32,3 +32,5 @@ Neocities is a service that allows users to easily make websites (I don't recomm
 This event will be streamed online, so people across the world can participate.
 
 Snacks will be available and Liquid Death drinks will be provided by Liquid Death.
+
+[Play Games From This Jam on Itch](https://itch.io/jam/monthly-2-hr-gamejam-club/entries)
