@@ -1,3 +1,3 @@
 ---
-name: Streaming Camera
+name: PTZ Cameras for streaming
 ---

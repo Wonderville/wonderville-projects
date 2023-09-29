@@ -1,3 +1,3 @@
 ---
-name: DMX lighting rig with controller
+name: New DMX lighting controller
 ---

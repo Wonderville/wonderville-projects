@@ -1,3 +1,3 @@
 ---
-name: Streaming equipment for PC
+name: Stream Deck Production Controller
 ---
