@@ -1,8 +1,8 @@
 ---
 name: Game Jams
 images:
-- game-jams/smush-bois-controllers.jpg
-- game-jams/soil-keyboards.jpg
+- game-jams/jam1.jpg
+- game-jams/jam2.jpg
 date: "02"
 ---
 
