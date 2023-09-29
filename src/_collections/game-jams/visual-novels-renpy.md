@@ -4,6 +4,7 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/6
 border: true
 date: 2023-06-10
 ---
+[Play Games From This Jam on Itch](https://itch.io/jam/monthly-2-hr-gamejam-club-3/entries)
 
 Make a game in 2 hours!
 
@@ -31,4 +32,3 @@ Snacks will be available and Liquid Death drinks will be provided by Liquid Deat
 
 Donations are not mandatory, but 100% of donations received go directly to your host, Blake Andrews!
 
-[Play Games From This Jam on Itch](https://itch.io/jam/monthly-2-hr-gamejam-club-3/entries)

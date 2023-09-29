@@ -4,6 +4,7 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/b
 border: true
 date: 2023-04-08
 ---
+[Play Games From This Jam on Itch](https://itch.io/jam/monthly-2-hr-gamejam-club/entries)
 
 Make a game in 2 hours!
 
@@ -33,4 +34,3 @@ This event will be streamed online, so people across the world can participate.
 
 Snacks will be available and Liquid Death drinks will be provided by Liquid Death.
 
-[Play Games From This Jam on Itch](https://itch.io/jam/monthly-2-hr-gamejam-club/entries)

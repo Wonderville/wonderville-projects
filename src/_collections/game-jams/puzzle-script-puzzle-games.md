@@ -4,6 +4,7 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/4
 border: true
 date: 2023-08-12
 ---
+[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-august-2023/entries)
 
 Make a game in 2 hours!
 
@@ -29,4 +30,3 @@ Snacks will be available and Liquid Death drinks will be provided by Liquid Deat
 
 This event is free to attend but donations are welcome and help pay for your instructor, Blake Andrews!
 
-[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-august-2023/entries)

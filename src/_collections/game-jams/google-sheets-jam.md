@@ -5,6 +5,8 @@ border: true
 date: 2023-09-09
 ---
 
+[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-september-2023/entries)
+
 Make a game in 2 hours!
 
 Each month, we will make short games using simple to use game engines.
@@ -29,4 +31,3 @@ Snacks will be available and Liquid Death drinks will be provided by Liquid Deat
 
 This event is free to attend but donations are welcome and help pay for your instructor, Blake Andrews!
 
-[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-september-2023/entries)
