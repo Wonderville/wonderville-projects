@@ -1,7 +1,7 @@
 ---
 name: Meow Pow
 poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/e6dbfe6c-6598-4c7d-8a8c-a7b05d1f50d5/IMG_3547.jpg?format=2500w
-date: 2021-6-01
+date: 2021-06-01
 season: Summer
 ---
 by [Cheap Ramen Games](https://www.cheapramen.games/)
