@@ -6,5 +6,5 @@
     "href": "/programs/internship"
   },
   "layout": "PageProgramEvent.liquid",
-  "permalink": "programs/internship/{{ name | slugify }}.html"
+  "permalink": "programs/internship/{{ page.fileSlug }}.html"
 }

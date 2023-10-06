@@ -6,5 +6,5 @@
     "href": "/programs/residencies"
   },
   "layout": "PageProgramEvent.liquid",
-  "permalink": "programs/residencies/{{ name | slugify }}.html"
+  "permalink": "programs/residencies/{{ page.fileSlug }}.html"
 }

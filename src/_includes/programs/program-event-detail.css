@@ -32,6 +32,7 @@
 
 @media (min-width: $desktop) {
   .ProgramEventDetail-content {
+    gap: $spacing5;
     flex-direction: row;
   }
 }
