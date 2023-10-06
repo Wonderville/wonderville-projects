@@ -12,9 +12,7 @@ On the spookiest night of the year come play a selection of bone-chilling videog
 
 🎃🎃🎃 FEATURING 🎃🎃🎃
 
-Haunted PS1 Demo Disc 2021
-
-(https://hauntedps1.itch.io/demodisc2021)
+[Haunted PS1 Demo Disc 2021](https://hauntedps1.itch.io/demodisc2021)
 
 You awake to find yourself in a room swathed in shadow, the memories of your arrival much too painful to confront in your uncertain state. The room is empty - save for one thing. A stone pedestal, nakedly imposing. Something wants you to approach.
 

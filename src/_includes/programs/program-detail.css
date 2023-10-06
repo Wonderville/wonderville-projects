@@ -1,3 +1,5 @@
+$program-event-width: 285px;
+
 /* -- .ProgramDetail -- */
 .ProgramDetail {
   display: flex;
@@ -30,12 +32,16 @@
 .ProgramEvent {
   display: inline-flex;
   flex-direction: column;
+  width: $program-event-width;
   transform: rotate(calc(1deg * (var(--rand) * 2 - 1)));
 }
 
 .ProgramEvent-title {
+  overflow: hidden;
   font-size: $fontSize1;
   text-decoration: underline;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .ProgramEvent-date {
@@ -43,8 +49,8 @@
 }
 
 .ProgramEvent-poster {
-  width: 285px;
-  height: 285px;
+  width: 100%;
+  height: $program-event-width;
   margin-top: $spacing1;
   object-fit: cover;
   border-radius: $borderRadius0;
