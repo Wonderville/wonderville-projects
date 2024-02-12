@@ -1,10 +1,12 @@
 ---
-name: Doom Builder Doom Levels
-poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/b12f1c54-0a3e-48c2-ad17-06a3a0979c76/DoomBuilderJam.png?format=2500w
+name: RPG Maker 2003
+poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/ad0dc551-6e10-46a6-bebb-4f6cc957ba82/rpgmaker.png?format=2500w
 border: true
-date: 2023-11-11
+date: 2024-02-10
 ---
-Make a game in 2 hours!
+[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-february-2024)
+
+Make a game in 2 hours!w
 
 Each month, we will make short games using simple to use game engines.
 
@@ -14,7 +16,7 @@ This is also great for experts who want to flex their skills and meet new people
 
 1:00 PM Doors
 
-1:30 PM Workshop hosted by Blake Andrews
+1:30 PM Workshop
 
 2:00 PM Game Jam Starts!
 
@@ -24,7 +26,6 @@ This is also great for experts who want to flex their skills and meet new people
 
 This event will be streamed online, so people across the world can participate.
 
-Snacks will be available and Liquid Death drinks will be provided by Liquid Death.
+Snacks will be available.
 
-This event is free to attend but donations are welcome and help pay for your instructor, Blake Andrews!
-
+This event is free to attend but donations are welcome and help pay for your instructor!
