@@ -5,6 +5,8 @@ border: true
 date: 2024-04-13
 ---
 
+[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-april-2024)
+
 Make a game in 2 hours!
 
 Each month, we will make short games using simple to use game engines.
