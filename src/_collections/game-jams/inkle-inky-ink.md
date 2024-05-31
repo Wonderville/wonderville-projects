@@ -1,10 +1,10 @@
 ---
-name: RPG Maker 2003
-poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/ad0dc551-6e10-46a6-bebb-4f6cc957ba82/rpgmaker.png?format=2500w
+name: Inkle Inky Ink Interactive Fiction
+poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/93833c7e-045f-46a6-ba66-60587cb1b360/gameJamInk+%281%29.png?format=2500w
 border: true
-date: 2024-02-10
+date: 2024-05-11
 ---
-[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-february-2024)
+[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-may-2024)
 
 Make a game in 2 hours!
 

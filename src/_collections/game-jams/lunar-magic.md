@@ -1,10 +1,10 @@
 ---
-name: RPG Maker 2003
-poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/ad0dc551-6e10-46a6-bebb-4f6cc957ba82/rpgmaker.png?format=2500w
+name: Lunar Magic
+poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/932fe42d-e3eb-4de1-a293-dc6b1f13469f/lunarMagic.png?format=2500w
 border: true
-date: 2024-02-10
+date: 2024-03-16
 ---
-[Play Games From This Jam on Itch](https://itch.io/jam/2-hr-gamejam-club-february-2024)
+
 
 Make a game in 2 hours!
 
