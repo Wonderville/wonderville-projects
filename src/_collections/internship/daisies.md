@@ -16,7 +16,7 @@ Furthermore, the layout of these games is meticulously arranged; standing in fro
 
 ## in spring the wind passing by plays the harmonica for me 
 **deimos**
-![Four small 4:3 monitors on a table with a green tablecloth.](https://drive.google.com/thumbnail?id=1uIIxj4XI-BgN_InRUMIqzz28flBatKFo&sz=w1000)
+![Four small 4:3 monitors on a table with a green tablecloth.](https://drive.google.com/thumbnail?id=152e85wZ9SFqowjPo3HScxdRkEl2b3tlo&sz=w1000)
 We arranged four identical monitors in a row, with a 4:3 aspect ratio that is very close to a square, creating a fascinating connection to old television sets. Each monitor is equipped with an independent Wiimote for control. Players need to hold the arrow buttons to move the cursor on the screen. As the cursor moves, streaks of light and drifting points appear on the screen, as if a gust of wind is sweeping from the left side to the right. Simultaneously, depending on the cursor's position, the game produces harmonica sounds of different pitches. The sounds from these four games are routed into a mixer, so each player's input has a real-time impact on the composition, ultimately achieving the effect of a sound toy.
 
 ## HYPER JUMP
