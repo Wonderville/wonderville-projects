@@ -30,7 +30,7 @@
 /* -- .Mission-title -- */
 .Mission-title {
   padding-bottom: 25px;
-  font-size: $fontSize2;
+  font-size: $fontSize3;
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 3px;
@@ -42,7 +42,7 @@
   .Mission-title {
     padding-top: $spacing3;
     padding-bottom: $spacing3;
-    font-size: $fontSize3;
+    font-size: $fontSize4;
     line-height: 1;
   }
 }
@@ -92,7 +92,7 @@
   width: 80%;
   top: -$spacing4;
   left: -$spacing3;
-  font-size: $fontSize4;
+  font-size: $fontSize5;
   font-weight: $fontWeightMedium;
   color: $colorHome1;
   mix-blend-mode: color-dodge;
@@ -102,7 +102,7 @@
   .MissionLine-name {
     top: -$spacing5;
     left: -$spacing5;
-    font-size: $fontSize5;
+    font-size: $fontSize6;
   }
 }
 

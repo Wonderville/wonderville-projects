@@ -6,10 +6,11 @@ $fontSize-base: 16px;
 /* -- sizes -- */
 $fontSize0: 1.1rem;
 $fontSize1: 1.3rem;
-$fontSize2: 2.5rem;
-$fontSize3: 3rem;
-$fontSize4: 4rem;
-$fontSize5: 5.4rem;
+$fontSize2: 1.8rem;
+$fontSize3: 2.5rem;
+$fontSize4: 3rem;
+$fontSize5: 4rem;
+$fontSize6: 5.4rem;
 
 /* -- weights -- */
 $fontWeightRegular: 400;
