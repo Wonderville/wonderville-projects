@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/8
 date: 2023-03-24
 ---
 
-# NO CTRL
 **Curated by Yasmine Batniji**
 **March 24, 2023**
 

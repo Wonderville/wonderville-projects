@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/c
 date: 2023-11-26
 ---
 
-# Unlikely Hero
 **Curated by Alex Zheng**
 **November 26, 2023**
 

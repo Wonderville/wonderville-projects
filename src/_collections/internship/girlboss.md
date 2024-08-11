@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/1
 date: 2023-04-30
 ---
 
-# GIRLBOSS!
 **Curated by Yasmine Batniji**
 **April 30, 2023**
 

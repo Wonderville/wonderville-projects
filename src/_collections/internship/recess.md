@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/5
 date: 2024-02-25
 ---
 
-# Recess
 **Curated by Julia H'Doubler**
 **Feb 25, 2024**
 

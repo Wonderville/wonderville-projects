@@ -3,7 +3,7 @@ name: Convergence
 poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/e2e6aad4-3ac9-472d-8229-50dd0922509e/convergence.png?format=2500w
 date: 2023-05-28
 ---
-# Convergence
+
 **Curated by Yasmine Batniji**
 **May 28, 2023**
 

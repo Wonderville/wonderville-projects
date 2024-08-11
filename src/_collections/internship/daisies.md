@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/9
 date: 2023-10-29
 ---
 
-# Daisies
 **Curated by Alex Zheng**
 **October 29, 2023**
 

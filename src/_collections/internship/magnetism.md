@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/d
 date: 2024-03-31
 ---
 
-# Magnetism
 **Curated by Julia H'Doubler**
 **Mar 31, 2024**
 

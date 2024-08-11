@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/8
 date: 2024-04-28
 ---
 
-# Play by Ear
 **Curated by Julia H’Doubler**
 **April 28, 2024**
 

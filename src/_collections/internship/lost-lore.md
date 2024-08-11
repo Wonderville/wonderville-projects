@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/f
 date: 2024-06-02
 ---
 
-# Lost Lore
 **Curated by Julia H'Doubler**
 **June 2, 2024**
 

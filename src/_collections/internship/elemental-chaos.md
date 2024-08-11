@@ -4,7 +4,6 @@ poster: https://images.squarespace-cdn.com/content/v1/5ca40c7b40978c0001458f5d/e
 date: 2024-01-07
 ---
 
-# ELEMENTAL CHAOS
 **Curated by Alex Zheng**
 **January 7, 2024**
 
