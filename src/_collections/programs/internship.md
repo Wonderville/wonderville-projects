@@ -6,4 +6,4 @@ images:
 date: "00"
 ---
 
-Wonderville Projects works with the NYU Game Center each semester to curate unique game showcases each month.
+Wonderville Projects worked with the NYU Game Center from 2021 - 2024 each semester to curate unique game showcases every month.
