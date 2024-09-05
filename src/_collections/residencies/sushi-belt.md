@@ -7,18 +7,10 @@ season: Fall
 
 By [Munro Hoberman](https://munro.itch.io/)
 
-Make sushi and feed customers using the innovative technology of conveyor belts!
+Sushi belt is the premier high speed conveyor cooking game! Roll your mat out and grab a friend or make a new one over this 1 to 2 player sushi-em-up! Get that plate on the belt, the customers won't wait forever! Featuring: 14 totally accurate recipes, high scores for clout, 4096 pixels, and somewhat more!
 
-Controls:
--Arrow keys to move around the kitchen.
--Bump into counter space to pickup ingredients (red=fish, white=rice, green=seaweed).
--Find out recipes from the book in the lower right.
--Discard used plates and botched recipes in the lower left sink.
--🅾️ (Z or C) to drop an item on the floor.
--You can carry up to 3 items!
+"It's like Overcooked but chiller!" -100% real playtester review
 
-Sushi Crafting:
--Dishes are made by combining three ingredients on the makisu (sushi mat).
--Order does not matter!
--If you don't know the recipe, it will become poop which should be discarded.
--The game is played over a week, each day you learn a new recipe.
+"Why do I keep making poop?" -90% real playtester review
+
+"I could really go for sushi right now!" -105% real developer review

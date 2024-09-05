@@ -7,12 +7,4 @@ season: Fall
 
 By [Jason Corace](https://www.goldengrave.com/)
 
-Waddle Throttle is a local multiplayer, figure skating, sumo wrestling mashup. The game has two modes: a competitive king of the hill mode, where you fight to be the last penguin standing and a two-player collaborative figure skating mode.
-
-In the battle mode there are three different ways to win:
-
-1. Make it to the end of the round with the most health left. 
-2. Knock out all the other players before the end of the round.
-3. Eat ten fish and survive without being knocked off.
-
-In the pairs figure skating mode, you and your partner try to impress the judges by pulling off the best-coordinated figure skating routine, set to music.
+Waddle Throttle is a fast-paced mashup of figure skating, sumo wrestling, and bumper cars. In this game, you take on the role of penguins battling for dominance over each level's floating ice sheets. Compete against your rivals by bumping them off, utilizing power-ups, and gobbling up fish to grow bigger. There are three ways to win: survive to the end of the round with the most health, eliminate all other players, or eat ten fish and stay on your ice sheet without being knocked off.
