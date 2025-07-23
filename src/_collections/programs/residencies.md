@@ -7,4 +7,4 @@ images:
 date: "01"
 ---
 
-Wonderville Projects collaborates with [Arcade Commons](https://www.arcadecommons.com/) to select games for two residency programs four times per year.
+Wonderville Projects selects games for two residency programs four times per year.
