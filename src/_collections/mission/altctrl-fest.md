@@ -1,5 +1,5 @@
 ---
-name: Alt Ctrl Fest
+name: Alt Ctrl Festival
 image: altctrl/guacamole.png
 alt: Alt Ctrl Game using paper slicer
 date: "03"
