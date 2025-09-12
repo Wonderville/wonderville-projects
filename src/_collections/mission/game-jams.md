@@ -2,7 +2,7 @@
 name: Game Jams
 image: game-jams/jam2.jpg
 alt: People milling around and playtesting video games at handful of tables in the middle of an arcade.
-date: "02"
+date: "01"
 ---
 
 <aside>
