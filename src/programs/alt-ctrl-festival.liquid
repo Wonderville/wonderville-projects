@@ -1,0 +1,8 @@
+---
+name: Alt Ctrl Festival
+image: playtest-night/playtest1.jpg
+---
+
+{% assign program = collections.programs | named: "Alt Ctrl Festival" %}
+{% assign programEvents = collections["alt-ctrl-festival"] %}
+{% render "programs/ProgramDetail.liquid", program: program, programEvents: programEvents %}
