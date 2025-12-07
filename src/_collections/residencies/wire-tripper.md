@@ -1,6 +1,6 @@
 ---
 name: Wire Tripper
-poster: https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXY3d3lsNjU2aHFsbnprNWtlYWxsemFscHp1Y2g4OGZpaGJncWhmMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E4Q7K5OgF3fpvulmyt/giphy.webp
+poster: https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmU2bGV0MGoyMHA1OXJneDI0M243MTA2NHAydTZrbjAxMG1rMXJ4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E4Q7K5OgF3fpvulmyt/giphy.gif
 date: 2024-06-01
 season: Summer
 ---

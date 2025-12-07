@@ -1,6 +1,6 @@
 ---
 name: Bumpy Grumpy
-poster: https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHZwdzI2M2JqaXgwNmM3YWg4Y2RyOGsyejVyZTNjZHQ2MGU3OTliayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y9irCp82tl7yn3uYUE/giphy.webp
+poster: https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZpend6cXBsOGZ6bDA4eTBudWxreTRxcHFza3p6aXFvcHhqdWRxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y9irCp82tl7yn3uYUE/giphy.gif
 date: 2024-06-01
 season: Summer
 ---
