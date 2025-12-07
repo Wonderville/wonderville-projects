@@ -1,0 +1,10 @@
+{
+  "tags": "alt-ctrl-festival",
+  "root": "programs",
+  "back": {
+    "name": "Back to Alt Ctrl Festival",
+    "href": "/programs/alt-ctrl-festival"
+  },
+  "layout": "PageProgramEvent.liquid",
+  "permalink": "programs/alt-ctrl-festival/{{ page.fileSlug }}.html"
+}
