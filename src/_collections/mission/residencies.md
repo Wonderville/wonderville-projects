@@ -6,5 +6,5 @@ date: "00"
 ---
 
 <aside>
-Wonderville Projects collaborates with Death By Audio Arcade to select games for two residency programs four times per year
+Wonderville Projects selects games for two residency programs four times per year to live on custom arcade cabinets.
 </aside>
