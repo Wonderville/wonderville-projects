@@ -5,7 +5,7 @@ border: true
 date: 2026-06-13
 ---
 
-[Play Games from this Game Jam]()
+[Play Games from this Game Jam](https://itch.io/jam/2-hr-gamejam-club-june-2026/entries)
 
 
 Welcome and hello Clickteam Fusion 2.5 users!
